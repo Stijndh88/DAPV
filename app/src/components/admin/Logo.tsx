@@ -7,7 +7,7 @@ export function Logo() {
         <path d="M20 6v8" stroke="#F4F1E6" strokeWidth="2" />
         <ellipse cx="20" cy="17" rx="3" ry="4.5" fill="#FF5A1F" />
       </svg>
-      <strong style={{ fontSize: 22 }}>De Plasvissers</strong>
+      <strong style={{ fontSize: 22 }}>De Aalsterse Plasvissers</strong>
     </div>
   )
 }

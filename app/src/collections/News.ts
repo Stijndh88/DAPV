@@ -11,7 +11,7 @@ export const News: CollectionConfig = {
     group: 'Inhoud',
     defaultColumns: ['title', 'publishedAt', '_status'],
     description: 'Verslagen, aankondigingen en clubnieuws. Klik op "Publiceren" om het op de site te zetten.',
-    preview: (doc) => `/nieuws/${doc.slug}`,
+    preview: (doc) => `/preview?path=/nieuws/${doc.slug}`,
   },
   defaultSort: '-publishedAt',
   versions: { drafts: true, maxPerDoc: 20 },
