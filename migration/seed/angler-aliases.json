@@ -1,0 +1,38 @@
+{
+  "_source": "Built 2026-11-20 from the names in the old results tables. Short names, initials and 'Last First' order are mapped to one person. Entries in 'guesses' are educated guesses that the club should confirm.",
+  "aliases": {
+    "Kenjiro": "Kenjiro Piron",
+    "Kenjiro P.": "Kenjiro Piron",
+    "Piron Kenjiro": "Kenjiro Piron",
+    "Merckx Ivan": "Ivan Merckx",
+    "Merckx Yvan": "Ivan Merckx",
+    "Verpeten Alfons": "Alfons Verpeten",
+    "Gevers Freddy": "Freddy Gevers",
+    "Hemelsoet Geert": "Geert Hemelsoet",
+    "Hemelsoet": "Geert Hemelsoet",
+    "Geert H.": "Geert Hemelsoet",
+    "Loeken T.": "Loeken Tatjen",
+    "Loeken": "Loeken Tatjen",
+    "Jordy": "Jordi De Greef",
+    "Jordy De Greef": "Jordi De Greef",
+    "Van Migerode": "Yvan Van Migerode",
+    "Yvan V.M.": "Yvan Van Migerode",
+    "Ivan V.M.": "Yvan Van Migerode",
+    "Jurgen V.B.": "Jurgen Van Broeck",
+    "Jurgen VDB": "Jurgen Van Broeck",
+    "Evert D.W.": "Evert De Wuffel",
+    "Evert DW": "Evert De Wuffel",
+    "Ivan": "Yvan Van Migerode",
+    "Jefken": "Jozef Bassleer",
+    "Jefken B.": "Jozef Bassleer",
+    "Brackie": "Rudy De Braeckeleer"
+  },
+  "guesses": {
+    "Ivan": "Only in Koningschap 2022. Ivan Merckx has no results after 2021 and Yvan Van Migerode is also written 'Ivan V.M.' in 2022.",
+    "Jefken": "Jef is short for Jozef, and 'Jefken B.' never fishes in the same match as Jozef Bassleer.",
+    "Jefken B.": "Same as 'Jefken'.",
+    "Brackie": "The 2022 'GP De Wuffel - Braeckeleer' is called 'GP Brackie & Evert' in the 2024 calendar, so Brackie is Rudy De Braeckeleer.",
+    "Jordy": "The member list spells it 'Jordi'.",
+    "Jordy De Greef": "The member list spells it 'Jordi'."
+  }
+}

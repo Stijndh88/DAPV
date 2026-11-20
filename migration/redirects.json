@@ -402,6 +402,321 @@
   {
     "from": "/",
     "query": {
+      "p": "68"
+    },
+    "to": "/wedstrijden/2021-gp-familie-arijs"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "415"
+    },
+    "to": "/wedstrijden/2021-gp-kristof-van-goethem-immo-kurt"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "437"
+    },
+    "to": "/wedstrijden/2021-gp-freddy-neirinckx"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "439"
+    },
+    "to": "/wedstrijden/2021-koningschap-2021"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "472"
+    },
+    "to": "/wedstrijden/2021-gp-familie-verpeten"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "496"
+    },
+    "to": "/wedstrijden/2021-gp-heck-freddy"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "514"
+    },
+    "to": "/wedstrijden/2021-koppelwedstrijd"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "522"
+    },
+    "to": "/wedstrijden/2021-gp-diego-muller"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "532"
+    },
+    "to": "/wedstrijden/2021-gp-soetinck-duwez"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "537"
+    },
+    "to": "/wedstrijden/2021-gp-soetinck-jozef"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "544"
+    },
+    "to": "/wedstrijden/2021-avondvissing"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "553"
+    },
+    "to": "/wedstrijden/2021-marathon"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "556"
+    },
+    "to": "/wedstrijden/2021-gp-dhondt-stijn"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "678"
+    },
+    "to": "/wedstrijden/2021-gp-cafe-de-belskes"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "683"
+    },
+    "to": "/wedstrijden/2021-gp-de-wuffel-de-braeckeleer"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "688"
+    },
+    "to": "/wedstrijden/2021-gp-bassleer-conny"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "693"
+    },
+    "to": "/wedstrijden/2021-gp-familie-bassleer"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "592"
+    },
+    "to": "/wedstrijden/2022-gp-familie-arijs"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "595"
+    },
+    "to": "/wedstrijden/2022-1e-reeks-kampioenschap"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "603"
+    },
+    "to": "/wedstrijden/2022-2e-reeks-kampioenschap"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "609"
+    },
+    "to": "/wedstrijden/2022-3e-reeks-kampioenschap"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "614"
+    },
+    "to": "/wedstrijden/2022-4e-reeks-kampioenschap"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "620"
+    },
+    "to": "/wedstrijden/2022-gp-freddy-neirinckx"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "625"
+    },
+    "to": "/wedstrijden/2022-gp-dhondt-stijn"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "631"
+    },
+    "to": "/wedstrijden/2022-koningschap-2022"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "648"
+    },
+    "to": "/wedstrijden/2022-gp-freddy-heck"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "653"
+    },
+    "to": "/wedstrijden/2022-belgie-duitsland"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "658"
+    },
+    "to": "/wedstrijden/2022-gp-conny-bassleer"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "665"
+    },
+    "to": "/wedstrijden/2022-gp-van-goethem-kristof"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "671"
+    },
+    "to": "/wedstrijden/2022-gp-kenjiro-jordy"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "770"
+    },
+    "to": "/wedstrijden/2022-koppelwedstrijd"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "776"
+    },
+    "to": "/wedstrijden/2022-avondwedstrijd"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "781"
+    },
+    "to": "/wedstrijden/2022-marathon"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "786"
+    },
+    "to": "/wedstrijden/2022-gp-diego-muller"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "791"
+    },
+    "to": "/wedstrijden/2022-gp-lokaal-de-parking"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "796"
+    },
+    "to": "/wedstrijden/2022-gp-de-wuffel-braeckeleer"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "801"
+    },
+    "to": "/wedstrijden/2022-gp-familie-bassleer"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "822"
+    },
+    "to": "/wedstrijden/2022-gp-cafe-de-parking"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "838"
+    },
+    "to": "/wedstrijden/2023-gp-fam-arijs"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "846"
+    },
+    "to": "/wedstrijden/2023-1e-reeks-kampioenschap"
+  },
+  {
+    "from": "/",
+    "query": {
+      "p": "503"
+    },
+    "to": "/nieuws/trekking-koppelvissing-26-06"
+  },
+  {
+    "from": "/",
+    "query": {
+      "page_id": "242"
+    },
+    "to": "/club/praktisch"
+  },
+  {
+    "from": "/",
+    "query": {
+      "page_id": "232"
+    },
+    "to": "/club/reglement"
+  },
+  {
+    "from": "/",
+    "query": {
+      "page_id": "98"
+    },
+    "to": "/lid-worden"
+  },
+  {
+    "from": "/",
+    "query": {
+      "page_id": "22"
+    },
+    "to": "/geschiedenis"
+  },
+  {
+    "from": "/",
+    "query": {
       "page_id": "58"
     },
     "to": "/nieuws"

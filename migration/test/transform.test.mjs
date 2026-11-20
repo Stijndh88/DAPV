@@ -31,7 +31,7 @@ test('transform builds competitions, results, anglers and news', async () => {
   await mkdir(path.join(dir, 'raw'), { recursive: true })
   const posts = [
     { id: 846, date: '2023-04-15T21:01:07', date_gmt: '2023-04-15T19:01:07', slug: 'uitslag-1e-reeks-kampioenschap-2', link: 'https://plasvissers.be/2023/04/15/uitslag-1e-reeks-kampioenschap-2/', title: { rendered: 'Uitslag 1e Reeks Kampioenschap' }, categories: [8], featured_media: 0, excerpt: { rendered: '' },
-      content: { rendered: table(45, ['Plaats', 'Visserke vis', 'Nr.', 'Gewicht'], [['1', 'Evert', '7', '24,840'], ['2', 'Pascal C. (v)', '3', '12,100'], ['3', 'Brackie', '9', '4,860'], ['', '', '', '']]) } },
+      content: { rendered: table(45, ['Plaats', 'Visserke vis', 'Nr.', 'Gewicht'], [['1', 'Evert', '7', '24,840'], ['2', 'Pascal C. (v)', '3', '12,100'], ['3', 'Mekkes', '9', '4,860'], ['', '', '', '']]) } },
     { id: 838, date: '2023-04-08T20:49:38', date_gmt: '2023-04-08T18:49:38', slug: 'gp-fam-arijs', link: 'https://plasvissers.be/2023/04/08/gp-fam-arijs/', title: { rendered: 'GP Fam. Arijs' }, categories: [8], featured_media: 0, excerpt: { rendered: '' },
       content: { rendered: table(44, ['Plaats', 'Visserke vis', 'Nr.', 'Gewicht'], [['1', 'Neirinckx Freddy', '1', '95,820']]) } },
     { id: 503, date: '2021-06-21T10:00:00', date_gmt: '2021-06-21T08:00:00', slug: 'trekking-koppelvissing-26-06', link: 'https://plasvissers.be/2021/06/21/trekking-koppelvissing-26-06/', title: { rendered: 'Trekking koppelvissing 26/06' }, categories: [5], featured_media: 0, excerpt: { rendered: '<p>De koppels</p>' },
@@ -71,13 +71,13 @@ test('transform builds competitions, results, anglers and news', async () => {
   assert.equal(results.length, 2)
   const r = results.find((x) => x.competitionSlug === '2023-1e-reeks-kampioenschap')
   assert.equal(r.entries.length, 3) // empty row skipped
-  assert.deepEqual(r.entries.map((e) => e.anglerSlug), ['evert-de-wuffel', 'pascal-cornand', 'brackie'])
+  assert.deepEqual(r.entries.map((e) => e.anglerSlug), ['evert-de-wuffel', 'pascal-cornand', 'mekkes'])
   assert.equal(r.entries[0].weight, 24.84)
   assert.equal(results.find((x) => x.competitionSlug === '2023-gp-fam-arijs').entries[0].anglerSlug, 'freddy-neirinckx')
 
   const anglers = await read('anglers.json')
   assert.equal(anglers.find((a) => a.slug === 'pascal-cornand').category, 'v')
-  assert.equal(anglers.find((a) => a.slug === 'brackie').member, false)
+  assert.equal(anglers.find((a) => a.slug === 'mekkes').member, false)
 
   const news = await read('news.json')
   assert.equal(news.length, 1)

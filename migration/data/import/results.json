@@ -1,0 +1,3378 @@
+[
+  {
+    "competitionSlug": "2021-gp-familie-arijs",
+    "reportHtml": "<p>Onze eerste wedstrijd van het jaar was die van de familie Arijs. Door COVID werd de wedstrijd verschoven van 3 april naar 1 mei. Eindelijk! Het werd het een half bewolkte dag die heel koud (3°) begon. Rond de middag kwam het zonnetje erdoor en als de wind ging liggen was het aangenaam warm. De vissen beten nog niet zoals we gewoon zijn op het Vissershof in Mere. Toch wist Kenjiro een mooie prestatie neer te zetten.</p>",
+    "entries": [
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 49.9,
+        "fishCount": null,
+        "peg": 7,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 40.6,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 38.3,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "freddy-neirinckx",
+        "weight": 32.7,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "steven-huysegoms",
+        "weight": 30.2,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "stijn-dhondt",
+        "weight": 28.6,
+        "fishCount": null,
+        "peg": 10,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "yvan-van-migerode",
+        "weight": 28.4,
+        "fishCount": null,
+        "peg": 12,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "geert-wijnant",
+        "weight": 23.8,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "ivan-merckx",
+        "weight": 18.6,
+        "fishCount": null,
+        "peg": 9,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 15.6,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 10
+      },
+      {
+        "anglerSlug": "remi-ophalvens",
+        "weight": 13.8,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 11
+      },
+      {
+        "anglerSlug": "jozef-bassleer",
+        "weight": 0.005,
+        "fishCount": null,
+        "peg": 11,
+        "note": null,
+        "oldPlace": 12
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2021-gp-kristof-van-goethem-immo-kurt",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "steven-huysegoms",
+        "weight": 29.7,
+        "fishCount": null,
+        "peg": 14,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 20.9,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "freddy-neirinckx",
+        "weight": 15.6,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "yvan-van-migerode",
+        "weight": 13.6,
+        "fishCount": null,
+        "peg": 10,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 13.5,
+        "fishCount": null,
+        "peg": 7,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 11.6,
+        "fishCount": null,
+        "peg": 9,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 11.1,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "ivan-merckx",
+        "weight": 9.7,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "stijn-dhondt",
+        "weight": 8.9,
+        "fishCount": null,
+        "peg": 13,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "steven-de-pauw",
+        "weight": 3.5,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 10
+      },
+      {
+        "anglerSlug": "jozef-bassleer",
+        "weight": 2.6,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 11
+      },
+      {
+        "anglerSlug": "geert-wijnant",
+        "weight": 0.6,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 12
+      },
+      {
+        "anglerSlug": "freddy-heck",
+        "weight": 0.1,
+        "fishCount": null,
+        "peg": 12,
+        "note": null,
+        "oldPlace": 13
+      },
+      {
+        "anglerSlug": "kristof-van-goethem",
+        "weight": 0,
+        "fishCount": null,
+        "peg": 11,
+        "note": null,
+        "oldPlace": 14
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2021-gp-freddy-neirinckx",
+    "reportHtml": "<p>Helaas kon de wedstrijd bij Tommy Neckebroeck niet door gaan waardoor we op een nieuwe locatie gingen vissen: in ‘De Bochten’ te Berlare.</p>\n\n\n\n<p>Wie er nog nooit geweest is, rijdt zich waarschijnlijk verloren. Vrij afgelegen maar zeer mooie locatie.</p>\n\n\n\n<div></div>\n\n\n\n<p>Hoe prachtig de locatie ook mocht zijn, het weer zat ons helemaal niet mee. Dat was ook te zien aan het vissen zelf. De sterke windstoten en hevige regenbuien maakten het er niet makkelijker op.</p>\n\n\n\n<div>\n<div>\n<div></div>\n</div>\n\n\n\n<div>\n<div></div>\n</div>\n</div>\n\n\n\n<p>De winst was deze keer weggelegd voor Geert ‘Muller’ Wijnant, hij wist 36,700kg vis uit het water te loodsen. Gevolgd door Jurgen Van Broeck en Kenjiro Piron met de tweede en derde plaats.</p>",
+    "entries": [
+      {
+        "anglerSlug": "geert-wijnant",
+        "weight": 36.7,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 27,
+        "fishCount": null,
+        "peg": 10,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 26,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 20,
+        "fishCount": null,
+        "peg": 11,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 15.8,
+        "fishCount": null,
+        "peg": 13,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 12,
+        "fishCount": null,
+        "peg": 7,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "yvan-van-migerode",
+        "weight": 11.3,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "alfons-verpeten",
+        "weight": 6.3,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "jozef-bassleer",
+        "weight": 5.4,
+        "fishCount": null,
+        "peg": 12,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "ivan-merckx",
+        "weight": 5.3,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 10
+      },
+      {
+        "anglerSlug": "stijn-dhondt",
+        "weight": 2.1,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 11
+      },
+      {
+        "anglerSlug": "freddy-gevers",
+        "weight": 1.6,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 12
+      },
+      {
+        "anglerSlug": "freddy-neirinckx",
+        "weight": 1.1,
+        "fishCount": null,
+        "peg": 9,
+        "note": null,
+        "oldPlace": 13
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2021-koningschap-2021",
+    "reportHtml": "<p>Een prachtige dag om op Meldert vijver te vissen, zonnig en zo goed als windstil. Wat een verschil met vorige week.</p>\n\n\n\n<p>Bij het verzamelen voor de trekking viel al snel op dat de vis, waarschijnlijk door het goeie weer sinds vrijdag, begonnen was met kuit te schieten in de oevers. Daardoor werd de strategie voor de dag al grotendeels bepaald.</p>\n\n\n\n<p>Het was vandaag niet alleen een wedstrijd op totaal gewicht, ook de dikste vis telde mee. Diegene die de zwaarste vis binnen kon halen mag zich voor dit jaar koning noemen.</p>\n\n\n\n<p>Geert ‘Muller’ Wijnant wist een karper van net geen 11kg (10,900kg) binnen te halen en volgt zo zichzelf op als koning.</p>\n\n\n\n<div>\n<div>\n<div>\n<div>\n<div></div>\n</div>\n\n\n\n<div>\n<div></div>\n</div>\n</div>\n</div>\n</div>",
+    "entries": [
+      {
+        "anglerSlug": "yvan-van-migerode",
+        "weight": 117.7,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 73.4,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "ivan-merckx",
+        "weight": 72.2,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "geert-hemelsoet",
+        "weight": 66.8,
+        "fishCount": null,
+        "peg": 10,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 51.6,
+        "fishCount": null,
+        "peg": 12,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "alfons-verpeten",
+        "weight": 48.2,
+        "fishCount": null,
+        "peg": 24,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 46.1,
+        "fishCount": null,
+        "peg": 16,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "geert-wijnant",
+        "weight": 36,
+        "fishCount": null,
+        "peg": 20,
+        "note": "Koning · Zwaarste vis 10,900 kg",
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "remi-ophalvens",
+        "weight": 33,
+        "fishCount": null,
+        "peg": 18,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "freddy-neirinckx",
+        "weight": 27.3,
+        "fishCount": null,
+        "peg": 26,
+        "note": null,
+        "oldPlace": 10
+      },
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 19,
+        "fishCount": null,
+        "peg": 22,
+        "note": null,
+        "oldPlace": 11
+      },
+      {
+        "anglerSlug": "stijn-dhondt",
+        "weight": 13.4,
+        "fishCount": null,
+        "peg": 28,
+        "note": null,
+        "oldPlace": 12
+      },
+      {
+        "anglerSlug": "freddy-heck",
+        "weight": 0,
+        "fishCount": null,
+        "peg": 14,
+        "note": null,
+        "oldPlace": 13
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2021-gp-familie-verpeten",
+    "reportHtml": "<p>Een tweede keer dat we op ’t Vissershof in Mere kwamen vissen dit jaar, maar deze keer met veel beter weer. In vergelijking met de uitslag van de <a href=\"https://plasvissers.be/2021/05/02/uitslag-wedstrijd-gp-familie-arijs/\" target=\"_blank\" rel=\"noreferrer noopener\">GP Familie Arijs</a> op deze put was het over ’t algemeen veel beter voor iedereen. Nog niet optimaal, maar we gaan in stijgende lijn.</p>\n\n\n\n<p>Kenjiro wist voor de tweede keer op rij op ’t Vissershof te winnen en overtrof zijn vorige gewicht van 49,900kg met 15,200kg en pakte zo winst met een mooie 65,100kg!</p>\n\n\n\n<div></div>",
+    "entries": [
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 65.1,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "geert-wijnant",
+        "weight": 55.1,
+        "fishCount": null,
+        "peg": 11,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "stijn-dhondt",
+        "weight": 45,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 43.7,
+        "fishCount": null,
+        "peg": 12,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "alfons-verpeten",
+        "weight": 25.6,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 23.9,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 23.6,
+        "fishCount": null,
+        "peg": 10,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "freddy-gevers",
+        "weight": 17.5,
+        "fishCount": null,
+        "peg": 9,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "freddy-neirinckx",
+        "weight": 16.7,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "ivan-merckx",
+        "weight": 8.6,
+        "fishCount": null,
+        "peg": 7,
+        "note": null,
+        "oldPlace": 10
+      },
+      {
+        "anglerSlug": "jozef-bassleer",
+        "weight": 6.4,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 11
+      },
+      {
+        "anglerSlug": "freddy-heck",
+        "weight": 5.6,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 12
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2021-gp-heck-freddy",
+    "reportHtml": "<div></div>",
+    "entries": [
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 90.3,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "geert-wijnant",
+        "weight": 76.7,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 61.1,
+        "fishCount": null,
+        "peg": 7,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "freddy-gevers",
+        "weight": 49.8,
+        "fishCount": null,
+        "peg": 13,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 41,
+        "fishCount": null,
+        "peg": 10,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 40.1,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "yvan-van-migerode",
+        "weight": 34.8,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "rudy-de-braeckeleer",
+        "weight": 34.4,
+        "fishCount": null,
+        "peg": 14,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "stijn-dhondt",
+        "weight": 33.4,
+        "fishCount": null,
+        "peg": 11,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "ivan-merckx",
+        "weight": 31,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 10
+      },
+      {
+        "anglerSlug": "freddy-heck",
+        "weight": 16.1,
+        "fishCount": null,
+        "peg": 9,
+        "note": null,
+        "oldPlace": 11
+      },
+      {
+        "anglerSlug": "alfons-verpeten",
+        "weight": 13.4,
+        "fishCount": null,
+        "peg": 12,
+        "note": null,
+        "oldPlace": 12
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 9.8,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 13
+      },
+      {
+        "anglerSlug": "jozef-bassleer",
+        "weight": 8.8,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 14
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2021-koppelwedstrijd",
+    "reportHtml": "<div></div>",
+    "entries": [
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 83.5,
+        "fishCount": null,
+        "peg": 5,
+        "note": "Koppel: Werner & Diego",
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "mekkes",
+        "weight": 44.8,
+        "fishCount": null,
+        "peg": 2,
+        "note": "Koppel: Mekkes & Muller",
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "yvan-van-migerode",
+        "weight": 44.5,
+        "fishCount": null,
+        "peg": 3,
+        "note": "Koppel: Yvan & Stijn",
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 34.5,
+        "fishCount": null,
+        "peg": 4,
+        "note": "Koppel: Pascal & Freddy H.",
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "jozef-bassleer",
+        "weight": 22.35,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 5
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2021-gp-diego-muller",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "geert-wijnant",
+        "weight": 133.7,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 96.7,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "steven-huysegoms",
+        "weight": 85.9,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 75,
+        "fishCount": null,
+        "peg": 7,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 68.1,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 50.4,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "ivan-merckx",
+        "weight": 42.5,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "jozef-bassleer",
+        "weight": 38.1,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "stijn-dhondt",
+        "weight": 35.7,
+        "fishCount": null,
+        "peg": 9,
+        "note": null,
+        "oldPlace": 9
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2021-gp-soetinck-duwez",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 133,
+        "fishCount": null,
+        "peg": 16,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "geert-hemelsoet",
+        "weight": 104.2,
+        "fishCount": null,
+        "peg": 14,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "yvan-van-migerode",
+        "weight": 93.3,
+        "fishCount": null,
+        "peg": 10,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 78.9,
+        "fishCount": null,
+        "peg": 20,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "ivan-merckx",
+        "weight": 57,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 49.6,
+        "fishCount": null,
+        "peg": 22,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "kristof-van-goethem",
+        "weight": 37.6,
+        "fishCount": null,
+        "peg": 18,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "remi-ophalvens",
+        "weight": 36,
+        "fishCount": null,
+        "peg": 12,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 27.6,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 9
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2021-gp-soetinck-jozef",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 138.5,
+        "fishCount": null,
+        "peg": 16,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "muller",
+        "weight": 81.9,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 73.7,
+        "fishCount": null,
+        "peg": 12,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 63.1,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "loeken-tatjen",
+        "weight": 56.1,
+        "fishCount": null,
+        "peg": 20,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 49.8,
+        "fishCount": null,
+        "peg": 22,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "jordi-de-greef",
+        "weight": 46.2,
+        "fishCount": null,
+        "peg": 18,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "mekkes",
+        "weight": 35,
+        "fishCount": null,
+        "peg": 14,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "remi-ophalvens",
+        "weight": 33.8,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 9
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2021-avondvissing",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 72.6,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "remi-ophalvens",
+        "weight": 71.1,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 66.8,
+        "fishCount": null,
+        "peg": 12,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "freddy-gevers",
+        "weight": 64.4,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "lodewijk",
+        "weight": 47.6,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "ivan-merckx",
+        "weight": 47.3,
+        "fishCount": null,
+        "peg": 13,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "muller",
+        "weight": 45.9,
+        "fishCount": null,
+        "peg": 7,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "alfons-verpeten",
+        "weight": 43.9,
+        "fishCount": null,
+        "peg": 9,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "stijn-dhondt",
+        "weight": 32.8,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "jordi-de-greef",
+        "weight": 26.3,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 10
+      },
+      {
+        "anglerSlug": "jozef-bassleer",
+        "weight": 24.4,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 11
+      },
+      {
+        "anglerSlug": "freddy-heck",
+        "weight": 7.2,
+        "fishCount": null,
+        "peg": 10,
+        "note": null,
+        "oldPlace": 12
+      },
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 0,
+        "fishCount": null,
+        "peg": 11,
+        "note": null,
+        "oldPlace": 13
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2021-marathon",
+    "reportHtml": "<div>\n<div>\n\n</div>\n\n\n\n<div>\n\n</div>\n</div>\n\n\n\n\n<!-- #tablepress-14 from cache -->",
+    "entries": [
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 265.3,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 222.4,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 165,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "muller",
+        "weight": 157.8,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "steven-huysegoms",
+        "weight": 148.4,
+        "fishCount": null,
+        "peg": 10,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "freddy-gevers",
+        "weight": 138.7,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "jordi-de-greef",
+        "weight": 135.3,
+        "fishCount": null,
+        "peg": 7,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 125.5,
+        "fishCount": null,
+        "peg": 11,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "loeken-tatjen",
+        "weight": 115.5,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "ivan-merckx",
+        "weight": 104.1,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 10
+      },
+      {
+        "anglerSlug": "stijn-dhondt",
+        "weight": 79.1,
+        "fishCount": null,
+        "peg": 9,
+        "note": null,
+        "oldPlace": 11
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2021-gp-dhondt-stijn",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 43.8,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 29.1,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "yvan-van-migerode",
+        "weight": 24.2,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "lodewijk",
+        "weight": 23.9,
+        "fishCount": null,
+        "peg": 10,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 18,
+        "fishCount": null,
+        "peg": 11,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 16.5,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 14.9,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "muller",
+        "weight": 8.1,
+        "fishCount": null,
+        "peg": 9,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "ivan-merckx",
+        "weight": 5.2,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "stijn-dhondt",
+        "weight": 3.1,
+        "fishCount": null,
+        "peg": 7,
+        "note": null,
+        "oldPlace": 10
+      },
+      {
+        "anglerSlug": "jozef-bassleer",
+        "weight": 2.3,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 11
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2021-gp-cafe-de-belskes",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "geert-hemelsoet",
+        "weight": 19.9,
+        "fishCount": null,
+        "peg": 11,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 9.5,
+        "fishCount": null,
+        "peg": 12,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "yvan-van-migerode",
+        "weight": 6.3,
+        "fishCount": null,
+        "peg": 9,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "steven-huysegoms",
+        "weight": 6.2,
+        "fishCount": null,
+        "peg": 10,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 5.3,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "lodewijk",
+        "weight": 2.7,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "evert-de-wuffel",
+        "weight": 1.9,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 1.2,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "muller",
+        "weight": 1.1,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "stijn-dhondt",
+        "weight": 0.2,
+        "fishCount": null,
+        "peg": 7,
+        "note": null,
+        "oldPlace": 10
+      },
+      {
+        "anglerSlug": "jozef-bassleer",
+        "weight": 0.1,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 11
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2021-gp-de-wuffel-de-braeckeleer",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 8,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "muller",
+        "weight": 7,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 6,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 2.5,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "lodewijk",
+        "weight": 1.6,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "jozef-bassleer",
+        "weight": 0.7,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 6
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2021-gp-bassleer-conny",
+    "reportHtml": "<!-- #tablepress-33 from cache -->",
+    "entries": [
+      {
+        "anglerSlug": "geert-hemelsoet",
+        "weight": 105.1,
+        "fishCount": null,
+        "peg": 24,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 95.4,
+        "fishCount": null,
+        "peg": 16,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "geert-wijnant",
+        "weight": 72.8,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "freddy-neirinckx",
+        "weight": 61.7,
+        "fishCount": null,
+        "peg": 12,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 53,
+        "fishCount": null,
+        "peg": 22,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "jordi-de-greef",
+        "weight": 41,
+        "fishCount": null,
+        "peg": 18,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "alfons-verpeten",
+        "weight": 36.7,
+        "fishCount": null,
+        "peg": 10,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 35.6,
+        "fishCount": null,
+        "peg": 20,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 32.9,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "jozef-bassleer",
+        "weight": 6.6,
+        "fishCount": null,
+        "peg": 14,
+        "note": null,
+        "oldPlace": 10
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2021-gp-familie-bassleer",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 11.2,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "freddy-neirinckx",
+        "weight": 6.2,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 5.4,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "geert-wijnant",
+        "weight": 5,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "jozef-bassleer",
+        "weight": 4.3,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "stijn-dhondt",
+        "weight": 2.2,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 6
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2022-gp-familie-arijs",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 40.3,
+        "fishCount": null,
+        "peg": 15,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "geert-hemelsoet",
+        "weight": 39.1,
+        "fishCount": null,
+        "peg": 12,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 31.4,
+        "fishCount": null,
+        "peg": 13,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "muller",
+        "weight": 25.6,
+        "fishCount": null,
+        "peg": 11,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 21.2,
+        "fishCount": null,
+        "peg": 10,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "lodewijk",
+        "weight": 11.5,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 10.9,
+        "fishCount": null,
+        "peg": 14,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 6.5,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "stijn-dhondt",
+        "weight": 3.3,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "paul-couck",
+        "weight": 2.9,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 10
+      },
+      {
+        "anglerSlug": "freddy-heck",
+        "weight": 0,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 11
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2022-1e-reeks-kampioenschap",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "steven-huysegoms",
+        "weight": 20,
+        "fishCount": null,
+        "peg": 9,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "yvan-van-migerode",
+        "weight": 13.6,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 13.2,
+        "fishCount": null,
+        "peg": 7,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "evert-de-wuffel",
+        "weight": 10.6,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "loeken-tatjen",
+        "weight": 10.3,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "jozef-bassleer",
+        "weight": 8.3,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 5.4,
+        "fishCount": null,
+        "peg": 11,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "remi-ophalvens",
+        "weight": 3.5,
+        "fishCount": null,
+        "peg": 13,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 2.2,
+        "fishCount": null,
+        "peg": 10,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "freddy-heck",
+        "weight": 1.4,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 10
+      },
+      {
+        "anglerSlug": "paul-couck",
+        "weight": 0.2,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 11
+      },
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 0,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 12
+      },
+      {
+        "anglerSlug": "geert-wijnant",
+        "weight": 0,
+        "fishCount": null,
+        "peg": 12,
+        "note": null,
+        "oldPlace": 13
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2022-2e-reeks-kampioenschap",
+    "reportHtml": "<div></div>",
+    "entries": [
+      {
+        "anglerSlug": "steven-huysegoms",
+        "weight": 4.4,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 4.2,
+        "fishCount": null,
+        "peg": 7,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 3.5,
+        "fishCount": null,
+        "peg": 9,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "freddy-neirinckx",
+        "weight": 2.2,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 1.3,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 0.09,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "evert-de-wuffel",
+        "weight": 0,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "paul-couck",
+        "weight": 0,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "jozef-bassleer",
+        "weight": 0,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 9
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2022-3e-reeks-kampioenschap",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "yvan-van-migerode",
+        "weight": 95.3,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 88.5,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 77.6,
+        "fishCount": null,
+        "peg": 11,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "steven-huysegoms",
+        "weight": 51,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 50.3,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "evert-de-wuffel",
+        "weight": 47.2,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "loeken-tatjen",
+        "weight": 34.6,
+        "fishCount": null,
+        "peg": 10,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "jozef-bassleer",
+        "weight": 28.7,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 18.5,
+        "fishCount": null,
+        "peg": 7,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "freddy-heck",
+        "weight": 10,
+        "fishCount": null,
+        "peg": 9,
+        "note": null,
+        "oldPlace": 10
+      },
+      {
+        "anglerSlug": "paul-couck",
+        "weight": 3.7,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 11
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2022-4e-reeks-kampioenschap",
+    "reportHtml": "<div></div>",
+    "entries": [
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 19,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 9,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "evert-de-wuffel",
+        "weight": 6.7,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "steven-huysegoms",
+        "weight": 5,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "loeken-tatjen",
+        "weight": 3.2,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 1,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 6
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2022-gp-freddy-neirinckx",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 91.52,
+        "fishCount": null,
+        "peg": 12,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 68.72,
+        "fishCount": null,
+        "peg": 11,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 62.92,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "yvan-van-migerode",
+        "weight": 59.24,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "muller",
+        "weight": 54.14,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "evert-de-wuffel",
+        "weight": 51.56,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 36.96,
+        "fishCount": null,
+        "peg": 13,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "loeken-tatjen",
+        "weight": 34.42,
+        "fishCount": null,
+        "peg": 14,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "paul-couck",
+        "weight": 19.74,
+        "fishCount": null,
+        "peg": 15,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "freddy-heck",
+        "weight": 18.64,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 10
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2022-gp-dhondt-stijn",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 24.86,
+        "fishCount": null,
+        "peg": 15,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 23.12,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 21.62,
+        "fishCount": null,
+        "peg": 23,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "lodewijk",
+        "weight": 18.49,
+        "fishCount": null,
+        "peg": 11,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "geert-hemelsoet",
+        "weight": 17.55,
+        "fishCount": null,
+        "peg": 16,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 12.23,
+        "fishCount": null,
+        "peg": 20,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "jozef-bassleer",
+        "weight": 9.14,
+        "fishCount": null,
+        "peg": 26,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "muller",
+        "weight": 8.48,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 5.52,
+        "fishCount": null,
+        "peg": 29,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "freddy-heck",
+        "weight": 3.8,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 10
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2022-koningschap-2022",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "remi-ophalvens",
+        "weight": 107.6,
+        "fishCount": null,
+        "peg": 12,
+        "note": "Koning · Zwaarste vis 8,600 kg",
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "yvan-van-migerode",
+        "weight": 99.2,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 81.7,
+        "fishCount": null,
+        "peg": 15,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 80.3,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "muller",
+        "weight": 69.8,
+        "fishCount": null,
+        "peg": 21,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "lodewijk",
+        "weight": 69.2,
+        "fishCount": null,
+        "peg": 9,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 53.5,
+        "fishCount": null,
+        "peg": 18,
+        "note": null,
+        "oldPlace": 7
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2022-gp-freddy-heck",
+    "reportHtml": "<div></div>",
+    "entries": [
+      {
+        "anglerSlug": "lodewijk",
+        "weight": 64.7,
+        "fishCount": null,
+        "peg": 9,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "yvan-van-migerode",
+        "weight": 51.6,
+        "fishCount": null,
+        "peg": 14,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "steven-huysegoms",
+        "weight": 46.2,
+        "fishCount": null,
+        "peg": 7,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "remi-ophalvens",
+        "weight": 37.4,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 37.4,
+        "fishCount": null,
+        "peg": 11,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 35.2,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 26.1,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "stijn-dhondt",
+        "weight": 22.3,
+        "fishCount": null,
+        "peg": 12,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 18.2,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "jozef-bassleer",
+        "weight": 18,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 10
+      },
+      {
+        "anglerSlug": "evert-de-wuffel",
+        "weight": 16.6,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 11
+      },
+      {
+        "anglerSlug": "freddy-heck",
+        "weight": 15.7,
+        "fishCount": null,
+        "peg": 13,
+        "note": null,
+        "oldPlace": 12
+      },
+      {
+        "anglerSlug": "muller",
+        "weight": 12.1,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 13
+      },
+      {
+        "anglerSlug": "paul-couck",
+        "weight": 9.6,
+        "fishCount": null,
+        "peg": 10,
+        "note": null,
+        "oldPlace": 14
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2022-belgie-duitsland",
+    "reportHtml": "<div></div>",
+    "entries": [
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 90.3,
+        "fishCount": null,
+        "peg": 13,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "lodewijk",
+        "weight": 75.5,
+        "fishCount": null,
+        "peg": 7,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "stijn-dhondt",
+        "weight": 67.9,
+        "fishCount": null,
+        "peg": 30,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "muller",
+        "weight": 66.2,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 53.9,
+        "fishCount": null,
+        "peg": 39,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 51.2,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 33.3,
+        "fishCount": null,
+        "peg": 10,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 28.2,
+        "fishCount": null,
+        "peg": 16,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "jozef-bassleer",
+        "weight": 16.6,
+        "fishCount": null,
+        "peg": 33,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "freddy-heck",
+        "weight": 12.8,
+        "fishCount": null,
+        "peg": 36,
+        "note": null,
+        "oldPlace": 10
+      },
+      {
+        "anglerSlug": "paul-couck",
+        "weight": 8.6,
+        "fishCount": null,
+        "peg": 42,
+        "note": null,
+        "oldPlace": 11
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2022-gp-conny-bassleer",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 26.4,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "remi-ophalvens",
+        "weight": 24.6,
+        "fishCount": null,
+        "peg": 7,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 24.5,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "loeken-tatjen",
+        "weight": 23.5,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "evert-de-wuffel",
+        "weight": 17.8,
+        "fishCount": null,
+        "peg": 10,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 17.1,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "yvan-van-migerode",
+        "weight": 5.1,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "jozef-bassleer",
+        "weight": 3.4,
+        "fishCount": null,
+        "peg": 9,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 3.1,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "paul-couck",
+        "weight": 1.3,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 10
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2022-gp-van-goethem-kristof",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 26.08,
+        "fishCount": null,
+        "peg": 12,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 21.78,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "stijn-dhondt",
+        "weight": 21.34,
+        "fishCount": null,
+        "peg": 10,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 21.32,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "jozef-bassleer",
+        "weight": 21.02,
+        "fishCount": null,
+        "peg": 13,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "yvan-van-migerode",
+        "weight": 19.92,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "evert-de-wuffel",
+        "weight": 17.66,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 13.96,
+        "fishCount": null,
+        "peg": 9,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "kristof-van-goethem",
+        "weight": 12.84,
+        "fishCount": null,
+        "peg": 11,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "muller",
+        "weight": 11.48,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 10
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 11.02,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 11
+      },
+      {
+        "anglerSlug": "freddy-heck",
+        "weight": 8.92,
+        "fishCount": null,
+        "peg": 7,
+        "note": null,
+        "oldPlace": 12
+      },
+      {
+        "anglerSlug": "paul-couck",
+        "weight": 2.08,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 13
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2022-gp-kenjiro-jordy",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 149.7,
+        "fishCount": null,
+        "peg": 15,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 99.1,
+        "fishCount": null,
+        "peg": 17,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "geert-hemelsoet",
+        "weight": 92.8,
+        "fishCount": null,
+        "peg": 19,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "yvan-van-migerode",
+        "weight": 91.3,
+        "fishCount": null,
+        "peg": 21,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "stijn-dhondt",
+        "weight": 83.3,
+        "fishCount": null,
+        "peg": 23,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 76,
+        "fishCount": null,
+        "peg": 11,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "remi-ophalvens",
+        "weight": 70,
+        "fishCount": null,
+        "peg": 7,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "evert-de-wuffel",
+        "weight": 63,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "kristof-van-goethem",
+        "weight": 42.2,
+        "fishCount": null,
+        "peg": 13,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 31.2,
+        "fishCount": null,
+        "peg": 9,
+        "note": null,
+        "oldPlace": 10
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2022-koppelwedstrijd",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 217.7,
+        "fishCount": null,
+        "peg": 17,
+        "note": "Koppel: Kenjiro & Pascal",
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "evert-de-wuffel",
+        "weight": 190.48,
+        "fishCount": null,
+        "peg": 13,
+        "note": "Koppel: Evert & Remi",
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 177.88,
+        "fishCount": null,
+        "peg": 21,
+        "note": "Koppel: Diego & Loeken",
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 146.64,
+        "fishCount": null,
+        "peg": 5,
+        "note": "Viste alleen",
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "stijn-dhondt",
+        "weight": 126.82,
+        "fishCount": null,
+        "peg": 9,
+        "note": "Koppel: Stijn & Muller",
+        "oldPlace": 5
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2022-avondwedstrijd",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 99.4,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "freddy-neirinckx",
+        "weight": 79.72,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "remi-ophalvens",
+        "weight": 59,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 57.46,
+        "fishCount": null,
+        "peg": 7,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "steven-huysegoms",
+        "weight": 47.76,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "kristof-van-goethem",
+        "weight": 43.14,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "geert-wijnant",
+        "weight": 38.42,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "paul-couck",
+        "weight": 21.74,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 8
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2022-marathon",
+    "reportHtml": "<!-- #tablepress-37 from cache -->",
+    "entries": [
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 242.18,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "muller",
+        "weight": 144.78,
+        "fishCount": null,
+        "peg": 38,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 142.34,
+        "fishCount": null,
+        "peg": 30,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 132.96,
+        "fishCount": null,
+        "peg": 26,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "steven-huysegoms",
+        "weight": 97.66,
+        "fishCount": null,
+        "peg": 9,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 81.46,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "loeken-tatjen",
+        "weight": 80.88,
+        "fishCount": null,
+        "peg": 13,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "evert-de-wuffel",
+        "weight": 79.62,
+        "fishCount": null,
+        "peg": 42,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "remi-ophalvens",
+        "weight": 78.12,
+        "fishCount": null,
+        "peg": 17,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "freddy-heck",
+        "weight": 25.68,
+        "fishCount": null,
+        "peg": 34,
+        "note": null,
+        "oldPlace": 10
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2022-gp-diego-muller",
+    "reportHtml": "<!-- #tablepress-38 from cache -->",
+    "entries": [
+      {
+        "anglerSlug": "loeken-tatjen",
+        "weight": 128.9,
+        "fishCount": null,
+        "peg": 7,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 117.48,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 115.94,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 100.78,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 98.86,
+        "fishCount": null,
+        "peg": 10,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "evert-de-wuffel",
+        "weight": 94.5,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "freddy-heck",
+        "weight": 68.98,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "ronny-arijs",
+        "weight": 68.56,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "muller",
+        "weight": 67.96,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "paul-couck",
+        "weight": 27.66,
+        "fishCount": null,
+        "peg": 9,
+        "note": null,
+        "oldPlace": 10
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2022-gp-lokaal-de-parking",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 8.62,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 7.9,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 7.14,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "evert-de-wuffel",
+        "weight": 6.24,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "loeken-tatjen",
+        "weight": 5.9,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 5
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2022-gp-de-wuffel-braeckeleer",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "rudy-de-braeckeleer",
+        "weight": 4.86,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "evert-de-wuffel",
+        "weight": 4.36,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 3.94,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 3.78,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 0.62,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "lodewijk",
+        "weight": 0.4,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "freddy-heck",
+        "weight": 0.22,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "muller",
+        "weight": 0.22,
+        "fishCount": null,
+        "peg": 7,
+        "note": null,
+        "oldPlace": 8
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2022-gp-familie-bassleer",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "freddy-neirinckx",
+        "weight": 9.78,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 9.76,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 7.56,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "steven-huysegoms",
+        "weight": 7.4,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 7.34,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "evert-de-wuffel",
+        "weight": 4.4,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 6
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2022-gp-cafe-de-parking",
+    "reportHtml": "<!-- #tablepress-43 from cache -->",
+    "entries": [
+      {
+        "anglerSlug": "evert-de-wuffel",
+        "weight": 7.28,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 5.64,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 4.86,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 4,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "loeken-tatjen",
+        "weight": 1.22,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 5
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2023-gp-fam-arijs",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "pascal-cornand",
+        "weight": 95.82,
+        "fishCount": null,
+        "peg": 14,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "muller",
+        "weight": 95.46,
+        "fishCount": null,
+        "peg": 12,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 84.54,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "yvan-van-migerode",
+        "weight": 61.74,
+        "fishCount": null,
+        "peg": 9,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "stijn-dhondt",
+        "weight": 56.16,
+        "fishCount": null,
+        "peg": 13,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "steven-huysegoms",
+        "weight": 55.72,
+        "fishCount": null,
+        "peg": 7,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "peter-bassleer",
+        "weight": 37.92,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "freddy-heck",
+        "weight": 33.63,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 30.54,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "remi-ophalvens",
+        "weight": 20.6,
+        "fishCount": null,
+        "peg": 10,
+        "note": null,
+        "oldPlace": 10
+      },
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 10.2,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 11
+      },
+      {
+        "anglerSlug": "evert-de-wuffel",
+        "weight": 9.4,
+        "fishCount": null,
+        "peg": 11,
+        "note": null,
+        "oldPlace": 12
+      }
+    ]
+  },
+  {
+    "competitionSlug": "2023-1e-reeks-kampioenschap",
+    "reportHtml": null,
+    "entries": [
+      {
+        "anglerSlug": "evert-de-wuffel",
+        "weight": 24.84,
+        "fishCount": null,
+        "peg": 6,
+        "note": null,
+        "oldPlace": 1
+      },
+      {
+        "anglerSlug": "diego-ruysschaert",
+        "weight": 24.48,
+        "fishCount": null,
+        "peg": 5,
+        "note": null,
+        "oldPlace": 2
+      },
+      {
+        "anglerSlug": "loeken-tatjen",
+        "weight": 24.42,
+        "fishCount": null,
+        "peg": 8,
+        "note": null,
+        "oldPlace": 3
+      },
+      {
+        "anglerSlug": "remi-ophalvens",
+        "weight": 19.52,
+        "fishCount": null,
+        "peg": 9,
+        "note": null,
+        "oldPlace": 4
+      },
+      {
+        "anglerSlug": "muller",
+        "weight": 16.7,
+        "fishCount": null,
+        "peg": 7,
+        "note": null,
+        "oldPlace": 5
+      },
+      {
+        "anglerSlug": "yvan-van-migerode",
+        "weight": 9.9,
+        "fishCount": null,
+        "peg": 2,
+        "note": null,
+        "oldPlace": 6
+      },
+      {
+        "anglerSlug": "werner-bassleer",
+        "weight": 7.18,
+        "fishCount": null,
+        "peg": 1,
+        "note": null,
+        "oldPlace": 7
+      },
+      {
+        "anglerSlug": "kenjiro-piron",
+        "weight": 4.18,
+        "fishCount": null,
+        "peg": 3,
+        "note": null,
+        "oldPlace": 8
+      },
+      {
+        "anglerSlug": "jurgen-van-broeck",
+        "weight": 3,
+        "fishCount": null,
+        "peg": 4,
+        "note": null,
+        "oldPlace": 9
+      },
+      {
+        "anglerSlug": "paul-couck",
+        "weight": 1.74,
+        "fishCount": null,
+        "peg": 10,
+        "note": null,
+        "oldPlace": 10
+      }
+    ]
+  }
+]

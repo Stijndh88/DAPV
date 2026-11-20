@@ -504,6 +504,546 @@
     "has": [
       {
         "type": "query",
+        "key": "p",
+        "value": "68"
+      }
+    ],
+    "destination": "/wedstrijden/2021-gp-familie-arijs",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "415"
+      }
+    ],
+    "destination": "/wedstrijden/2021-gp-kristof-van-goethem-immo-kurt",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "437"
+      }
+    ],
+    "destination": "/wedstrijden/2021-gp-freddy-neirinckx",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "439"
+      }
+    ],
+    "destination": "/wedstrijden/2021-koningschap-2021",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "472"
+      }
+    ],
+    "destination": "/wedstrijden/2021-gp-familie-verpeten",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "496"
+      }
+    ],
+    "destination": "/wedstrijden/2021-gp-heck-freddy",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "514"
+      }
+    ],
+    "destination": "/wedstrijden/2021-koppelwedstrijd",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "522"
+      }
+    ],
+    "destination": "/wedstrijden/2021-gp-diego-muller",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "532"
+      }
+    ],
+    "destination": "/wedstrijden/2021-gp-soetinck-duwez",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "537"
+      }
+    ],
+    "destination": "/wedstrijden/2021-gp-soetinck-jozef",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "544"
+      }
+    ],
+    "destination": "/wedstrijden/2021-avondvissing",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "553"
+      }
+    ],
+    "destination": "/wedstrijden/2021-marathon",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "556"
+      }
+    ],
+    "destination": "/wedstrijden/2021-gp-dhondt-stijn",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "678"
+      }
+    ],
+    "destination": "/wedstrijden/2021-gp-cafe-de-belskes",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "683"
+      }
+    ],
+    "destination": "/wedstrijden/2021-gp-de-wuffel-de-braeckeleer",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "688"
+      }
+    ],
+    "destination": "/wedstrijden/2021-gp-bassleer-conny",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "693"
+      }
+    ],
+    "destination": "/wedstrijden/2021-gp-familie-bassleer",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "592"
+      }
+    ],
+    "destination": "/wedstrijden/2022-gp-familie-arijs",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "595"
+      }
+    ],
+    "destination": "/wedstrijden/2022-1e-reeks-kampioenschap",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "603"
+      }
+    ],
+    "destination": "/wedstrijden/2022-2e-reeks-kampioenschap",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "609"
+      }
+    ],
+    "destination": "/wedstrijden/2022-3e-reeks-kampioenschap",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "614"
+      }
+    ],
+    "destination": "/wedstrijden/2022-4e-reeks-kampioenschap",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "620"
+      }
+    ],
+    "destination": "/wedstrijden/2022-gp-freddy-neirinckx",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "625"
+      }
+    ],
+    "destination": "/wedstrijden/2022-gp-dhondt-stijn",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "631"
+      }
+    ],
+    "destination": "/wedstrijden/2022-koningschap-2022",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "648"
+      }
+    ],
+    "destination": "/wedstrijden/2022-gp-freddy-heck",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "653"
+      }
+    ],
+    "destination": "/wedstrijden/2022-belgie-duitsland",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "658"
+      }
+    ],
+    "destination": "/wedstrijden/2022-gp-conny-bassleer",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "665"
+      }
+    ],
+    "destination": "/wedstrijden/2022-gp-van-goethem-kristof",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "671"
+      }
+    ],
+    "destination": "/wedstrijden/2022-gp-kenjiro-jordy",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "770"
+      }
+    ],
+    "destination": "/wedstrijden/2022-koppelwedstrijd",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "776"
+      }
+    ],
+    "destination": "/wedstrijden/2022-avondwedstrijd",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "781"
+      }
+    ],
+    "destination": "/wedstrijden/2022-marathon",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "786"
+      }
+    ],
+    "destination": "/wedstrijden/2022-gp-diego-muller",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "791"
+      }
+    ],
+    "destination": "/wedstrijden/2022-gp-lokaal-de-parking",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "796"
+      }
+    ],
+    "destination": "/wedstrijden/2022-gp-de-wuffel-braeckeleer",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "801"
+      }
+    ],
+    "destination": "/wedstrijden/2022-gp-familie-bassleer",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "822"
+      }
+    ],
+    "destination": "/wedstrijden/2022-gp-cafe-de-parking",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "838"
+      }
+    ],
+    "destination": "/wedstrijden/2023-gp-fam-arijs",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "846"
+      }
+    ],
+    "destination": "/wedstrijden/2023-1e-reeks-kampioenschap",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "p",
+        "value": "503"
+      }
+    ],
+    "destination": "/nieuws/trekking-koppelvissing-26-06",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "page_id",
+        "value": "242"
+      }
+    ],
+    "destination": "/club/praktisch",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "page_id",
+        "value": "232"
+      }
+    ],
+    "destination": "/club/reglement",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "page_id",
+        "value": "98"
+      }
+    ],
+    "destination": "/lid-worden",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "page_id",
+        "value": "22"
+      }
+    ],
+    "destination": "/geschiedenis",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
         "key": "page_id",
         "value": "58"
       }

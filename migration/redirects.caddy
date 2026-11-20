@@ -199,7 +199,97 @@ redir @old97 /visplaatsen/de-meerse-lijnvissers-mere permanent
 redir @old98 /admin permanent
 @old99 path /wp-login.php /wp-login.php/
 redir @old99 /admin permanent
-@oldq0 query page_id=58
-redir @oldq0 /nieuws permanent
+@oldq0 query p=68
+redir @oldq0 /wedstrijden/2021-gp-familie-arijs permanent
+@oldq1 query p=415
+redir @oldq1 /wedstrijden/2021-gp-kristof-van-goethem-immo-kurt permanent
+@oldq2 query p=437
+redir @oldq2 /wedstrijden/2021-gp-freddy-neirinckx permanent
+@oldq3 query p=439
+redir @oldq3 /wedstrijden/2021-koningschap-2021 permanent
+@oldq4 query p=472
+redir @oldq4 /wedstrijden/2021-gp-familie-verpeten permanent
+@oldq5 query p=496
+redir @oldq5 /wedstrijden/2021-gp-heck-freddy permanent
+@oldq6 query p=514
+redir @oldq6 /wedstrijden/2021-koppelwedstrijd permanent
+@oldq7 query p=522
+redir @oldq7 /wedstrijden/2021-gp-diego-muller permanent
+@oldq8 query p=532
+redir @oldq8 /wedstrijden/2021-gp-soetinck-duwez permanent
+@oldq9 query p=537
+redir @oldq9 /wedstrijden/2021-gp-soetinck-jozef permanent
+@oldq10 query p=544
+redir @oldq10 /wedstrijden/2021-avondvissing permanent
+@oldq11 query p=553
+redir @oldq11 /wedstrijden/2021-marathon permanent
+@oldq12 query p=556
+redir @oldq12 /wedstrijden/2021-gp-dhondt-stijn permanent
+@oldq13 query p=678
+redir @oldq13 /wedstrijden/2021-gp-cafe-de-belskes permanent
+@oldq14 query p=683
+redir @oldq14 /wedstrijden/2021-gp-de-wuffel-de-braeckeleer permanent
+@oldq15 query p=688
+redir @oldq15 /wedstrijden/2021-gp-bassleer-conny permanent
+@oldq16 query p=693
+redir @oldq16 /wedstrijden/2021-gp-familie-bassleer permanent
+@oldq17 query p=592
+redir @oldq17 /wedstrijden/2022-gp-familie-arijs permanent
+@oldq18 query p=595
+redir @oldq18 /wedstrijden/2022-1e-reeks-kampioenschap permanent
+@oldq19 query p=603
+redir @oldq19 /wedstrijden/2022-2e-reeks-kampioenschap permanent
+@oldq20 query p=609
+redir @oldq20 /wedstrijden/2022-3e-reeks-kampioenschap permanent
+@oldq21 query p=614
+redir @oldq21 /wedstrijden/2022-4e-reeks-kampioenschap permanent
+@oldq22 query p=620
+redir @oldq22 /wedstrijden/2022-gp-freddy-neirinckx permanent
+@oldq23 query p=625
+redir @oldq23 /wedstrijden/2022-gp-dhondt-stijn permanent
+@oldq24 query p=631
+redir @oldq24 /wedstrijden/2022-koningschap-2022 permanent
+@oldq25 query p=648
+redir @oldq25 /wedstrijden/2022-gp-freddy-heck permanent
+@oldq26 query p=653
+redir @oldq26 /wedstrijden/2022-belgie-duitsland permanent
+@oldq27 query p=658
+redir @oldq27 /wedstrijden/2022-gp-conny-bassleer permanent
+@oldq28 query p=665
+redir @oldq28 /wedstrijden/2022-gp-van-goethem-kristof permanent
+@oldq29 query p=671
+redir @oldq29 /wedstrijden/2022-gp-kenjiro-jordy permanent
+@oldq30 query p=770
+redir @oldq30 /wedstrijden/2022-koppelwedstrijd permanent
+@oldq31 query p=776
+redir @oldq31 /wedstrijden/2022-avondwedstrijd permanent
+@oldq32 query p=781
+redir @oldq32 /wedstrijden/2022-marathon permanent
+@oldq33 query p=786
+redir @oldq33 /wedstrijden/2022-gp-diego-muller permanent
+@oldq34 query p=791
+redir @oldq34 /wedstrijden/2022-gp-lokaal-de-parking permanent
+@oldq35 query p=796
+redir @oldq35 /wedstrijden/2022-gp-de-wuffel-braeckeleer permanent
+@oldq36 query p=801
+redir @oldq36 /wedstrijden/2022-gp-familie-bassleer permanent
+@oldq37 query p=822
+redir @oldq37 /wedstrijden/2022-gp-cafe-de-parking permanent
+@oldq38 query p=838
+redir @oldq38 /wedstrijden/2023-gp-fam-arijs permanent
+@oldq39 query p=846
+redir @oldq39 /wedstrijden/2023-1e-reeks-kampioenschap permanent
+@oldq40 query p=503
+redir @oldq40 /nieuws/trekking-koppelvissing-26-06 permanent
+@oldq41 query page_id=242
+redir @oldq41 /club/praktisch permanent
+@oldq42 query page_id=232
+redir @oldq42 /club/reglement permanent
+@oldq43 query page_id=98
+redir @oldq43 /lid-worden permanent
+@oldq44 query page_id=22
+redir @oldq44 /geschiedenis permanent
+@oldq45 query page_id=58
+redir @oldq45 /nieuws permanent
 @wpcontent path /wp-content/* /wp-includes/* /xmlrpc.php
 redir @wpcontent / permanent

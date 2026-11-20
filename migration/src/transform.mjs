@@ -62,6 +62,7 @@ function parseResultsTable(t) {
       fishCount: col.count >= 0 ? Number.parseInt(c[col.count], 10) || null : null,
       peg: col.peg >= 0 ? (Number.parseInt(c[col.peg], 10) || null) : null,
       oldPlace: col.place >= 0 ? Number.parseInt(c[col.place], 10) || null : null,
+      king: col.place >= 0 && /♚/.test(c[col.place] ?? ''),
     })
   }
   return entries.length ? entries : null
@@ -110,7 +111,9 @@ function cleanHtml(html, { dropImages = true } = {}) {
   return $.html().trim()
 }
 
-const firstImage = (html) => cheerio.load(html ?? '')('img').first().attr('src') ?? null
+// Smush lazy-loading puts the real URL in data-src and a data: placeholder in src
+const imgSrc = (el) => [el.attribs['data-src'], el.attribs['data-lazy-src'], el.attribs.src].find((u) => u && !u.startsWith('data:')) ?? null
+const firstImage = (html) => cheerio.load(html ?? '')('img').toArray().map(imgSrc).find(Boolean) ?? null
 
 // ---------- main ----------
 async function main() {
@@ -126,6 +129,7 @@ async function main() {
     board: await readJson(path.join(ROOT, 'seed', 'board.json')),
     members: await readJson(path.join(ROOT, 'seed', 'members.json')),
     waters: await readJson(path.join(ROOT, 'seed', 'waters.json')),
+    aliases: await readJson(path.join(ROOT, 'seed', 'angler-aliases.json'), { aliases: {}, guesses: {} }),
   }
   await mkdir(OUT, { recursive: true })
 
@@ -147,6 +151,17 @@ async function main() {
       w.description = cleanHtml(page.content.rendered)
       w.imageFile = localFile(firstImage(page.content.rendered))
     }
+  }
+  // the /vislocaties/ overview has one captioned photo per water
+  const overview = pages.find((p) => p.slug === 'vislocaties')
+  if (overview) {
+    const $o = cheerio.load(overview.content.rendered)
+    $o('figure.wp-block-image').each((_, f) => {
+      const cap = $o(f).find('figcaption').text().toLowerCase()
+      const img = $o(f).find('img').get(0)
+      const w = img && waters.find((x) => cap.includes(x.name.toLowerCase()))
+      if (w && !w.imageFile) w.imageFile = localFile(imgSrc(img))
+    })
   }
   const matchWater = (cell) => {
     if (!cell) return null
@@ -191,7 +206,7 @@ async function main() {
         excerpt: cheerio.load(p.excerpt?.rendered ?? '').text().replace(/\s+/g, ' ').trim().slice(0, 300),
         html: cleanHtml(p.content.rendered),
         coverFile: localFile(fm?.source_url) ?? localFile(firstImage(p.content.rendered)),
-        imageFiles: cheerio.load(p.content.rendered)('img').toArray().map((i) => localFile(i.attribs.src)).filter(Boolean),
+        imageFiles: cheerio.load(p.content.rendered)('img').toArray().map((i) => localFile(imgSrc(i))).filter(Boolean),
         oldPaths: [pathOf(p.link), `/?p=${p.id}`],
       })
     }
@@ -252,8 +267,14 @@ async function main() {
   const members = seed.members.members.map((name) => ({ name, slug: slugify(name), category: null, member: true }))
   const anglers = new Map(members.map((m) => [m.slug, m]))
   const first = (n) => n.split(' ')[0].toLowerCase()
+  report.anglerGuesses = {}
   const resolveAngler = (raw) => {
-    const { name, category } = splitNameCategory(raw)
+    let { name, category } = splitNameCategory(raw)
+    const alias = seed.aliases.aliases[name]
+    if (alias) {
+      if (seed.aliases.guesses[name]) report.anglerGuesses[name] = `${alias}: ${seed.aliases.guesses[name]}`
+      name = alias
+    }
     const lower = name.toLowerCase()
     let m = members.find((x) => x.name.toLowerCase() === lower)
     // "Pascal C." -> first name + initial of the last name
@@ -268,30 +289,44 @@ async function main() {
     // "Evert" -> unique first name
     m ??= (() => { const hits = members.filter((x) => first(x.name) === lower); return hits.length === 1 ? hits[0] : null })()
     if (m) {
-      if (m.name.toLowerCase() !== lower) report.anglerMatches[name] = m.name
+      if (m.name.toLowerCase() !== raw.toLowerCase()) report.anglerMatches[raw] = m.name
       if (category && !m.category) m.category = category
       return m.slug
     }
     const slug = slugify(name)
-    if (!anglers.has(slug)) { anglers.set(slug, { name, slug, category, member: false }); report.anglerMatches[name] = '(new angler, not on member list)' }
+    if (!anglers.has(slug)) anglers.set(slug, { name, slug, category, member: false })
+    report.anglerMatches[raw] = name === raw ? '(not on member list)' : `${name} (not on member list)`
     return slug
   }
 
   const results = []
   for (const c of competitions) {
     if (!c.results) continue
-    const isPair = c.type === 'koppel'
+    const isPair = c.type === 'koppel' || c.results.some((e) => /\s~\s/.test(e.rawName))
     results.push({
       competitionSlug: c.slug,
       reportHtml: c.textHtml,
       entries: c.results.map((e) => {
-        const pair = isPair ? e.rawName.split(/\s*(?:&|\/|\+|\sen\s)\s*/i).filter(Boolean) : [e.rawName]
+        // Koningschap: "Remi (8,600kg)" = heaviest single fish, "1 (♚)" = the king
+        const fish = e.rawName.match(/\s*\(([\d.,\s]+)\s*kg\)/i)
+        const rawName = fish ? e.rawName.replace(fish[0], '') : e.rawName
+        let pair = [rawName]
+        if (isPair) {
+          const parts = rawName.split(/\s*(?:\s~\s|&|\+|\sen\s)\s*/i).filter(Boolean)
+          // "Werner ~ 1/2": fished on his own
+          pair = parts.length > 1 && /^\d+\s*\/\s*\d+$/.test(parts[1]) ? [parts[0]] : parts
+        }
+        const notes = []
+        if (e.king) notes.push('Koning')
+        if (fish) notes.push(`Zwaarste vis ${fish[1].trim()} kg`)
+        if (pair.length > 1) notes.push(`Koppel: ${pair.join(' & ')}`)
+        else if (isPair && pair[0] !== rawName) notes.push('Viste alleen')
         return {
           anglerSlug: resolveAngler(pair[0]),
           weight: e.weight,
           fishCount: e.fishCount,
           peg: e.peg,
-          note: pair.length > 1 ? `Koppel: ${pair.join(' & ')}` : null,
+          note: notes.length ? notes.join(' · ') : null,
           oldPlace: e.oldPlace,
         }
       }),

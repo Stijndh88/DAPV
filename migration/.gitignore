@@ -1,2 +1,4 @@
 node_modules/
+# Full media download (125 MB) stays out of git; only files the importer uses are committed (git add -f).
 data/media/
+data/raw/users.json

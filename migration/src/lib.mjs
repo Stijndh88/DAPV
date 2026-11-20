@@ -40,7 +40,10 @@ export const cleanResultTitle = (title) =>
 /** Competition slug used by both the importer and the redirect map. */
 export const competitionSlug = (season, wpSlugOrTitle) => `${season}-${slugify(cleanResultSlug(slugify(wpSlugOrTitle)))}`
 
-export const waterSlug = (w) => slugify(`${w.name} ${w.place ?? ''}`)
+export const waterSlug = (w) => {
+  const name = slugify(w.name), place = w.place ? slugify(w.place) : ''
+  return !place || name.includes(place) ? name : `${name}-${place}`
+}
 
 /** "/2022/09/24/gp-familie-bassleer-2/" -> { year: 2022, month: 9, day: 24, slug } */
 export const parsePostPath = (p) => {

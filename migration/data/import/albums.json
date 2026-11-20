@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "fotos-2022",
+    "title": "Foto's 2022",
+    "date": "2022-12-31",
+    "description": "Overgezet van de vorige website.",
+    "coverFile": "data/media/photo-gallery/285010115_1737228953281900_3575035053435660225_n.jpg",
+    "photoFiles": [
+      "data/media/photo-gallery/285010115_1737228953281900_3575035053435660225_n.jpg",
+      "data/media/photo-gallery/288797718_2284723458359002_1967456932431103397_n.jpg",
+      "data/media/photo-gallery/308269703_492945302385429_6289307336010035704d_n.jpg",
+      "data/media/photo-gallery/221366445_151538270412191_5831792612328540750_n.jpg",
+      "data/media/photo-gallery/279732296_5022700144443644_6430984332178047335_n.jpg",
+      "data/media/photo-gallery/220404071_466212124550372_7041011100863352747_n.jpg",
+      "data/media/photo-gallery/217546909_3006912932968446_3584067088692233692_n.jpg",
+      "data/media/photo-gallery/221855214_510594880168193_8313091901119606881_n.jpg",
+      "data/media/photo-gallery/235331567_247308090579454_5793503029789529239_n.jpg",
+      "data/media/photo-gallery/234094724_125876643051741_5928067630602687923_n.jpg",
+      "data/media/photo-gallery/287023683_1089225538673411_7186701734783381132_n-1.jpg",
+      "data/media/photo-gallery/291147517_1062265121392525_6972603856646375859_n.jpg",
+      "data/media/photo-gallery/291049489_1200089724138047_5466603187717694716_n.jpg",
+      "data/media/photo-gallery/290955760_1504395673310991_9162590404542967928_n.jpg",
+      "data/media/photo-gallery/291445688_575578713963378_3872431870046001542_n.jpg",
+      "data/media/photo-gallery/291335757_368978938686614_5750429447133595942_n.jpg",
+      "data/media/photo-gallery/291583991_3914324325459747_3327126005714595282_n.jpg",
+      "data/media/photo-gallery/290885592_893256691604000_467733177936099696_n.jpg",
+      "data/media/photo-gallery/291781278_1213433832754229_4819458437804522285_n.jpg"
+    ],
+    "oldPaths": [
+      "/fotos/",
+      "/bwg_gallery/fotos-2022/"
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Werner Bassleer",
+    "role": "Voorzitter",
+    "email": "werner@plasvissers.be",
+    "order": 1
+  },
+  {
+    "name": "Evert De Wuffel",
+    "role": "Ondervoorzitter",
+    "email": "evert@plasvissers.be",
+    "order": 2
+  },
+  {
+    "name": "Diego Ruysschaert",
+    "role": "Secretaris",
+    "email": "diego@plasvissers.be",
+    "order": 3
+  },
+  {
+    "name": "Conny Bassleer",
+    "role": "Schatbewaarder",
+    "email": "conny@plasvissers.be",
+    "order": 4
+  },
+  {
+    "name": "Rudy De Braeckeleer",
+    "role": "Bestuurslid",
+    "order": 5
+  },
+  {
+    "name": "Ronny Arijs",
+    "role": "Bestuurslid",
+    "order": 6
+  }
+]
