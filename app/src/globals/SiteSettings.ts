@@ -1,11 +1,15 @@
 import type { GlobalConfig } from 'payload'
-import { anyone, isAdmin, editors } from '../access'
+import { anyone, isAdmin } from '../access'
 
 export const SiteSettings: GlobalConfig = {
   slug: 'site-settings',
   label: 'Club & website',
-  admin: { group: 'Beheer', description: 'Contactgegevens en algemene info die overal op de site staat.' },
-  access: { read: anyone, update: ({ req }) => isAdmin({ req }) || Boolean(editors({ req } as never)) },
+  admin: {
+    group: 'Beheer',
+    hidden: ({ user }) => (user as { role?: string } | null)?.role !== 'admin',
+    description: 'Contactgegevens en algemene info die overal op de site staat.',
+  },
+  access: { read: anyone, update: ({ req }) => isAdmin({ req }) },
   hooks: {
     afterChange: [
       async ({ doc }) => {

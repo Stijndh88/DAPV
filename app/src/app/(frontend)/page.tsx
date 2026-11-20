@@ -165,7 +165,7 @@ export default async function Home() {
                 <li key={c.id}>
                   <Link href={`/wedstrijden/${c.slug}`} className="fixture">
                     <span className="fixture__day">{fmtDate(c.date, { day: 'numeric' })}</span>
-                    <span className="fixture__month">{fmtDate(c.date, { weekday: 'short', month: 'long' })}</span>
+                    <span className="fixture__month">{fmtDate(c.date, { weekday: 'long' })} {fmtDate(c.date, { month: 'long' })}</span>
                     <span className="fixture__title">
                       {c.title}
                       {c.status === 'verplaatst' && <span className="tag tag--warn">Verplaatst</span>}

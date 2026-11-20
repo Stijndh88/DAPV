@@ -24,6 +24,6 @@ test('parses semicolons, leading places and single spaces', () => {
 })
 
 test('ranks by weight with shared places and points', () => {
-  const r = rankEntries([{ weight: 1 }, { weight: 3 }, { weight: 3 }, { weight: 0 }, { weight: 2, disqualified: true }])
+  const r = rankEntries<{ weight: number; disqualified?: boolean; place?: number | null; points?: number | null }>([{ weight: 1 }, { weight: 3 }, { weight: 3 }, { weight: 0 }, { weight: 2, disqualified: true }])
   assert.deepEqual(r.map((e) => [e.weight, e.place, e.points]), [[3, 1, 4], [3, 1, 4], [1, 3, 2], [0, 4, 1], [2, null, 0]])
 })

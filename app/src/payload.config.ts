@@ -51,6 +51,7 @@ export default buildConfig({
       },
     },
     dateFormat: 'd MMMM yyyy',
+    avatar: 'default',
   },
   i18n: {
     supportedLanguages: { nl },
