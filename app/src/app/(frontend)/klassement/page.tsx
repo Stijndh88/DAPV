@@ -23,7 +23,8 @@ export default async function Klassement({ searchParams }: Props) {
           {byWeight
             ? 'Het totale gewicht over alle wedstrijden telt.'
             : 'Per wedstrijd krijgt de winnaar evenveel punten als er deelnemers zijn, de laatste krijgt 1 punt.'}{' '}
-          {s.dropWorst > 0 && `De ${s.dropWorst} slechtste resultaten van elke visser vallen weg.`} Na {s.competitions.length} van{' '}
+          {s.dropWorst === 1 && 'Het slechtste resultaat van elke visser valt weg.'}
+          {s.dropWorst > 1 && `De ${s.dropWorst} slechtste resultaten van elke visser vallen weg.`} Na {s.competitions.length} van{' '}
           {s.plannedCount} wedstrijden.
         </p>
       </header>
