@@ -52,7 +52,7 @@ The importer upserts by slug or name (media by filename), so it is safe to run a
 
 `redirects.json` maps every old URL in the sitemaps (posts, pages, categories, monthly archives, feeds, `?page_id=` and `?p=` links) to its new route. Regenerate it after the transform (`npm run redirects`) so the competition slugs come from the real data. Use it in one of two ways:
 
-- **Next.js:** `redirects: async () => (await import('../migration/redirects.next.json')).default` in `next.config`.
+- **Next.js:** the script also writes `app/redirects.json` (same content as `redirects.next.json`), which `next.config.ts` loads. Commit it after regenerating.
 - **Caddy:** `import /srv/migration/redirects.caddy` inside the site block.
 
 ## Known limits

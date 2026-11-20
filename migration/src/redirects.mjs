@@ -5,6 +5,7 @@
 // seed/old-urls.json (the sitemap list). Writes:
 //   redirects.json         [{ from, to, query? }]  generic list (from without trailing slash)
 //   redirects.next.json    for `async redirects()` in next.config
+//   ../app/redirects.json  same, inside the app's Docker build context
 //   redirects.caddy        snippet for the Caddyfile
 import { readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
@@ -89,10 +90,13 @@ const list = [...map].map(([from, to]) => ({ from, to })).sort((a, b) => a.from.
 const all = [...list, ...queryRules.map((q) => ({ from: '/', query: { [q.key]: q.value }, to: q.to }))]
 
 await writeFile(path.join(ROOT, 'redirects.json'), JSON.stringify(all, null, 2) + '\n')
-await writeFile(path.join(ROOT, 'redirects.next.json'), JSON.stringify([
+const nextRedirects = [
   ...list.map((r) => ({ source: r.from, destination: r.to, permanent: true })),
   ...queryRules.map((q) => ({ source: '/', has: [{ type: 'query', key: q.key, value: q.value }], destination: q.to, permanent: true })),
-], null, 2) + '\n')
+]
+await writeFile(path.join(ROOT, 'redirects.next.json'), JSON.stringify(nextRedirects, null, 2) + '\n')
+// The app's Docker build context is ./app, so production reads its own copy.
+await writeFile(path.join(ROOT, '..', 'app', 'redirects.json'), JSON.stringify(nextRedirects, null, 2) + '\n')
 await writeFile(path.join(ROOT, 'redirects.caddy'), [
   '# Old WordPress URLs -> new site. Import with: import /path/to/redirects.caddy (inside the site block)',
   ...list.map((r, i) => `@old${i} path ${r.from} ${r.from}/\nredir @old${i} ${r.to} permanent`),

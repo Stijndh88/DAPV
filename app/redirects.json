@@ -1,0 +1,514 @@
+[
+  {
+    "source": "/2021/05",
+    "destination": "/wedstrijden?seizoen=2021",
+    "permanent": true
+  },
+  {
+    "source": "/2021/05/02/uitslag-wedstrijd-gp-familie-arijs",
+    "destination": "/wedstrijden/2021-gp-familie-arijs",
+    "permanent": true
+  },
+  {
+    "source": "/2021/05/09/uitslag-wedstrijd-gp-kristof-van-goethem-immo-kurt",
+    "destination": "/wedstrijden/2021-gp-kristof-van-goethem-immo-kurt",
+    "permanent": true
+  },
+  {
+    "source": "/2021/05/23/uitslag-wedstrijd-gp-freddy-neirinckx",
+    "destination": "/wedstrijden/2021-gp-freddy-neirinckx",
+    "permanent": true
+  },
+  {
+    "source": "/2021/05/30/uitslag-wedstrijd-koningschap-2021",
+    "destination": "/wedstrijden/2021-koningschap-2021",
+    "permanent": true
+  },
+  {
+    "source": "/2021/06",
+    "destination": "/wedstrijden?seizoen=2021",
+    "permanent": true
+  },
+  {
+    "source": "/2021/06/06/uitslag-wedstrijd-gp-familie-verpeten",
+    "destination": "/wedstrijden/2021-gp-familie-verpeten",
+    "permanent": true
+  },
+  {
+    "source": "/2021/06/17/uitslag-wedstrijd-gp-heck-freddy",
+    "destination": "/wedstrijden/2021-gp-heck-freddy",
+    "permanent": true
+  },
+  {
+    "source": "/2021/06/21/trekking-koppelvissing-26-06",
+    "destination": "/nieuws/trekking-koppelvissing-26-06",
+    "permanent": true
+  },
+  {
+    "source": "/2021/06/27/uitslag-koppelwedstrijd",
+    "destination": "/wedstrijden/2021-koppelwedstrijd",
+    "permanent": true
+  },
+  {
+    "source": "/2021/07",
+    "destination": "/wedstrijden?seizoen=2021",
+    "permanent": true
+  },
+  {
+    "source": "/2021/07/04/uitslag-wedstrijd-gp-diego-muller",
+    "destination": "/wedstrijden/2021-gp-diego-muller",
+    "permanent": true
+  },
+  {
+    "source": "/2021/07/11/uitslag-wedstrijd-gp-soetinck-duwez",
+    "destination": "/wedstrijden/2021-gp-soetinck-duwez",
+    "permanent": true
+  },
+  {
+    "source": "/2021/08",
+    "destination": "/wedstrijden?seizoen=2021",
+    "permanent": true
+  },
+  {
+    "source": "/2021/08/08/uitslag-wedstrijd-gp-soetinck-jozef",
+    "destination": "/wedstrijden/2021-gp-soetinck-jozef",
+    "permanent": true
+  },
+  {
+    "source": "/2021/08/15/uitslag-avondvissing",
+    "destination": "/wedstrijden/2021-avondvissing",
+    "permanent": true
+  },
+  {
+    "source": "/2021/08/22/uitslag-marathon",
+    "destination": "/wedstrijden/2021-marathon",
+    "permanent": true
+  },
+  {
+    "source": "/2021/08/29/uitslag-gp-dhondt-stijn",
+    "destination": "/wedstrijden/2021-gp-dhondt-stijn",
+    "permanent": true
+  },
+  {
+    "source": "/2021/09",
+    "destination": "/wedstrijden?seizoen=2021",
+    "permanent": true
+  },
+  {
+    "source": "/2021/09/11/gp-cafe-de-belskes",
+    "destination": "/wedstrijden/2021-gp-cafe-de-belskes",
+    "permanent": true
+  },
+  {
+    "source": "/2021/09/18/gp-de-wuffel-de-braeckeleer",
+    "destination": "/wedstrijden/2021-gp-de-wuffel-de-braeckeleer",
+    "permanent": true
+  },
+  {
+    "source": "/2021/10",
+    "destination": "/wedstrijden?seizoen=2021",
+    "permanent": true
+  },
+  {
+    "source": "/2021/10/02/gp-bassleer-conny",
+    "destination": "/wedstrijden/2021-gp-bassleer-conny",
+    "permanent": true
+  },
+  {
+    "source": "/2021/10/09/gp-familie-bassleer",
+    "destination": "/wedstrijden/2021-gp-familie-bassleer",
+    "permanent": true
+  },
+  {
+    "source": "/2022/04",
+    "destination": "/wedstrijden?seizoen=2022",
+    "permanent": true
+  },
+  {
+    "source": "/2022/04/02/uitslag-wedstrijd-gp-familie-arijs-2",
+    "destination": "/wedstrijden/2022-gp-familie-arijs",
+    "permanent": true
+  },
+  {
+    "source": "/2022/04/16/uitslag-1e-reeks-kampioenschap",
+    "destination": "/wedstrijden/2022-1e-reeks-kampioenschap",
+    "permanent": true
+  },
+  {
+    "source": "/2022/04/23/uitslag-2e-reeks-kampioenschap",
+    "destination": "/wedstrijden/2022-2e-reeks-kampioenschap",
+    "permanent": true
+  },
+  {
+    "source": "/2022/04/30/uitslag-3e-reeks-kampioenschap",
+    "destination": "/wedstrijden/2022-3e-reeks-kampioenschap",
+    "permanent": true
+  },
+  {
+    "source": "/2022/05",
+    "destination": "/wedstrijden?seizoen=2022",
+    "permanent": true
+  },
+  {
+    "source": "/2022/05/07/uitslag-4e-reeks-kampioenschap",
+    "destination": "/wedstrijden/2022-4e-reeks-kampioenschap",
+    "permanent": true
+  },
+  {
+    "source": "/2022/05/14/uitslag-gp-freddy-neirinckx",
+    "destination": "/wedstrijden/2022-gp-freddy-neirinckx",
+    "permanent": true
+  },
+  {
+    "source": "/2022/05/21/uitslag-gp-dhondt-stijn-2",
+    "destination": "/wedstrijden/2022-gp-dhondt-stijn",
+    "permanent": true
+  },
+  {
+    "source": "/2022/05/28/koningschap-2022",
+    "destination": "/wedstrijden/2022-koningschap-2022",
+    "permanent": true
+  },
+  {
+    "source": "/2022/06",
+    "destination": "/wedstrijden?seizoen=2022",
+    "permanent": true
+  },
+  {
+    "source": "/2022/06/04/gp-freddy-heck",
+    "destination": "/wedstrijden/2022-gp-freddy-heck",
+    "permanent": true
+  },
+  {
+    "source": "/2022/06/11/belgie-duitsland",
+    "destination": "/wedstrijden/2022-belgie-duitsland",
+    "permanent": true
+  },
+  {
+    "source": "/2022/06/18/gp-conny-bassleer",
+    "destination": "/wedstrijden/2022-gp-conny-bassleer",
+    "permanent": true
+  },
+  {
+    "source": "/2022/07",
+    "destination": "/wedstrijden?seizoen=2022",
+    "permanent": true
+  },
+  {
+    "source": "/2022/07/02/gp-van-goethem-kristof",
+    "destination": "/wedstrijden/2022-gp-van-goethem-kristof",
+    "permanent": true
+  },
+  {
+    "source": "/2022/07/09/gp-kenjiro-jordy",
+    "destination": "/wedstrijden/2022-gp-kenjiro-jordy",
+    "permanent": true
+  },
+  {
+    "source": "/2022/08",
+    "destination": "/wedstrijden?seizoen=2022",
+    "permanent": true
+  },
+  {
+    "source": "/2022/08/06/koppelwedstrijd",
+    "destination": "/wedstrijden/2022-koppelwedstrijd",
+    "permanent": true
+  },
+  {
+    "source": "/2022/08/13/avondwedstrijd",
+    "destination": "/wedstrijden/2022-avondwedstrijd",
+    "permanent": true
+  },
+  {
+    "source": "/2022/08/20/marathon",
+    "destination": "/wedstrijden/2022-marathon",
+    "permanent": true
+  },
+  {
+    "source": "/2022/08/27/gp-diego-muller",
+    "destination": "/wedstrijden/2022-gp-diego-muller",
+    "permanent": true
+  },
+  {
+    "source": "/2022/09",
+    "destination": "/wedstrijden?seizoen=2022",
+    "permanent": true
+  },
+  {
+    "source": "/2022/09/10/gp-lokaal-de-parking",
+    "destination": "/wedstrijden/2022-gp-lokaal-de-parking",
+    "permanent": true
+  },
+  {
+    "source": "/2022/09/17/gp-de-wuffel-braeckeleer",
+    "destination": "/wedstrijden/2022-gp-de-wuffel-braeckeleer",
+    "permanent": true
+  },
+  {
+    "source": "/2022/09/24/gp-familie-bassleer-2",
+    "destination": "/wedstrijden/2022-gp-familie-bassleer",
+    "permanent": true
+  },
+  {
+    "source": "/2022/10",
+    "destination": "/wedstrijden?seizoen=2022",
+    "permanent": true
+  },
+  {
+    "source": "/2022/10/01/gp-cafe-de-parking",
+    "destination": "/wedstrijden/2022-gp-cafe-de-parking",
+    "permanent": true
+  },
+  {
+    "source": "/2023/04",
+    "destination": "/wedstrijden?seizoen=2023",
+    "permanent": true
+  },
+  {
+    "source": "/2023/04/08/gp-fam-arijs",
+    "destination": "/wedstrijden/2023-gp-fam-arijs",
+    "permanent": true
+  },
+  {
+    "source": "/2023/04/15/uitslag-1e-reeks-kampioenschap-2",
+    "destination": "/wedstrijden/2023-1e-reeks-kampioenschap",
+    "permanent": true
+  },
+  {
+    "source": "/archief-wedstrijden",
+    "destination": "/wedstrijden",
+    "permanent": true
+  },
+  {
+    "source": "/author/stijndh",
+    "destination": "/nieuws",
+    "permanent": true
+  },
+  {
+    "source": "/bestuur",
+    "destination": "/club/bestuur",
+    "permanent": true
+  },
+  {
+    "source": "/bwg_gallery/fotos-2022",
+    "destination": "/fotos/fotos-2022",
+    "permanent": true
+  },
+  {
+    "source": "/category/nieuws",
+    "destination": "/nieuws",
+    "permanent": true
+  },
+  {
+    "source": "/category/uncategorised",
+    "destination": "/nieuws",
+    "permanent": true
+  },
+  {
+    "source": "/category/wedstrijduitslagen-2019",
+    "destination": "/wedstrijden?seizoen=2019",
+    "permanent": true
+  },
+  {
+    "source": "/category/wedstrijduitslagen-2020",
+    "destination": "/wedstrijden?seizoen=2020",
+    "permanent": true
+  },
+  {
+    "source": "/category/wedstrijduitslagen-2021",
+    "destination": "/wedstrijden?seizoen=2021",
+    "permanent": true
+  },
+  {
+    "source": "/category/wedstrijduitslagen-2022",
+    "destination": "/wedstrijden?seizoen=2022",
+    "permanent": true
+  },
+  {
+    "source": "/category/wedstrijduitslagen-2023",
+    "destination": "/wedstrijden?seizoen=2023",
+    "permanent": true
+  },
+  {
+    "source": "/category/wedstrijduitslagen-2024",
+    "destination": "/wedstrijden?seizoen=2024",
+    "permanent": true
+  },
+  {
+    "source": "/category/wedstrijduitslagen-2025",
+    "destination": "/wedstrijden?seizoen=2025",
+    "permanent": true
+  },
+  {
+    "source": "/category/wedstrijduitslagen-2026",
+    "destination": "/wedstrijden?seizoen=2026",
+    "permanent": true
+  },
+  {
+    "source": "/clubnieuws",
+    "destination": "/nieuws",
+    "permanent": true
+  },
+  {
+    "source": "/comments/feed",
+    "destination": "/nieuws",
+    "permanent": true
+  },
+  {
+    "source": "/cpt_staff_lst/bestuur-17",
+    "destination": "/club/bestuur",
+    "permanent": true
+  },
+  {
+    "source": "/dendervissers-gijzegem",
+    "destination": "/visplaatsen/dendervissers-gijzegem",
+    "permanent": true
+  },
+  {
+    "source": "/feed",
+    "destination": "/nieuws",
+    "permanent": true
+  },
+  {
+    "source": "/kalender-2019",
+    "destination": "/wedstrijden?seizoen=2019",
+    "permanent": true
+  },
+  {
+    "source": "/kalender-2020",
+    "destination": "/wedstrijden?seizoen=2020",
+    "permanent": true
+  },
+  {
+    "source": "/kalender-2021",
+    "destination": "/wedstrijden?seizoen=2021",
+    "permanent": true
+  },
+  {
+    "source": "/kalender-2022",
+    "destination": "/wedstrijden?seizoen=2022",
+    "permanent": true
+  },
+  {
+    "source": "/kalender-2023",
+    "destination": "/wedstrijden?seizoen=2023",
+    "permanent": true
+  },
+  {
+    "source": "/kalender-2024",
+    "destination": "/wedstrijden?seizoen=2024",
+    "permanent": true
+  },
+  {
+    "source": "/kalender-2025",
+    "destination": "/wedstrijden?seizoen=2025",
+    "permanent": true
+  },
+  {
+    "source": "/kalender-2026",
+    "destination": "/wedstrijden?seizoen=2026",
+    "permanent": true
+  },
+  {
+    "source": "/leden",
+    "destination": "/club/leden",
+    "permanent": true
+  },
+  {
+    "source": "/nieuws/page/10",
+    "destination": "/nieuws",
+    "permanent": true
+  },
+  {
+    "source": "/nieuws/page/2",
+    "destination": "/nieuws",
+    "permanent": true
+  },
+  {
+    "source": "/nieuws/page/3",
+    "destination": "/nieuws",
+    "permanent": true
+  },
+  {
+    "source": "/nieuws/page/4",
+    "destination": "/nieuws",
+    "permanent": true
+  },
+  {
+    "source": "/nieuws/page/5",
+    "destination": "/nieuws",
+    "permanent": true
+  },
+  {
+    "source": "/nieuws/page/6",
+    "destination": "/nieuws",
+    "permanent": true
+  },
+  {
+    "source": "/nieuws/page/7",
+    "destination": "/nieuws",
+    "permanent": true
+  },
+  {
+    "source": "/nieuws/page/8",
+    "destination": "/nieuws",
+    "permanent": true
+  },
+  {
+    "source": "/nieuws/page/9",
+    "destination": "/nieuws",
+    "permanent": true
+  },
+  {
+    "source": "/ontstaan",
+    "destination": "/geschiedenis",
+    "permanent": true
+  },
+  {
+    "source": "/ontstaan/clubreglement",
+    "destination": "/club/reglement",
+    "permanent": true
+  },
+  {
+    "source": "/praktische-clubgegevens",
+    "destination": "/club/praktisch",
+    "permanent": true
+  },
+  {
+    "source": "/vislocaties",
+    "destination": "/visplaatsen",
+    "permanent": true
+  },
+  {
+    "source": "/vislocaties/dendervissers-gijzegem",
+    "destination": "/visplaatsen/dendervissers-gijzegem",
+    "permanent": true
+  },
+  {
+    "source": "/vislocaties/meerse-lijnvissers-mere",
+    "destination": "/visplaatsen/de-meerse-lijnvissers-mere",
+    "permanent": true
+  },
+  {
+    "source": "/wp-admin",
+    "destination": "/admin",
+    "permanent": true
+  },
+  {
+    "source": "/wp-login.php",
+    "destination": "/admin",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "has": [
+      {
+        "type": "query",
+        "key": "page_id",
+        "value": "58"
+      }
+    ],
+    "destination": "/nieuws",
+    "permanent": true
+  }
+]
