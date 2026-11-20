@@ -1,0 +1,6 @@
+.env
+backups/*
+!backups/.gitkeep
+rclone/*
+!rclone/.gitkeep
+!rclone/rclone.conf.example

@@ -1,0 +1,10 @@
+# Hetzner Storage Box over SFTP (BX11, 1 TB, about 3.20 EUR/month).
+# Create with:  docker run --rm -it -v $PWD/rclone:/config/rclone rclone/rclone config
+# or fill in by hand; the password must be obscured with `rclone obscure`.
+[storagebox]
+type = sftp
+host = uXXXXXX.your-storagebox.de
+user = uXXXXXX
+port = 23
+pass = <output of: rclone obscure 'your-password'>
+shell_type = unix

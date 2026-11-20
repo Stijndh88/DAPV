@@ -1,0 +1,53 @@
+{
+	email {$ACME_EMAIL}
+	# Uncomment to test against Let's Encrypt staging first (avoids rate limits):
+	# acme_ca https://acme-staging-v02.api.letsencrypt.org/directory
+}
+
+# www -> apex (one canonical URL is better for SEO)
+www.{$SITE_DOMAIN} {
+	redir https://{$SITE_DOMAIN}{uri} permanent
+}
+
+{$SITE_DOMAIN} {
+	encode zstd gzip
+
+	# Photo uploads from the CMS can be large; Payload resizes them server-side.
+	request_body {
+		max_size 64MB
+	}
+
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "SAMEORIGIN"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		Permissions-Policy "camera=(), microphone=(), geolocation=()"
+		-Server
+		-X-Powered-By
+	}
+
+	# Old WordPress URLs -> new site, so bookmarks and Google results keep working.
+	# Add specific old permalinks in redirects.caddy (see docs/deployment.md).
+	import /etc/caddy/redirects.caddy
+
+	redir /wp-admin* /admin permanent
+	redir /wp-login.php /admin permanent
+	redir /feed* /nieuws permanent
+	@wpjunk path /xmlrpc.php /wp-json* /wp-content/plugins* /wp-includes*
+	respond @wpjunk 410
+
+	# Long cache for Next.js build assets (file names are content-hashed).
+	@static path /_next/static/*
+	header @static Cache-Control "public, max-age=31536000, immutable"
+
+	reverse_proxy app:3000 {
+		# Hold requests up to 10s while the app restarts during a deploy.
+		lb_try_duration 10s
+	}
+
+	log {
+		output stdout
+		format console
+	}
+}
