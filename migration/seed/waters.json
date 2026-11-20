@@ -1,0 +1,14 @@
+{
+  "_source": "plasvissers.be /vislocaties/ and its subpages, read 2026-11-20. Addresses only where the site gives one. aliases help match calendar 'Water' cells.",
+  "waters": [
+    { "name": "Donkvissers", "place": "Mere", "aliases": ["donk"] },
+    { "name": "Koutervissers", "place": "Viane", "aliases": ["kouter"] },
+    { "name": "Vissershof", "place": "Mere", "aliases": [] },
+    { "name": "Warm Water", "place": "Vilvoorde", "aliases": ["warm water"] },
+    { "name": "Gespoelde Put", "place": "Grembergen", "aliases": ["gespoelde"] },
+    { "name": "Dendervissers", "place": "Gijzegem", "aliases": ["gijzegem", "dender"], "oldPath": "/vislocaties/dendervissers-gijzegem/" },
+    { "name": "De Meerse Lijnvissers", "place": "Mere", "address": "Biezeputstraat 10, 9420 Erpe-Mere", "aliases": ["meerse", "lijnvissers"], "oldPath": "/vislocaties/meerse-lijnvissers-mere/" },
+    { "name": "Meldert vijver", "place": "Meldert", "aliases": ["meldert"] },
+    { "name": "De Donkere Wolk", "place": "Geraardsbergen", "aliases": ["donkere wolk"] }
+  ]
+}
