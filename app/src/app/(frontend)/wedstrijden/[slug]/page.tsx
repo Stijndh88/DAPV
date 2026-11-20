@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import type { Water } from '@/payload-types'
 import { payload } from '@/lib/payload'
-import { daysUntil, fmtDate, fmtKg, relativeDay, typeLabel } from '@/lib/format'
+import { daysUntil, fmtDate, fmtKg, relativeDay, typeLabel, ucfirst } from '@/lib/format'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -41,7 +41,7 @@ export default async function Wedstrijd({ params }: Props) {
         </Link>
         <h1>{c.title}</h1>
         <p>
-          <span style={{ textTransform: 'capitalize' }}>{fmtDate(c.date, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}</span>
+          {ucfirst(fmtDate(c.date, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }))}
           {upcoming && relativeDay(c.date) ? `, ${relativeDay(c.date)}` : ''}
           {c.status === 'afgelast' && <span className="tag tag--warn">Afgelast</span>}
           {c.status === 'verplaatst' && <span className="tag tag--warn">Verplaatst</span>}

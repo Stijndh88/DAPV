@@ -75,7 +75,7 @@ export default async function Wedstrijden({ searchParams }: Props) {
                       {c.title}
                       {c.status === 'afgelast' && <span className="tag tag--warn">Afgelast</span>}
                       {c.status === 'verplaatst' && <span className="tag tag--warn">Verplaatst</span>}
-                      {c.type && c.type !== 'club' && <span className="tag">{typeLabel[c.type]}</span>}
+                      {c.type && c.type !== 'club' && !(c.title ?? '').toLowerCase().includes(c.type) && <span className="tag">{typeLabel[c.type]}</span>}
                     </span>
                     <br />
                     <span className="match__where">

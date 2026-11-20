@@ -1,5 +1,5 @@
 /** Minimal Lexical JSON builder for seed/import scripts. */
-type Node = Record<string, unknown>
+type Node = { type: string; version: number; [k: string]: unknown }
 
 const text = (t: string, format = 0): Node => ({ type: 'text', text: t, format, detail: 0, mode: 'normal', style: '', version: 1 })
 

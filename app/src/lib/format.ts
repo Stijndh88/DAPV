@@ -37,3 +37,5 @@ export const typeLabel: Record<string, string> = {
   vriendschappelijk: 'Vriendschappelijk',
   andere: 'Wedstrijd',
 }
+
+export const ucfirst = (s: string) => s.charAt(0).toUpperCase() + s.slice(1)
