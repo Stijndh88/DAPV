@@ -27,7 +27,7 @@ const dirname = path.dirname(filename)
 const smtp = process.env.SMTP_HOST
   ? nodemailerAdapter({
       defaultFromAddress: process.env.SMTP_FROM || 'website@plasvissers.be',
-      defaultFromName: 'De Plasvissers',
+      defaultFromName: 'De Aalsterse Plasvissers',
       transportOptions: {
         host: process.env.SMTP_HOST,
         port: Number(process.env.SMTP_PORT || 587),

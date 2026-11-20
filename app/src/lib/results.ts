@@ -22,7 +22,8 @@ export function parseResultsPaste(text: string): ParsedLine[] {
   for (const rawLine of text.split(/\r?\n/)) {
     const line = rawLine.trim()
     if (!line) continue
-    let parts = line.split(/\t|;|\s{2,}|,(?=\s*\d)/).map((p) => p.trim()).filter(Boolean)
+    const sep = /\t|;/.test(line) ? /\t|;/ : /\s{2,}/
+    let parts = line.split(sep).map((p) => p.trim()).filter(Boolean)
     if (parts.length === 1) {
       // "Jan Peeters 4,350 12" single-space fallback: peel numbers off the end
       const m = line.match(/^(.*?)\s+([\d.,]+)\s*(?:kg|g)?(?:\s+(\d+))?$/i)

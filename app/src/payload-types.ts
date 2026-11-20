@@ -894,6 +894,8 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
 export interface SiteSetting {
   id: number;
   clubName: string;
+  founded?: number | null;
+  clubNumber?: string | null;
   tagline?: string | null;
   welcome?: string | null;
   /**
@@ -928,6 +930,8 @@ export interface SiteSetting {
  */
 export interface SiteSettingsSelect<T extends boolean = true> {
   clubName?: T;
+  founded?: T;
+  clubNumber?: T;
   tagline?: T;
   welcome?: T;
   clubSong?: T;

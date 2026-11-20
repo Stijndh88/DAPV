@@ -11,7 +11,7 @@ export const Pages: CollectionConfig = {
     group: 'Inhoud',
     defaultColumns: ['title', 'slug', '_status'],
     description: 'Vaste pagina’s zoals Lid worden, Reglement of Geschiedenis.',
-    preview: (doc) => `/${doc.slug}`,
+    preview: (doc) => `/preview?path=/${doc.slug}`,
   },
   versions: { drafts: true, maxPerDoc: 20 },
   access: { read: publishedOrLoggedIn, create: editors, update: editors, delete: editors },

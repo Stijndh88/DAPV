@@ -24,8 +24,10 @@ export const SiteSettings: GlobalConfig = {
         {
           label: 'Club',
           fields: [
-            { name: 'clubName', label: 'Clubnaam', type: 'text', defaultValue: 'De Plasvissers', required: true },
-            { name: 'tagline', label: 'Ondertitel', type: 'text', defaultValue: 'Hengelclub sinds 1976' },
+            { name: 'clubName', label: 'Clubnaam', type: 'text', defaultValue: 'De Aalsterse Plasvissers', required: true },
+            { name: 'founded', label: 'Opgericht in', type: 'number', defaultValue: 1969 },
+            { name: 'clubNumber', label: 'Stamnummer', type: 'text', defaultValue: '02001' },
+            { name: 'tagline', label: 'Ondertitel', type: 'text', defaultValue: "Al meer dan 50 jaar de tofste club van 't stad!" },
             {
               name: 'welcome',
               label: 'Welkomsttekst op de homepagina',
@@ -42,8 +44,8 @@ export const SiteSettings: GlobalConfig = {
           fields: [
             { name: 'email', label: 'E-mail', type: 'email' },
             { name: 'phone', label: 'Telefoon', type: 'text' },
-            { name: 'clubhouse', label: 'Clublokaal', type: 'text' },
-            { name: 'address', label: 'Adres', type: 'textarea' },
+            { name: 'clubhouse', label: 'Clublokaal', type: 'text', defaultValue: 'Café @ De Parking' },
+            { name: 'address', label: 'Adres', type: 'textarea', defaultValue: 'Botermelkstraat 46\n9300 Aalst' },
             { name: 'bankAccount', label: 'Rekeningnummer (lidgeld)', type: 'text' },
             {
               name: 'socials',

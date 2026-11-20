@@ -62,8 +62,8 @@ export const Competitions: CollectionConfig = {
           index: true,
           admin: { width: '50%', date: { pickerAppearance: 'dayOnly', displayFormat: 'EEEE d MMMM yyyy' } },
         },
-        { name: 'startTime', label: 'Aanvang', type: 'text', defaultValue: '08:00', admin: { width: '25%', placeholder: '08:00' } },
-        { name: 'endTime', label: 'Einde', type: 'text', defaultValue: '12:00', admin: { width: '25%', placeholder: '12:00' } },
+        { name: 'startTime', label: 'Aanvang', type: 'text', defaultValue: '13:30', admin: { width: '25%', placeholder: '13:30' } },
+        { name: 'endTime', label: 'Einde', type: 'text', defaultValue: '17:30', admin: { width: '25%', placeholder: '17:30' } },
       ],
     },
     { name: 'title', label: 'Naam', type: 'text', admin: { description: 'Bv. "3e clubwedstrijd" of "Kampioenschap". Leeg = automatisch.' } },
@@ -77,7 +77,7 @@ export const Competitions: CollectionConfig = {
     {
       type: 'row',
       fields: [
-        { name: 'drawTime', label: 'Loting', type: 'text', admin: { width: '33%', placeholder: '07:15' } },
+        { name: 'drawTime', label: 'Loting', type: 'text', defaultValue: '12:30', admin: { width: '33%', placeholder: '12:30' } },
         { name: 'price', label: 'Inschrijfgeld', type: 'text', admin: { width: '33%', placeholder: '€ 10' } },
         { name: 'maxParticipants', label: 'Max. deelnemers', type: 'number', admin: { width: '33%' } },
       ],

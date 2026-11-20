@@ -1517,14 +1517,14 @@
           "type": "varchar",
           "primaryKey": false,
           "notNull": false,
-          "default": "'08:00'"
+          "default": "'13:30'"
         },
         "end_time": {
           "name": "end_time",
           "type": "varchar",
           "primaryKey": false,
           "notNull": false,
-          "default": "'12:00'"
+          "default": "'17:30'"
         },
         "title": {
           "name": "title",
@@ -1550,7 +1550,8 @@
           "name": "draw_time",
           "type": "varchar",
           "primaryKey": false,
-          "notNull": false
+          "notNull": false,
+          "default": "'12:30'"
         },
         "price": {
           "name": "price",
@@ -3826,14 +3827,28 @@
           "type": "varchar",
           "primaryKey": false,
           "notNull": true,
-          "default": "'De Plasvissers'"
+          "default": "'De Aalsterse Plasvissers'"
+        },
+        "founded": {
+          "name": "founded",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false,
+          "default": 1969
+        },
+        "club_number": {
+          "name": "club_number",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "'02001'"
         },
         "tagline": {
           "name": "tagline",
           "type": "varchar",
           "primaryKey": false,
           "notNull": false,
-          "default": "'Hengelclub sinds 1976'"
+          "default": "'Al meer dan 50 jaar de tofste club van ''t stad!'"
         },
         "welcome": {
           "name": "welcome",
@@ -3870,13 +3885,15 @@
           "name": "clubhouse",
           "type": "varchar",
           "primaryKey": false,
-          "notNull": false
+          "notNull": false,
+          "default": "'Café @ De Parking'"
         },
         "address": {
           "name": "address",
           "type": "varchar",
           "primaryKey": false,
-          "notNull": false
+          "notNull": false,
+          "default": "'Botermelkstraat 46\n9300 Aalst'"
         },
         "bank_account": {
           "name": "bank_account",
@@ -4088,6 +4105,6 @@
     "tables": {},
     "columns": {}
   },
-  "id": "2fa32ce6-4692-4572-8e92-e4949b267465",
+  "id": "8dbc939d-9d65-46ec-b9bf-56ef98bbe71a",
   "prevId": "00000000-0000-0000-0000-000000000000"
 }
