@@ -74,7 +74,9 @@ async function shape(payload: Payload, slug: string, data: Record<string, unknow
   const fields = new Map(flatFields(cfg.fields).map((f) => [f.name!, f]))
   const out: Record<string, unknown> = {}
   for (const [k, v] of Object.entries(data)) {
-    if (v === undefined || v === null || v === '') continue
+    if (v === undefined || v === '') continue
+    // an explicit null beats a field's default (e.g. no draw time instead of the default 12:30)
+    if (v === null) { if ((fields.get(k) as { defaultValue?: unknown } | undefined)?.defaultValue !== undefined) out[k] = null; continue }
     if (k === '_status') { if (cfg.versions?.drafts) out._status = v; continue }
     const f = fields.get(k)
     if (!f) { warnOnce(`${slug}.${k} is not in the schema, skipped`); continue }
