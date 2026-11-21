@@ -290,8 +290,23 @@
     "permanent": true
   },
   {
+    "source": "/bwg_album/fotos",
+    "destination": "/fotos",
+    "permanent": true
+  },
+  {
     "source": "/bwg_gallery/fotos-2022",
     "destination": "/fotos/fotos-2022",
+    "permanent": true
+  },
+  {
+    "source": "/bwg_tag/2022",
+    "destination": "/fotos/fotos-2022",
+    "permanent": true
+  },
+  {
+    "source": "/bwg_tag/2023",
+    "destination": "/fotos",
     "permanent": true
   },
   {

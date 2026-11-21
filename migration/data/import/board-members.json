@@ -3,34 +3,40 @@
     "name": "Werner Bassleer",
     "role": "Voorzitter",
     "email": "werner@plasvissers.be",
-    "order": 1
+    "order": 1,
+    "photoFile": "data/media/2019/06/werner-bassleer-2.jpg"
   },
   {
     "name": "Evert De Wuffel",
     "role": "Ondervoorzitter",
     "email": "evert@plasvissers.be",
-    "order": 2
+    "order": 2,
+    "photoFile": "data/media/2019/06/Evert.jpg"
   },
   {
     "name": "Diego Ruysschaert",
     "role": "Secretaris",
     "email": "diego@plasvissers.be",
-    "order": 3
+    "order": 3,
+    "photoFile": "data/media/2019/06/DSC00651.jpg"
   },
   {
     "name": "Conny Bassleer",
     "role": "Schatbewaarder",
     "email": "conny@plasvissers.be",
-    "order": 4
+    "order": 4,
+    "photoFile": null
   },
   {
     "name": "Rudy De Braeckeleer",
     "role": "Bestuurslid",
-    "order": 5
+    "order": 5,
+    "photoFile": "data/media/2019/06/DSC00649.jpg"
   },
   {
     "name": "Ronny Arijs",
     "role": "Bestuurslid",
-    "order": 6
+    "order": 6,
+    "photoFile": null
   }
 ]
