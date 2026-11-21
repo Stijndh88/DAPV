@@ -229,9 +229,13 @@ async function main() {
     rc ??= resultComps.find((r) => !usedResults.has(r) && r.season === row.season && dayDiff(r.date, row.date) <= 1)
     if (rc) usedResults.add(rc)
     const notes = [row.superPrestige && 'Telt mee voor de Super Prestige.'].filter(Boolean)
+    // "GP Fam. Verpeten WORDT LATER GEVIST" -> status verplaatst, clean title
+    const postponed = !rc && /\s*[-–(]?\s*(wordt later gevist|uitgesteld|verplaatst)\)?\s*$/i
+    const isPostponed = postponed && postponed.test(row.title)
+    if (isPostponed) notes.push('Uitgesteld: wordt later gevist (zo stond het op de oude kalender).')
     competitions.push({
-      slug: rc?.slug ?? competitionSlug(row.season, row.title),
-      title: rc?.title ?? row.title,
+      slug: rc?.slug ?? competitionSlug(row.season, isPostponed ? row.title.replace(postponed, '') : row.title),
+      title: rc?.title ?? (isPostponed ? row.title.replace(postponed, '') : row.title),
       date: row.date,
       startTime: row.startTime,
       endTime: row.endTime,
@@ -240,8 +244,8 @@ async function main() {
       type: inferType(row.title),
       season: row.season,
       countsForStandings: inferType(row.title) === 'kampioenschap' || row.superPrestige,
-      status: rc ? 'gespeeld' : row.date < NOW ? 'gespeeld' : 'gepland',
-      notes: [...notes, !rc && row.date < NOW ? 'Geen uitslag gepubliceerd op de oude website.' : null].filter(Boolean).join(' ') || null,
+      status: isPostponed ? 'verplaatst' : rc ? 'gespeeld' : row.date < NOW ? 'gespeeld' : 'gepland',
+      notes: [...notes, !rc && !isPostponed && row.date < NOW ? 'Geen uitslag gepubliceerd op de oude website.' : null].filter(Boolean).join(' ') || null,
       oldPaths: rc?.oldPaths ?? [],
       results: rc?.entries ?? null,
       textHtml: rc?.textHtml || null,
@@ -362,6 +366,13 @@ async function main() {
   // ---- board & settings ----
   const board = seed.board.members.map((b, i) => ({ ...b, order: i + 1 }))
   const settings = { ...seed.club, clubSongFile: localFile(`https://plasvissers.be${seed.club.clubSong}`) }
+  // The old MP3 starts with ~400 zero bytes, so upload type sniffing sees text/plain. Strip them.
+  if (settings.clubSongFile) {
+    const f = path.join(ROOT, settings.clubSongFile)
+    const buf = await readFile(f).catch(() => null)
+    const start = buf ? buf.findIndex((b) => b !== 0) : 0
+    if (start > 0) { await writeFile(f, buf.subarray(start)); warn(`Stripped ${start} leading zero bytes from ${settings.clubSongFile}`) }
+  }
 
   const write = (n, d) => writeFile(path.join(OUT, n), JSON.stringify(d, null, 2))
   const anglerList = [...anglers.values()]

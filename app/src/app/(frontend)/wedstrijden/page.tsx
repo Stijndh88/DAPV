@@ -90,7 +90,8 @@ export default async function Wedstrijden({ searchParams }: Props) {
                         {fmtKg(top.weight)} kg
                       </>
                     ) : past ? (
-                      'Uitslag volgt'
+                      // a result is usually posted within days; after a month, say there is none
+                      daysUntil(c.date) < -30 ? 'Geen uitslag' : 'Uitslag volgt'
                     ) : (
                       c.price ?? ''
                     )}

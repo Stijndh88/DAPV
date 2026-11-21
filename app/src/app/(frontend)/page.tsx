@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Competition, Water } from '@/payload-types'
 import { payload, getSettings } from '@/lib/payload'
-import { getStandings } from '@/lib/standings'
+import { getLatestStandings } from '@/lib/standings'
 import { fmtDate, fmtKg, fmtShort, fmtWeekday, relativeDay, typeLabel, ucfirst } from '@/lib/format'
 import { Bobber, Waterline } from '@/components/site/Waterline'
 import { Img } from '@/components/site/Img'
@@ -30,8 +30,7 @@ export default async function Home() {
   const next = upcoming.docs[0]
   const later = upcoming.docs.slice(1)
   const season = next?.season ?? new Date().getFullYear()
-  let standings = await getStandings(season)
-  if (standings.rows.length === 0 && season > 2000) standings = await getStandings(season - 1)
+  const standings = await getLatestStandings(season)
   const result = lastResult.docs[0]
   const resultComp = result && typeof result.competition === 'object' ? result.competition : null
   const winner = result?.entries?.[0]

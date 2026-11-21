@@ -589,8 +589,8 @@
     ]
   },
   {
-    "slug": "2022-gp-fam-verpeten-wordt-later-gevist",
-    "title": "GP Fam. Verpeten WORDT LATER GEVIST",
+    "slug": "2022-gp-fam-verpeten",
+    "title": "GP Fam. Verpeten",
     "date": "2022-06-25",
     "startTime": "09:00",
     "endTime": "12:00",
@@ -599,8 +599,8 @@
     "type": "club",
     "season": 2022,
     "countsForStandings": true,
-    "status": "gespeeld",
-    "notes": "Telt mee voor de Super Prestige. Geen uitslag gepubliceerd op de oude website.",
+    "status": "verplaatst",
+    "notes": "Telt mee voor de Super Prestige. Uitgesteld: wordt later gevist (zo stond het op de oude kalender).",
     "oldPaths": [],
     "results": null,
     "textHtml": null
