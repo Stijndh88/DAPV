@@ -24,6 +24,9 @@ for (const f of files) {
   const abs = path.join(ROOT, f)
   const s = await stat(abs).catch(() => null)
   if (!s || s.size <= LIMIT) continue
+  // only resize what is larger than 2560 px, so running this twice changes nothing
+  const [w, h] = execFileSync('identify', ['-format', '%w %h', `${abs}[0]`]).toString().split(' ').map(Number)
+  if (Math.max(w, h) <= 2560) continue
   const args = /\.png$/i.test(f) ? [abs, '-resize', '2560x2560>', abs] : [abs, '-resize', '2560x2560>', '-quality', '85', abs]
   execFileSync('convert', args)
   n++

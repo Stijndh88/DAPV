@@ -3,7 +3,6 @@
 // that matches the Payload collections in /app.
 //   node src/transform.mjs [--now 2026-11-20]
 import { readFile, writeFile, mkdir, readdir } from 'node:fs/promises'
-import { createHash } from 'node:crypto'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import * as cheerio from 'cheerio'
@@ -542,14 +541,10 @@ async function main() {
     .map((m) => ({ file: bestFile(m.source_url), title: decodeEntities(m.title?.rendered ?? ''), date: m.date.slice(0, 10) }))
     .filter((m) => m.file && !PLACEHOLDER.test(m.file) && !used.has(m.file))
     .sort((a, b) => a.date.localeCompare(b.date))
-  // skip exact duplicates (the same photo uploaded twice under another name)
-  const hashOf = async (f) => createHash('md5').update(await readFile(path.join(ROOT, f))).digest('hex')
-  const seenHashes = new Set(await Promise.all([...used].map((f) => hashOf(f).catch(() => f))))
-  const archiveFiles = []
-  for (const m of archive) {
-    const h = await hashOf(m.file).catch(() => m.file)
-    if (!seenHashes.has(h)) { seenHashes.add(h); archiveFiles.push(m) }
-  }
+  // skip photos that were uploaded twice under another name (seed/media-duplicates.json)
+  const dupes = (await readJson(path.join(ROOT, 'seed', 'media-duplicates.json'), { duplicates: {} })).duplicates
+  const seenArchive = new Set()
+  const archiveFiles = archive.filter((m) => !dupes[path.basename(m.file)] && !seenArchive.has(m.file) && seenArchive.add(m.file))
   if (archiveFiles.length) {
     albums.push({
       slug: 'archief-vorige-website', title: 'Archief vorige website', date: archiveFiles.at(-1).date,
