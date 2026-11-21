@@ -10,7 +10,7 @@ name: Pages demo
 on:
   push:
     branches: [main]
-    paths: [app/**, migration/data/**, demo/**, .github/workflows/pages-demo.yml]
+    paths: [app/**, migration/data/**, demo/**, designs/**, .github/workflows/pages-demo.yml]
   workflow_dispatch:
 
 permissions:
@@ -89,6 +89,10 @@ jobs:
             --out "$RUNNER_TEMP/site" \
             --static app/.next/static \
             --repo "${{ github.server_url }}/${{ github.repository }}"
+
+      - name: Add the design proposals under /designs/
+        working-directory: .
+        run: cp -r designs/site "$RUNNER_TEMP/site/designs"
 
       - uses: actions/upload-pages-artifact@v3
         with:

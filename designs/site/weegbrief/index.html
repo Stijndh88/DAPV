@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weegbrief · De Aalsterse Plasvissers</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;600;700&family=Archivo:wght@400;600&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #F5EFC4; --paper-2: #EFE6AE; --form: #C1272D; --rule: rgba(193,39,45,.38);
+  --pen: #1D3C9C; --print: #2A2620; --soft: #6E6552;
+}
+* { box-sizing: border-box; }
+html { background: var(--paper); }
+body { margin: 0; color: var(--print); font: 400 17px/1.55 Archivo, system-ui, sans-serif;
+  background: var(--paper) repeating-linear-gradient(transparent 0 31px, rgba(29,60,156,.06) 31px 32px); }
+a { color: var(--pen); }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--pen); outline-offset: 3px; }
+.hand { font-family: 'Nanum Pen Script', cursive; color: var(--pen); font-size: 1.45em; line-height: 1.05; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+h1, h2, h3, .label { font-family: 'Archivo Narrow', sans-serif; color: var(--form); }
+h2 { font-size: clamp(30px, 4vw, 44px); line-height: 1.05; margin: 0 0 6px; font-weight: 700; }
+.sub { color: var(--soft); margin: 0 0 24px; max-width: 60ch; }
+
+/* Pre-printed header */
+.top { border-bottom: 3px double var(--form); }
+.top .wrap { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px 24px; padding-block: 18px 12px; }
+.brand { font-family: 'Archivo Narrow'; color: var(--form); line-height: 1.1; }
+.brand b { display: block; font-size: 24px; }
+.brand span { font-size: 14px; }
+nav ul { display: flex; flex-wrap: wrap; gap: 4px 20px; margin: 0; padding: 0; list-style: none; font-family: 'Archivo Narrow'; font-weight: 600; }
+nav a { color: var(--form); text-decoration: none; border-bottom: 1px solid var(--rule); }
+nav a:hover { border-color: var(--form); }
+
+/* Hero: the filled-in slip */
+.hero { padding: 48px 0 64px; display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 48px; align-items: start; }
+.slip { position: relative; background: #FBF7DD; border: 2px solid var(--form); padding: 22px 24px 26px;
+  box-shadow: 0 1px 0 var(--paper-2), 6px 8px 0 -2px rgba(42,38,32,.08); }
+.slip::before { content: ''; position: absolute; left: 0; right: 0; top: -9px; height: 9px;
+  background: radial-gradient(circle at 6px 9px, var(--paper) 4px, transparent 4.5px) 0 0/16px 9px repeat-x; }
+.slip h1 { margin: 0 0 14px; font-size: 15px; font-weight: 700; display: flex; justify-content: space-between; border-bottom: 1px solid var(--form); padding-bottom: 8px; }
+.fields { display: grid; grid-template-columns: 1fr 1fr; gap: 0 20px; margin-bottom: 18px; }
+.field { border-bottom: 1px solid var(--rule); padding: 4px 0 2px; min-height: 48px; }
+.field.wide { grid-column: 1 / -1; }
+.field .label { display: block; font-size: 12.5px; font-weight: 600; }
+.field .hand { font-size: 30px; }
+table { width: 100%; border-collapse: collapse; }
+th { font-family: 'Archivo Narrow'; font-weight: 600; font-size: 13px; color: var(--form); text-align: left; border-bottom: 1.5px solid var(--form); padding: 4px 8px 4px 0; }
+td { border-bottom: 1px solid var(--rule); padding: 4px 8px 4px 0; vertical-align: baseline; }
+td.num, th.num { text-align: right; white-space: nowrap; }
+.slip td.hand { font-size: 26px; }
+tr.gast td { opacity: .7; }
+small { font-family: Archivo; font-size: 12px; color: var(--soft); }
+.stamp { position: absolute; right: 20px; bottom: 16px; transform: rotate(-9deg); border: 3px solid var(--form); color: var(--form);
+  font: 700 15px/1.15 'Archivo Narrow'; text-align: center; padding: 8px 12px; border-radius: 6px; opacity: .82; mix-blend-mode: multiply;
+  background: radial-gradient(rgba(193,39,45,.08), transparent 70%); }
+.stamp b { display: block; font-size: 24px; }
+.signed { display: flex; justify-content: space-between; gap: 16px; margin-top: 18px; min-height: 84px; font-size: 13px; color: var(--form); font-family: 'Archivo Narrow'; }
+.signed .hand { font-size: 34px; display: block; transform: rotate(-3deg); }
+.side figure { margin: 0; position: relative; transform: rotate(1.6deg); background: #fff; padding: 10px 10px 34px; box-shadow: 0 2px 4px rgba(0,0,0,.12); }
+.side figure::before { content: ''; position: absolute; top: -12px; left: 38%; width: 90px; height: 26px; background: rgba(240,234,190,.75); transform: rotate(-4deg); border: 1px solid rgba(0,0,0,.05); }
+.side img { width: 100%; height: auto; display: block; aspect-ratio: 4/3; object-fit: cover; }
+.side figcaption { position: absolute; bottom: 4px; left: 12px; }
+.side .note { margin-top: 30px; }
+.side .note p { margin: 0 0 12px; }
+.btn { display: inline-block; font: 700 16px 'Archivo Narrow'; color: #fff; background: var(--form); padding: 10px 18px; text-decoration: none; border-radius: 2px; }
+.btn.ghost { background: none; color: var(--form); border: 1.5px solid var(--form); }
+
+section { padding: 56px 0; border-top: 3px double var(--form); }
+.register { overflow-x: auto; }
+.register table { min-width: 760px; }
+.register td { padding: 8px 10px 6px 0; }
+.register .hand { font-size: 25px; }
+.kind { font-size: 13px; color: var(--soft); }
+.tick { font-family: 'Nanum Pen Script'; font-size: 34px; color: var(--pen); line-height: .6; }
+.tick.dim { opacity: .35; }
+
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+.tally { list-style: none; margin: 0; padding: 0; }
+.tally li { display: grid; grid-template-columns: 34px auto 1fr auto; align-items: baseline; gap: 8px; border-bottom: 1px solid var(--rule); padding: 6px 0; }
+.tally .pos { font-family: 'Archivo Narrow'; color: var(--form); font-weight: 700; }
+.tally .who, .tally .w { font-size: 28px; }
+.tally .dots { border-bottom: 2px dotted rgba(29,60,156,.3); transform: translateY(-6px); }
+.card { background: #FBF7DD; border: 2px solid var(--form); border-radius: 10px; padding: 22px 24px; position: relative; }
+.card h3 { margin: 0; font-size: 26px; }
+.card .no { position: absolute; right: 22px; top: 22px; font-family: 'Archivo Narrow'; color: var(--form); font-size: 13px; text-align: right; }
+.card .no .hand { display: block; font-size: 30px; }
+.card ul { list-style: none; padding: 0; margin: 18px 0; }
+.card li { display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--rule); padding: 4px 0; font-size: 14px; color: var(--form); font-family: 'Archivo Narrow'; align-items: baseline; }
+.card li .hand { font-size: 26px; }
+.history p { max-width: 68ch; }
+.history p:first-child::first-letter { font: 700 3.4em/0.8 'Archivo Narrow'; color: var(--form); float: left; padding: 6px 8px 0 0; }
+footer { border-top: 3px double var(--form); padding: 32px 0 48px; font-size: 13px; color: var(--soft); }
+footer .cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+footer h3 { font-size: 15px; margin: 0 0 6px; }
+footer ol { margin: 0; padding-left: 18px; }
+.copy { margin-top: 28px; font-family: 'Archivo Narrow'; color: var(--form); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+
+@media (max-width: 860px) {
+  .hero, .two, footer .cols { grid-template-columns: 1fr; }
+  .hero { gap: 40px; }
+}
+@media (max-width: 520px) {
+  .wrap { padding: 0 16px; }
+  .fields { grid-template-columns: 1fr; }
+  .slip { padding: 18px 14px; }
+  .slip td.hand { font-size: 22px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .stamp { animation: thump .5s cubic-bezier(.2,1.6,.4,1) .5s both; }
+  @keyframes thump { from { transform: rotate(-9deg) scale(1.6); opacity: 0; } }
+}
+</style>
+</head>
+<body>
+<div style="font:500 13px/1.4 system-ui,sans-serif;background:#16202a;color:#e8eef2;padding:8px 16px;display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between">
+  <span>Ontwerpvoorstel: Weegbrief. Echte clubinhoud, geen werkende site.</span>
+  <a href="../" style="color:#9fd3ff">Alle voorstellen bekijken</a></div>
+<header class="top"><div class="wrap">
+  <div class="brand"><b>De Aalsterse Plasvissers</b><span>Opgericht in 1969, stamnummer 02001</span></div>
+  <nav aria-label="Hoofdmenu"><ul>
+    <li><a href="#uitslag">Uitslag</a></li><li><a href="#kalender">Kalender</a></li>
+    <li><a href="#stand">Stand</a></li><li><a href="#club">De club</a></li><li><a href="#reglement">Reglement</a></li></ul></nav>
+</div></header>
+
+<main>
+<div class="wrap hero" id="uitslag">
+  <article class="slip" aria-labelledby="slip-title">
+    <h1 id="slip-title"><span>Weegbrief</span><span>Seizoen 2026</span></h1>
+    <div class="fields">
+      <div class="field wide"><span class="label">Wedstrijd</span><span class="hand">GP Jurgen &amp; Paul</span></div>
+      <div class="field"><span class="label">Datum</span><span class="hand">zaterdag 3 oktober 2026</span></div>
+      <div class="field"><span class="label">Water</span><span class="hand">Brasemput, Baasrode</span></div>
+      <div class="field"><span class="label">Loting</span><span class="hand">07:45</span></div>
+      <div class="field"><span class="label">Aanvang</span><span class="hand">09:00</span></div>
+    </div>
+    <table>
+      <thead><tr><th class="num">Pl.</th><th>Visser</th><th class="num">Stek</th><th class="num">Gewicht</th></tr></thead>
+      <tbody><tr>
+          <td class="num">1</td><td class="hand">Yvan Van Migerode</td>
+          <td class="num hand">13</td><td class="num hand">54,25 kg</td></tr><tr>
+          <td class="num">2</td><td class="hand">Werner Bassleer</td>
+          <td class="num hand">19</td><td class="num hand">45,70 kg</td></tr><tr>
+          <td class="num">3</td><td class="hand">Steven Huysegoms</td>
+          <td class="num hand">7</td><td class="num hand">38,70 kg</td></tr><tr>
+          <td class="num">4</td><td class="hand">Diego Ruysschaert</td>
+          <td class="num hand">4</td><td class="num hand">36,10 kg</td></tr><tr>
+          <td class="num">5</td><td class="hand">Bart Meert</td>
+          <td class="num hand">27</td><td class="num hand">33,15 kg</td></tr><tr>
+          <td class="num">6</td><td class="hand">Rudy De Braeckeleer</td>
+          <td class="num hand">30</td><td class="num hand">30,15 kg</td></tr><tr>
+          <td class="num">7</td><td class="hand">Geert Wijnant</td>
+          <td class="num hand">33</td><td class="num hand">12,20 kg</td></tr><tr>
+          <td class="num">8</td><td class="hand">Pascal Cornand</td>
+          <td class="num hand">10</td><td class="num hand">11,10 kg</td></tr><tr>
+          <td class="num">9</td><td class="hand">Jurgen Van Broeck</td>
+          <td class="num hand">24</td><td class="num hand">9,10 kg</td></tr><tr class="gast">
+          <td class="num">10</td><td class="hand">Mike <small>gast</small></td>
+          <td class="num hand">21</td><td class="num hand">5,80 kg</td></tr><tr>
+          <td class="num">11</td><td class="hand">Paul Couck</td>
+          <td class="num hand">16</td><td class="num hand">0,85 kg</td></tr></tbody>
+    </table>
+    <div class="signed"><span>Voor echt verklaard<span class="hand">het bestuur</span></span></div>
+    <div class="stamp" aria-hidden="true">Laatste uitslag<b>3 oktober</b>11 vissers</div>
+  </article>
+
+  <aside class="side">
+    <figure><img src="../assets/karper-meer.jpg" alt="Een clublid toont een karper aan de waterkant" width="1200" height="900">
+      <figcaption class="hand">uit het fotoboek</figcaption></figure>
+    <div class="note">
+      <p class="hand" style="font-size:34px">Al meer dan 50 jaar de tofste club van &#x27;t stad!</p>
+      <p>We vissen van april tot oktober op wateren rond Aalst, met een grote prijs of een reeks van het kampioenschap bijna elke zaterdag. Iedereen weegt op hetzelfde blad.</p>
+      <p><a class="btn" href="#club">Lid worden</a> <a class="btn ghost" href="#kalender">Kalender 2026</a></p>
+    </div>
+  </aside>
+</div>
+
+<section id="kalender"><div class="wrap">
+  <h2>Kalender 2026</h2>
+  <p class="sub">Alle 24 wedstrijden van het seizoen. Een vinkje betekent dat de uitslag op de site staat.</p>
+  <div class="register"><table>
+    <thead><tr><th class="num">Nr.</th><th>Datum</th><th>Wedstrijd</th><th>Water</th><th class="num">Loting</th><th class="num">Aanvang</th><th class="num">Uitslag</th></tr></thead>
+    <tbody><tr>
+          <td class="num">1</td>
+          <td><span class="hand">zaterdag 4 april</span></td>
+          <td><strong>GP Fam. Arijs</strong><br><span class="kind">Grote prijs</span></td>
+          <td class="hand">De Meerse Lijnvissers, Mere</td>
+          <td class="num hand">07:45</td><td class="num hand">09:00</td>
+          <td class="num"><span class="tick dim" title="Gespeeld">✓</span></td></tr><tr>
+          <td class="num">2</td>
+          <td><span class="hand">zaterdag 11 april</span></td>
+          <td><strong>1° Reeks Kampioenschap</strong><br><span class="kind">Kampioenschap</span></td>
+          <td class="hand">Dendervissers, Gijzegem</td>
+          <td class="num hand">08:00</td><td class="num hand">10:00</td>
+          <td class="num"><span class="tick dim" title="Gespeeld">✓</span></td></tr><tr>
+          <td class="num">3</td>
+          <td><span class="hand">zaterdag 18 april</span></td>
+          <td><strong>2° Reeks Kampioenschap</strong><br><span class="kind">Kampioenschap</span></td>
+          <td class="hand">Humbeek, Humbeek</td>
+          <td class="num hand">07:45</td><td class="num hand">09:00</td>
+          <td class="num"><span class="tick dim" title="Gespeeld">✓</span></td></tr><tr>
+          <td class="num">4</td>
+          <td><span class="hand">zaterdag 25 april</span></td>
+          <td><strong>3° Reeks Kampioenschap</strong><br><span class="kind">Kampioenschap</span></td>
+          <td class="hand">Dender, Liedekerke</td>
+          <td class="num hand">08:00</td><td class="num hand">10:00</td>
+          <td class="num"><span class="tick dim" title="Gespeeld">✓</span></td></tr><tr>
+          <td class="num">5</td>
+          <td><span class="hand">zaterdag 2 mei</span></td>
+          <td><strong>GP Ophalvens Remi</strong><br><span class="kind">Grote prijs</span></td>
+          <td class="hand">Meldert vijver, Meldert</td>
+          <td class="num hand">07:45</td><td class="num hand">09:00</td>
+          <td class="num"><span class="tick dim" title="Gespeeld">✓</span></td></tr><tr>
+          <td class="num">6</td>
+          <td><span class="hand">zaterdag 9 mei</span></td>
+          <td><strong>4° Reeks Kampioenschap</strong><br><span class="kind">Kampioenschap</span></td>
+          <td class="hand">Vissershof, Mere</td>
+          <td class="num hand">07:45</td><td class="num hand">09:00</td>
+          <td class="num"><span class="tick dim" title="Gespeeld">✓</span></td></tr><tr>
+          <td class="num">7</td>
+          <td><span class="hand">zaterdag 23 mei</span></td>
+          <td><strong>GP Heck Freddy</strong><br><span class="kind">Grote prijs</span></td>
+          <td class="hand">Ponderosa, Okegem</td>
+          <td class="num hand">07:45</td><td class="num hand">09:00</td>
+          <td class="num"><span class="tick dim" title="Gespeeld">✓</span></td></tr><tr>
+          <td class="num">8</td>
+          <td><span class="hand">zaterdag 30 mei</span></td>
+          <td><strong>GP Stijn en Simon</strong><br><span class="kind">Grote prijs</span></td>
+          <td class="hand">Humbeek, Humbeek</td>
+          <td class="num hand">07:45</td><td class="num hand">09:00</td>
+          <td class="num"><span class="tick dim" title="Gespeeld">✓</span></td></tr><tr>
+          <td class="num">9</td>
+          <td><span class="hand">zaterdag 6 juni</span></td>
+          <td><strong>Marathon</strong><br><span class="kind">Clubfeest</span></td>
+          <td class="hand">Donkvissers, Mere</td>
+          <td class="num hand">07:45</td><td class="num hand">09:00</td>
+          <td class="num"><span class="tick dim" title="Gespeeld">✓</span></td></tr><tr>
+          <td class="num">10</td>
+          <td><span class="hand">zaterdag 13 juni</span></td>
+          <td><strong>België - Duitsland</strong><br><span class="kind">Vriendschappelijk</span></td>
+          <td class="hand">Ponderosa, Okegem</td>
+          <td class="num hand">08:15</td><td class="num hand">09:30</td>
+          <td class="num"><span class="tick dim" title="Gespeeld">✓</span></td></tr><tr>
+          <td class="num">11</td>
+          <td><span class="hand">zaterdag 20 juni</span></td>
+          <td><strong>Koningschap</strong><br><span class="kind">Clubfeest</span></td>
+          <td class="hand">Vissershof, Mere</td>
+          <td class="num hand">–</td><td class="num hand">09:30</td>
+          <td class="num"><span class="tick dim" title="Gespeeld">✓</span></td></tr><tr>
+          <td class="num">12</td>
+          <td><span class="hand">zaterdag 27 juni</span></td>
+          <td><strong>GP Bestuur</strong><br><span class="kind">Grote prijs</span></td>
+          <td class="hand">MDM, Nederzwalm</td>
+          <td class="num hand">07:45</td><td class="num hand">09:00</td>
+          <td class="num"><span class="tick dim" title="Gespeeld">✓</span></td></tr><tr>
+          <td class="num">13</td>
+          <td><span class="hand">zaterdag 4 juli</span></td>
+          <td><strong>Trouwfeest Jurgen</strong><br><span class="kind">Clubfeest</span></td>
+          <td class="hand">De Mooie Molen</td>
+          <td class="num hand">–</td><td class="num hand">–</td>
+          <td class="num"><span class="tick dim" title="Gespeeld">✓</span></td></tr><tr>
+          <td class="num">14</td>
+          <td><span class="hand">zaterdag 1 augustus</span></td>
+          <td><strong>Avondvissing</strong><br><span class="kind">Avondvissing</span></td>
+          <td class="hand">Vissershof, Mere</td>
+          <td class="num hand">12:45</td><td class="num hand">14:00</td>
+          <td class="num"><span class="tick dim" title="Gespeeld">✓</span></td></tr><tr>
+          <td class="num">15</td>
+          <td><span class="hand">zaterdag 8 augustus</span></td>
+          <td><strong>Koppelwedstrijd</strong><br><span class="kind">Koppelvissing</span></td>
+          <td class="hand">Meikopvissers, Hamme</td>
+          <td class="num hand">07:45</td><td class="num hand">09:00</td>
+          <td class="num"><span class="tick dim" title="Gespeeld">✓</span></td></tr><tr>
+          <td class="num">16</td>
+          <td><span class="hand">zaterdag 22 augustus</span></td>
+          <td><strong>GP Wedstrijd Bart &amp; Chris</strong><br><span class="kind">Grote prijs</span></td>
+          <td class="hand">De Lustige Visser, Idegem</td>
+          <td class="num hand">07:45</td><td class="num hand">09:00</td>
+          <td class="num"><span class="tick dim" title="Gespeeld">✓</span></td></tr><tr>
+          <td class="num">17</td>
+          <td><span class="hand">zaterdag 29 augustus</span></td>
+          <td><strong>GP Bassleer Conny &amp; Peter</strong><br><span class="kind">Grote prijs</span></td>
+          <td class="hand">De Meerse Lijnvissers, Mere</td>
+          <td class="num hand">07:45</td><td class="num hand">09:00</td>
+          <td class="num"><span class="tick dim" title="Gespeeld">✓</span></td></tr><tr>
+          <td class="num">18</td>
+          <td><span class="hand">zaterdag 5 september</span></td>
+          <td><strong>Duitsland - België</strong><br><span class="kind">Vriendschappelijk</span></td>
+          <td class="hand">Schwerte am Ruhr, Schwerte</td>
+          <td class="num hand">–</td><td class="num hand">–</td>
+          <td class="num"><span class="tick dim" title="Gespeeld">✓</span></td></tr><tr>
+          <td class="num">19</td>
+          <td><span class="hand">zaterdag 12 september</span></td>
+          <td><strong>GP Evert &amp; Rudy</strong><br><span class="kind">Grote prijs</span></td>
+          <td class="hand">Kyma, Baasrode</td>
+          <td class="num hand">07:45</td><td class="num hand">09:00</td>
+          <td class="num"><span class="tick" title="Uitslag binnen">✓</span></td></tr><tr>
+          <td class="num">20</td>
+          <td><span class="hand">zaterdag 19 september</span></td>
+          <td><strong>Grote Prijs Van Migerode Yvan</strong><br><span class="kind">Grote prijs</span></td>
+          <td class="hand">De Lustige Lijnvissers, Schellebelle</td>
+          <td class="num hand">07:45</td><td class="num hand">09:00</td>
+          <td class="num"><span class="tick" title="Uitslag binnen">✓</span></td></tr><tr>
+          <td class="num">21</td>
+          <td><span class="hand">zaterdag 26 september</span></td>
+          <td><strong>GP Muller &amp; Diego</strong><br><span class="kind">Grote prijs</span></td>
+          <td class="hand">Marikjell, Denderhoutem</td>
+          <td class="num hand">07:45</td><td class="num hand">09:00</td>
+          <td class="num"><span class="tick dim" title="Gespeeld">✓</span></td></tr><tr>
+          <td class="num">22</td>
+          <td><span class="hand">zaterdag 3 oktober</span></td>
+          <td><strong>GP Jurgen &amp; Paul</strong><br><span class="kind">Grote prijs</span></td>
+          <td class="hand">Brasemput, Baasrode</td>
+          <td class="num hand">07:45</td><td class="num hand">09:00</td>
+          <td class="num"><span class="tick" title="Uitslag binnen">✓</span></td></tr><tr>
+          <td class="num">23</td>
+          <td><span class="hand">zaterdag 10 oktober</span></td>
+          <td><strong>GP Café Parking</strong><br><span class="kind">Grote prijs</span></td>
+          <td class="hand">Dendervissers, Gijzegem</td>
+          <td class="num hand">08:00</td><td class="num hand">10:00</td>
+          <td class="num"><span class="tick dim" title="Gespeeld">✓</span></td></tr><tr>
+          <td class="num">24</td>
+          <td><span class="hand">zaterdag 17 oktober</span></td>
+          <td><strong>GP Bassleer</strong><br><span class="kind">Grote prijs</span></td>
+          <td class="hand">Dendervissers, Gijzegem</td>
+          <td class="num hand">08:00</td><td class="num hand">10:00</td>
+          <td class="num"><span class="tick dim" title="Gespeeld">✓</span></td></tr></tbody></table></div>
+</div></section>
+
+<section id="stand"><div class="wrap two">
+  <div>
+    <h2>Seizoensgewicht</h2>
+    <p class="sub">Opgeteld over de grote prijzen van 2026 met een gepubliceerde uitslag, enkel leden.</p>
+    <ol class="tally"><li><span class="pos">1</span><span class="hand who">Werner Bassleer</span>
+        <span class="dots"></span><span class="hand w">211,13 kg</span></li><li><span class="pos">2</span><span class="hand who">Bart Meert</span>
+        <span class="dots"></span><span class="hand w">132,31 kg</span></li><li><span class="pos">3</span><span class="hand who">Rudy De Braeckeleer</span>
+        <span class="dots"></span><span class="hand w">127,77 kg</span></li><li><span class="pos">4</span><span class="hand who">Jurgen Van Broeck</span>
+        <span class="dots"></span><span class="hand w">123,48 kg</span></li><li><span class="pos">5</span><span class="hand who">Yvan Van Migerode</span>
+        <span class="dots"></span><span class="hand w">121,77 kg</span></li><li><span class="pos">6</span><span class="hand who">Geert Wijnant</span>
+        <span class="dots"></span><span class="hand w">116,06 kg</span></li><li><span class="pos">7</span><span class="hand who">Diego Ruysschaert</span>
+        <span class="dots"></span><span class="hand w">95,18 kg</span></li><li><span class="pos">8</span><span class="hand who">Pascal Cornand</span>
+        <span class="dots"></span><span class="hand w">78,18 kg</span></li><li><span class="pos">9</span><span class="hand who">Steven Huysegoms</span>
+        <span class="dots"></span><span class="hand w">38,70 kg</span></li><li><span class="pos">10</span><span class="hand who">Paul Couck</span>
+        <span class="dots"></span><span class="hand w">32,93 kg</span></li></ol>
+  </div>
+  <div class="history" id="club">
+    <h2>Sinds 1969</h2>
+    <p>De club is opgericht in 1969 door de heer Petrus Bassleer in café ’t Plasken. De eerste vergadering kon toch de aandacht trekken van zo’n zestig personen. Op dat moment was er nog geen voorzitter aangesteld. Na overleg met de aanwezigen werd er beslist om Jozef Bassleer aan te stellen, die op dat moment nog voorzitter was bij de Ajuinvissers. Eerst werd er nog druk overlegd tussen vader en zoon maar het voorzitterschap werd toch aanvaard en zo had de club ‘De Aalsterse Plasvissers’ hun patron. Het ledenbestand groeide aan tot ongeveer tachtig leden, wat voor een beginnende club al veel te veel was. De maatregel om maximum 50 leden te aanvaarden, was dan ook niet onoverkomelijk. Deze regel is nu nog steeds van kracht.</p><p>De Plasvissers verlegden ook hun grenzen. De voorzitter van de club nam contact op met Belgische militairen die in Duitsland gekazerneerd waren in Ludenscheid om eens een wedstrijd te organiseren tussen beide clubs. Na 3 jaar was de Duitse club Schwerte-Rurh ook geïnteresseerd om mee te vissen. Deze traditie wordt nog steeds in stand gehouden, en dit al 35 jaar lang.</p>
+  </div>
+</div></section>
+
+<section><div class="wrap two">
+  <div class="card" aria-labelledby="lidkaart">
+    <div class="no">Lidnummer<span class="hand">…</span></div>
+    <h3 id="lidkaart">Lidkaart 2027</h3>
+    <p style="margin:6px 0 0;max-width:34ch">Maximum vijftig leden, al sinds de eerste vergadering. Er is nog plaats.</p>
+    <ul><li><span>Voorzitter</span><span class='hand'>Werner Bassleer</span></li><li><span>Ondervoorzitter</span><span class='hand'>Evert De Wuffel</span></li><li><span>Secretaris</span><span class='hand'>Diego Ruysschaert</span></li><li><span>Schatbewaarder</span><span class='hand'>Conny Bassleer</span></li><li><span>Bestuurslid</span><span class='hand'>Rudy De Braeckeleer</span></li><li><span>Bestuurslid</span><span class='hand'>Ronny Arijs</span></li></ul>
+    <a class="btn" href="mailto:werner@plasvissers.be">Vraag een lidkaart aan</a>
+  </div>
+  <div>
+    <h2>Clublokaal</h2>
+    <p class="hand" style="font-size:40px;margin:8px 0 4px">Café @ De Parking</p>
+    <p>Botermelkstraat 46<br>9300 Aalst</p>
+    <p>Hier wordt na elke wedstrijd nagekaart, en hier hangt de stand aan de muur.</p>
+    <p><a href="https://www.facebook.com/atdeparking/">Café @ De Parking op Facebook</a></p>
+  </div>
+</div></section>
+</main>
+
+<footer id="reglement"><div class="wrap">
+  <div class="cols">
+    <div><h3>Reglement</h3><ol><li>Bij wedstrijden zoals koningschap, marathon, grote prijs (GP) en koppelvissing zal er gevist worden naar zuiver gewicht.</li><li>Bij het kampioenschap mag men de slechtst geviste wedstrijd laten vallen.</li><li>Bij een afwezigheid der reeksen komt men niet meer in aanmerking voor de titels.</li><li>Bij gelijke punten worden de punten van de vier reeksen opgenomen.</li></ol></div>
+    <div><h3>Voederregels</h3><ol><li>Bij doorlopende wedstrijden (zonder onderbreking voor de weging) is maximum 1 doos amorce vers-de-vase toegestaan.</li><li>Bij wedstrijden in twee delen (met onderbreking voor de weging) is maximum 1 kg amorce vers-de-vase in de voormiddag en maximum 1 kg in de namiddag toegestaan.</li><li>Drijvend aas, lok- of haakvoer is te allen tijde verboden in onze club, ook als de beheerder van het viswater het toelaat.</li><li>Voeder je met granen of zaden, dan gebruik je de clubemmer. Maximum 2 emmers per dag.</li></ol></div>
+    <div><h3>Contact</h3><p>Werner Bassleer, voorzitter<br><a href="mailto:werner@plasvissers.be">werner@plasvissers.be</a></p></div>
+  </div>
+  <div class="copy"><span>De Aalsterse Plasvissers, stamnummer 02001</span><span>Exemplaar voor de visser</span></div>
+</div></footer>
+</body></html>
