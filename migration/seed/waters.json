@@ -1,12 +1,14 @@
 {
-  "_source": "plasvissers.be /vislocaties/ and its subpages, read 2026-11-20. Addresses only where the site gives one. aliases help match calendar 'Water' cells.",
+  "_source": "plasvissers.be /vislocaties/ and its subpages, read 2026-11-20. Addresses only where the site gives one. aliases help match calendar 'Water' cells. 2026 additions from the paper calendar (photo 21/11/2026).",
   "waters": [
     {
       "name": "Donkvissers",
       "place": "Mere",
       "aliases": [
-        "donk"
-      ]
+        "donk",
+        "donkvissers"
+      ],
+      "_note": "2026 calendar says 'Donkvissers - Erpe'; Erpe and Mere are both Erpe-Mere."
     },
     {
       "name": "Koutervissers",
@@ -102,9 +104,10 @@
       "name": "Humbeek",
       "place": "Humbeek",
       "aliases": [
-        "humbeek"
+        "humbeek",
+        "humbeekse lijnvissers"
       ],
-      "_note": "Only the town is known from the calendar."
+      "_note": "Only the town is known from the calendar. The 2026 calendar says 'Humbeekse Lijnvissers': assumed to be the same water (check)."
     },
     {
       "name": "Staatswater",
@@ -136,6 +139,91 @@
         "schellebelle"
       ],
       "_note": "Water of the club De Lustige Lijnvissers."
+    },
+    {
+      "name": "Dender",
+      "place": "Liedekerke",
+      "aliases": [
+        "liedekerke"
+      ],
+      "_note": "2026 calendar: 'Dender - Liedekerke'. Exact spot unknown."
+    },
+    {
+      "name": "MDM",
+      "place": "Nederzwalm",
+      "aliases": [
+        "mdm",
+        "nederzwalm"
+      ],
+      "_note": "2026 calendar: 'MDM - Nederzwalm'. Full name unknown."
+    },
+    {
+      "name": "De Mooie Molen",
+      "place": null,
+      "aliases": [
+        "mooie molen"
+      ],
+      "_note": "2026 calendar, Trouwfeest Jurgen (a party, not a water). Place unknown."
+    },
+    {
+      "name": "Meikopvissers",
+      "place": "Hamme",
+      "aliases": [
+        "meikop"
+      ],
+      "_note": "2026 calendar: 'Meikopvissers - Hamme'."
+    },
+    {
+      "name": "De Lustige Visser",
+      "place": "Idegem",
+      "aliases": [
+        "lustige visser -",
+        "lustige visser"
+      ],
+      "_note": "2026 calendar: 'De Lustige Visser(s) - Idegem'. Maybe the same water as Tommy Neckebroeck, Idegem (check)."
+    },
+    {
+      "name": "Karperput",
+      "place": "Baasrode",
+      "aliases": [
+        "karperput"
+      ],
+      "_note": "2026 calendar for GP Evert & Rudy; the result sheet says Kyma - Baasrode."
+    },
+    {
+      "name": "Marikjell",
+      "place": "Denderhoutem",
+      "aliases": [
+        "marikjell",
+        "denderhoutem"
+      ],
+      "_note": "2026 calendar: 'Marikjell - Denderhoutem'."
+    },
+    {
+      "name": "Forten",
+      "place": "Dendermonde",
+      "aliases": [
+        "forten dendermonde",
+        "forten - dendermonde",
+        "forten"
+      ],
+      "_note": "Calendars 2022-2024: 'Forten (-) Dendermonde'. Before 2026-11-21 these matched Dendervissers Gijzegem by mistake."
+    },
+    {
+      "name": "Dender",
+      "place": "Erembodegem",
+      "aliases": [
+        "erembodegem"
+      ],
+      "_note": "Calendars: 'Dender - Erembodegem'. Exact spot unknown."
+    },
+    {
+      "name": "Donkmeer",
+      "place": "Berlare",
+      "aliases": [
+        "donkmeer"
+      ],
+      "_note": "Calendar: 'Donkmeer - Berlare'."
     }
   ]
 }

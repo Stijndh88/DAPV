@@ -15,5 +15,23 @@
     "facebook": "https://www.facebook.com/atdeparking/"
   },
   "clubSong": "/wp-content/uploads/2019/06/t-Plasvisserslieken.mp3",
+  "feedRules": [
+    {
+      "appliesTo": "continuous",
+      "text": "Bij doorlopende wedstrijden (zonder onderbreking voor de weging) is maximum 1 doos amorce vers-de-vase toegestaan."
+    },
+    {
+      "appliesTo": "twoPart",
+      "text": "Bij wedstrijden in twee delen (met onderbreking voor de weging) is maximum 1 kg amorce vers-de-vase in de voormiddag en maximum 1 kg in de namiddag toegestaan."
+    },
+    {
+      "appliesTo": "all",
+      "text": "Drijvend aas, lok- of haakvoer is te allen tijde verboden in onze club, ook als de beheerder van het viswater het toelaat."
+    },
+    {
+      "appliesTo": "all",
+      "text": "Voeder je met granen of zaden, dan gebruik je de clubemmer. Maximum 2 emmers per dag."
+    }
+  ],
   "clubSongFile": "data/media/2019/06/t-Plasvisserslieken.mp3"
 }

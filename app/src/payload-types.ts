@@ -247,6 +247,11 @@ export interface Competition {
   startTime?: string | null;
   endTime?: string | null;
   /**
+   * Alleen bij een wedstrijd in twee delen (met weging tussendoor).
+   */
+  breakStart?: string | null;
+  breakEnd?: string | null;
+  /**
    * Bv. "3e clubwedstrijd" of "Kampioenschap". Leeg = automatisch.
    */
   title?: string | null;
@@ -296,6 +301,130 @@ export interface Water {
    */
   species?: string | null;
   rules?: string | null;
+  /**
+   * Wat mag er gevoederd en aan de haak, zoals op het voederblad. Vink de soorten aan: de site toont ze als labels bij dit water en bij elke wedstrijd hier.
+   */
+  feeding?: {
+    shallow?: ('ja' | 'nee') | null;
+    clubKeepnet?: boolean | null;
+    clubPellets?: boolean | null;
+    feedAllowed?:
+      | (
+          | 'voeder'
+          | 'leem'
+          | 'witte-maden'
+          | 'casters'
+          | 'rode-maden'
+          | 'muggenlarven'
+          | 'pieren'
+          | 'insecten'
+          | 'granen'
+          | 'mais'
+          | 'korrels'
+          | 'zinkers'
+          | 'drijvend'
+          | 'deeg'
+          | 'pasta'
+          | 'den-bol'
+          | 'aasvisjes'
+        )[]
+      | null;
+    feedForbidden?:
+      | (
+          | 'voeder'
+          | 'leem'
+          | 'witte-maden'
+          | 'casters'
+          | 'rode-maden'
+          | 'muggenlarven'
+          | 'pieren'
+          | 'insecten'
+          | 'granen'
+          | 'mais'
+          | 'korrels'
+          | 'zinkers'
+          | 'drijvend'
+          | 'deeg'
+          | 'pasta'
+          | 'den-bol'
+          | 'aasvisjes'
+        )[]
+      | null;
+    hookAllowed?:
+      | (
+          | 'voeder'
+          | 'leem'
+          | 'witte-maden'
+          | 'casters'
+          | 'rode-maden'
+          | 'muggenlarven'
+          | 'pieren'
+          | 'insecten'
+          | 'granen'
+          | 'mais'
+          | 'korrels'
+          | 'zinkers'
+          | 'drijvend'
+          | 'deeg'
+          | 'pasta'
+          | 'den-bol'
+          | 'aasvisjes'
+        )[]
+      | null;
+    hookForbidden?:
+      | (
+          | 'voeder'
+          | 'leem'
+          | 'witte-maden'
+          | 'casters'
+          | 'rode-maden'
+          | 'muggenlarven'
+          | 'pieren'
+          | 'insecten'
+          | 'granen'
+          | 'mais'
+          | 'korrels'
+          | 'zinkers'
+          | 'drijvend'
+          | 'deeg'
+          | 'pasta'
+          | 'den-bol'
+          | 'aasvisjes'
+        )[]
+      | null;
+    /**
+     * Bv. "Voeder of leem: 5 kg". Kies één of meer soorten die samen onder dezelfde grens vallen.
+     */
+    limits?:
+      | {
+          baits: (
+            | 'voeder'
+            | 'leem'
+            | 'witte-maden'
+            | 'casters'
+            | 'rode-maden'
+            | 'muggenlarven'
+            | 'pieren'
+            | 'insecten'
+            | 'granen'
+            | 'mais'
+            | 'korrels'
+            | 'zinkers'
+            | 'drijvend'
+            | 'deeg'
+            | 'pasta'
+            | 'den-bol'
+            | 'aasvisjes'
+          )[];
+          amount: string;
+          id?: string | null;
+        }[]
+      | null;
+    /**
+     * Bv. "Per mande = 4 uur vissen."
+     */
+    note?: string | null;
+  };
   image?: (number | null) | Media;
   /**
    * Plak een Google Maps of OpenStreetMap link.
@@ -365,7 +494,7 @@ export interface Angler {
    */
   member?: boolean | null;
   /**
-   * Optioneel, bv. "v" (dames), "s" (senior) of "j" (jeugd). Uit oude uitslagen overgenomen.
+   * Optioneel: "s" (senior), "v" (veteraan) of "j" (junior). Uit oude uitslagen overgenomen.
    */
   category?: string | null;
   /**
@@ -715,6 +844,8 @@ export interface CompetitionsSelect<T extends boolean = true> {
   date?: T;
   startTime?: T;
   endTime?: T;
+  breakStart?: T;
+  breakEnd?: T;
   title?: T;
   water?: T;
   type?: T;
@@ -787,6 +918,25 @@ export interface WatersSelect<T extends boolean = true> {
   description?: T;
   species?: T;
   rules?: T;
+  feeding?:
+    | T
+    | {
+        shallow?: T;
+        clubKeepnet?: T;
+        clubPellets?: T;
+        feedAllowed?: T;
+        feedForbidden?: T;
+        hookAllowed?: T;
+        hookForbidden?: T;
+        limits?:
+          | T
+          | {
+              baits?: T;
+              amount?: T;
+              id?: T;
+            };
+        note?: T;
+      };
   image?: T;
   mapUrl?: T;
   slug?: T;
@@ -915,6 +1065,16 @@ export interface SiteSetting {
         id?: string | null;
       }[]
     | null;
+  /**
+   * Gelden aan elk water, bovenop de regels van het water zelf. Ze staan op elke visplaats- en wedstrijdpagina.
+   */
+  feedRules?:
+    | {
+        text: string;
+        appliesTo?: ('all' | 'continuous' | 'twoPart') | null;
+        id?: string | null;
+      }[]
+    | null;
   standingsMethod?: ('points' | 'weight') | null;
   /**
    * Aantal slechtste wedstrijden per visser dat niet meetelt. 0 = alles telt.
@@ -946,6 +1106,13 @@ export interface SiteSettingsSelect<T extends boolean = true> {
     | {
         platform?: T;
         url?: T;
+        id?: T;
+      };
+  feedRules?:
+    | T
+    | {
+        text?: T;
+        appliesTo?: T;
         id?: T;
       };
   standingsMethod?: T;

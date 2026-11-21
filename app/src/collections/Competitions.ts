@@ -66,6 +66,18 @@ export const Competitions: CollectionConfig = {
         { name: 'endTime', label: 'Einde', type: 'text', defaultValue: '17:30', admin: { width: '25%', placeholder: '17:30' } },
       ],
     },
+    {
+      type: 'row',
+      fields: [
+        {
+          name: 'breakStart',
+          label: 'Pauze van',
+          type: 'text',
+          admin: { width: '25%', placeholder: '12:00', description: 'Alleen bij een wedstrijd in twee delen (met weging tussendoor).' },
+        },
+        { name: 'breakEnd', label: 'Pauze tot', type: 'text', admin: { width: '25%', placeholder: '13:30' } },
+      ],
+    },
     { name: 'title', label: 'Naam', type: 'text', admin: { description: 'Bv. "3e clubwedstrijd" of "Kampioenschap". Leeg = automatisch.' } },
     {
       type: 'row',

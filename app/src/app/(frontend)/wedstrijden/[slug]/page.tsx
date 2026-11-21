@@ -2,8 +2,10 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import type { Water } from '@/payload-types'
-import { payload } from '@/lib/payload'
+import { payload, getSettings } from '@/lib/payload'
 import { daysUntil, fmtDate, fmtKg, relativeDay, typeLabel, ucfirst } from '@/lib/format'
+import { directionsUrl, fishingTimes, googleCalendarUrl } from '@/lib/calendar'
+import { FeedRules } from '@/components/site/FeedRules'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -22,7 +24,9 @@ export default async function Wedstrijd({ params }: Props) {
   const c = await load((await params).slug)
   if (!c) notFound()
   const p = await payload()
-  const [resultRes, albumsRes, newsRes] = await Promise.all([
+  const [settings, siblings, resultRes, albumsRes, newsRes] = await Promise.all([
+    getSettings(),
+    p.find({ collection: 'competitions', where: { season: { equals: c.season } }, sort: 'date', depth: 0, limit: 200, pagination: false, select: { slug: true, title: true, date: true } }),
     p.find({ collection: 'results', where: { competition: { equals: c.id } }, depth: 1, limit: 1 }),
     p.find({ collection: 'albums', where: { competition: { equals: c.id } }, depth: 1, limit: 3 }),
     p.find({ collection: 'news', where: { and: [{ relatedCompetition: { equals: c.id } }, { _status: { equals: 'published' } }] }, depth: 0, limit: 3 }),
@@ -31,6 +35,13 @@ export default async function Wedstrijd({ params }: Props) {
   const entries = result?.entries ?? []
   const water = c.water && typeof c.water === 'object' ? (c.water as Water) : null
   const upcoming = daysUntil(c.date) >= 0
+  const idx = siblings.docs.findIndex((x) => x.id === c.id)
+  const prev = idx > 0 ? siblings.docs[idx - 1] : null
+  const next = idx >= 0 ? siblings.docs[idx + 1] : null
+  const route = directionsUrl(water)
+  const siteUrl = process.env.NEXT_PUBLIC_SERVER_URL ?? ''
+  const isMatch = !!(c.startTime || c.drawTime) || c.type !== 'andere'
+  const showFish = entries.some((e) => e.fishCount)
   const name = (a: unknown) => (a && typeof a === 'object' && 'name' in a ? (a as { name: string }).name : '')
 
   return (
@@ -45,13 +56,37 @@ export default async function Wedstrijd({ params }: Props) {
           {upcoming && relativeDay(c.date) ? `, ${relativeDay(c.date)}` : ''}
           {c.status === 'afgelast' && <span className="tag tag--warn">Afgelast</span>}
           {c.status === 'verplaatst' && <span className="tag tag--warn">Verplaatst</span>}
+          {c.countsForStandings && <span className="tag">Super Prestige</span>}
         </p>
+        {upcoming && c.status !== 'afgelast' && (
+          <p className="match-actions">
+            <a className="btn btn--primary" href={`/wedstrijden/${c.slug}/agenda.ics`}>
+              Zet in je agenda
+            </a>
+            <a className="btn" href={googleCalendarUrl(c, siteUrl)} target="_blank" rel="noreferrer">
+              Google Agenda
+            </a>
+            {route && (
+              <a className="btn" href={route} target="_blank" rel="noreferrer">
+                Route naar het water
+              </a>
+            )}
+          </p>
+        )}
       </header>
 
       <dl className="facts">
         <div>
           <dt>Viswater</dt>
-          <dd>{water ? <Link href={`/visplaatsen/${water.slug}`}>{water.name}</Link> : 'Volgt nog'}</dd>
+          <dd>
+            {water ? <Link href={`/visplaatsen/${water.slug}`}>{water.name}</Link> : 'Volgt nog'}
+            {water?.town && !water.name.toLowerCase().includes(water.town.toLowerCase()) && <small className="facts__sub">{water.town}</small>}
+            {route && !upcoming && (
+              <small className="facts__sub">
+                <a href={route} target="_blank" rel="noreferrer">Route</a>
+              </small>
+            )}
+          </dd>
         </div>
         {c.drawTime && (
           <div>
@@ -59,13 +94,12 @@ export default async function Wedstrijd({ params }: Props) {
             <dd>{c.drawTime}</dd>
           </div>
         )}
-        <div>
-          <dt>Vissen</dt>
-          <dd>
-            {c.startTime ?? '?'}
-            {c.endTime ? ` tot ${c.endTime}` : ''}
-          </dd>
-        </div>
+        {c.startTime && (
+          <div>
+            <dt>{c.breakStart && c.breakEnd ? 'Vissen, in twee delen' : 'Vissen'}</dt>
+            <dd>{fishingTimes(c)}</dd>
+          </div>
+        )}
         <div>
           <dt>Soort</dt>
           <dd>{typeLabel[c.type ?? 'club']}</dd>
@@ -112,7 +146,7 @@ export default async function Wedstrijd({ params }: Props) {
                   <th scope="col">Plaats</th>
                   <th scope="col">Visser</th>
                   {entries.some((e) => e.peg) && <th scope="col">Stek</th>}
-                  <th scope="col" className="num">Vissen</th>
+                  {showFish && <th scope="col" className="num">Vissen</th>}
                   <th scope="col" className="num">Gewicht</th>
                   <th scope="col" className="num">Punten</th>
                 </tr>
@@ -127,7 +161,7 @@ export default async function Wedstrijd({ params }: Props) {
                       {e.disqualified && <small>Uitgesloten</small>}
                     </td>
                     {entries.some((x) => x.peg) && <td>{e.peg}</td>}
-                    <td className="num">{e.fishCount ?? '–'}</td>
+                    {showFish && <td className="num">{e.fishCount ?? '–'}</td>}
                     <td className="num">{fmtKg(e.weight)} kg</td>
                     <td className="num">{e.points}</td>
                   </tr>
@@ -145,6 +179,8 @@ export default async function Wedstrijd({ params }: Props) {
         </section>
       )}
       {!upcoming && entries.length === 0 && c.status !== 'afgelast' && <p className="empty">De uitslag wordt binnenkort toegevoegd.</p>}
+
+      {isMatch && <FeedRules water={water} settings={settings} mode={c.breakStart && c.breakEnd ? 'twoPart' : c.startTime ? 'continuous' : null} />}
 
       {(newsRes.docs.length > 0 || albumsRes.docs.length > 0) && (
         <section style={{ marginTop: '3rem' }}>
@@ -166,6 +202,25 @@ export default async function Wedstrijd({ params }: Props) {
             ))}
           </ul>
         </section>
+      )}
+
+      {(prev || next) && (
+        <nav className="pager" aria-label="Andere wedstrijden dit seizoen">
+          {prev ? (
+            <Link href={`/wedstrijden/${prev.slug}`} rel="prev">
+              <small>Vorige, {fmtDate(prev.date, { day: 'numeric', month: 'long' })}</small>
+              {prev.title}
+            </Link>
+          ) : (
+            <span />
+          )}
+          {next && (
+            <Link href={`/wedstrijden/${next.slug}`} rel="next" className="pager__next">
+              <small>Volgende, {fmtDate(next.date, { day: 'numeric', month: 'long' })}</small>
+              {next.title}
+            </Link>
+          )}
+        </nav>
       )}
     </div>
   )

@@ -94,6 +94,26 @@ export const parseTime = (cell) => {
   return r ? `${r[1].padStart(2, '0')}:${r[2] ?? '00'}` : null
 }
 
+/**
+ * Paper calendar cells: trekking "7u45" (sometimes a date), vissen "9u00-12u00/13u30-17u00" or "10u00 tot 16u00".
+ * Start = first time, end = last time, and the break between two parts.
+ */
+export const parseFishing = (draw, fishing) => {
+  const times = [...String(fishing ?? '').matchAll(/(\d{1,2})\s*[:.uh]\s*(\d{2})/gi)].map((m) => `${m[1].padStart(2, '0')}:${m[2]}`)
+  const d = String(draw ?? '').trim()
+  const isTime = /^\d{1,2}\s*[:.uh]\s*\d{0,2}(?![\d/])/i.test(d) // "7u45", "12u lokaal"; not "15/06/26"
+  const extra = isTime ? d.replace(/^\d{1,2}\s*[:.uh]\s*\d{0,2}\s*/i, '') : d
+  return {
+    drawTime: isTime ? parseTime(d) : null,
+    drawNote: !extra ? null : isTime ? `Loting: ${d}.` : `Op de kalender staat bij de loting: ${d}.`,
+    startTime: times[0] ?? null,
+    endTime: times.length > 1 ? times[times.length - 1] : null,
+    // two parts with a weigh-in between: "9u00-12u00/13u30-17u00"
+    breakStart: times.length === 4 ? times[1] : null,
+    breakEnd: times.length === 4 ? times[2] : null,
+  }
+}
+
 export const inferType = (title) => {
   const t = title.toLowerCase()
   if (/reeks|kampioenschap/.test(t)) return 'kampioenschap'

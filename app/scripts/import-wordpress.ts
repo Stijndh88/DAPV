@@ -74,7 +74,9 @@ async function shape(payload: Payload, slug: string, data: Record<string, unknow
   const fields = new Map(flatFields(cfg.fields).map((f) => [f.name!, f]))
   const out: Record<string, unknown> = {}
   for (const [k, v] of Object.entries(data)) {
-    if (v === undefined || v === null || v === '') continue
+    if (v === undefined || v === '') continue
+    // an explicit null beats a field's default (e.g. no draw time instead of the default 12:30)
+    if (v === null) { if ((fields.get(k) as { defaultValue?: unknown } | undefined)?.defaultValue !== undefined) out[k] = null; continue }
     if (k === '_status') { if (cfg.versions?.drafts) out._status = v; continue }
     const f = fields.get(k)
     if (!f) { warnOnce(`${slug}.${k} is not in the schema, skipped`); continue }
@@ -129,7 +131,7 @@ async function main() {
   for (const w of read<any[]>('waters.json')) {
     const image = await media(payload, w.imageFile, `${w.name} ${w.place ?? ''}`.trim())
     const description = w.description ?? (w.place ? `<p>Wedstrijdwater in ${w.place}.</p>` : undefined)
-    waterIds.set(w.slug, await upsert(payload, 'waters', { slug: { equals: w.slug } }, { name: w.name, slug: w.slug, town: w.place, address: w.address, description, image }))
+    waterIds.set(w.slug, await upsert(payload, 'waters', { slug: { equals: w.slug } }, { name: w.name, slug: w.slug, town: w.place, address: w.address, description, image, feeding: w.feeding ?? undefined }))
     inc('waters')
   }
 
@@ -145,7 +147,7 @@ async function main() {
   for (const c of read<any[]>('competitions.json')) {
     compIds.set(c.slug, await upsert(payload, 'competitions', { slug: { equals: c.slug } }, {
       title: c.title, slug: c.slug, date: new Date(`${c.date}T12:00:00Z`).toISOString(),
-      startTime: c.startTime, endTime: c.endTime, drawTime: c.drawTime, notes: c.notes,
+      startTime: c.startTime, endTime: c.endTime, breakStart: c.breakStart, breakEnd: c.breakEnd, drawTime: c.drawTime, notes: c.notes,
       water: c.waterSlug ? waterIds.get(c.waterSlug) : undefined, type: c.type, season: c.season,
       countsForStandings: c.countsForStandings, status: c.status,
     }))
@@ -210,6 +212,7 @@ async function main() {
     clubName: s.name, tagline: s.tagline, clubSong,
     clubhouse: s.clubhouse?.name,
     address: s.clubhouse && `${s.clubhouse.street}\n${s.clubhouse.postalCode} ${s.clubhouse.city}`,
+    feedRules: s.feedRules,
   }, true)
   if (!DRY) await payload.updateGlobal({ slug: 'site-settings' as never, data: settings as never })
 
