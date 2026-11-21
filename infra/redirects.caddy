@@ -1,0 +1,5 @@
+# Old WordPress permalinks -> new URLs. One line per redirect, e.g.:
+#   redir /2019/05/12/clubkampioenschap-2019/ /nieuws/clubkampioenschap-2019 permanent
+#   redir /kalender/ /kalender permanent
+#   redir /wp-content/uploads/* /media{path} permanent   (only if media keep old names)
+# Generate this list from the WordPress export (see docs/deployment.md, "Keep old links working").
