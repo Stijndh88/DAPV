@@ -1,0 +1,8 @@
+{
+  "_source": "Same photo uploaded twice to the old site (found by comparing image fingerprints, 2026-11-21). Key = the copy to skip, value = the copy that is kept.",
+  "duplicates": {
+    "De-Braeckeleer-Rudy.jpg": "DSC00649.jpg",
+    "cafedebelskes-1.jpg": "cafedebelskes.jpg",
+    "wp5ac523f1_02.jpg": "wp5ac523f1_02-1.jpg"
+  }
+}

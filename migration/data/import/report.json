@@ -1,0 +1,242 @@
+{
+  "warnings": [
+    "Album date for \"Foto's 2022\" set to 2022-12-31 (the old gallery has no date)"
+  ],
+  "anglerMatches": {
+    "Kenjiro Piron (s)": "Kenjiro Piron (not on member list)",
+    "Bassleer Werner": "Werner Bassleer",
+    "Ruysschaert Diego (s)": "Diego Ruysschaert",
+    "Neirinckx Freddy": "Freddy Neirinckx",
+    "Huysegoms Steven (s)": "Steven Huysegoms",
+    "D'Hondt Stijn (s)": "Stijn D'Hondt",
+    "Van Migerode Yvan": "Yvan Van Migerode",
+    "Wijnant Geert": "Geert Wijnant",
+    "Merckx Ivan": "Ivan Merckx (not on member list)",
+    "Van Broeck Jurgen (s)": "Jurgen Van Broeck",
+    "Ophalvens Remi": "Remi Ophalvens",
+    "Bassleer Jozef": "Jozef Bassleer",
+    "Steven De Pauw (s)": "Steven De Pauw (not on member list)",
+    "Kristof Van Goethem (s)": "Kristof Van Goethem",
+    "Cornand Pascal": "Pascal Cornand",
+    "Verpeten Alfons": "Alfons Verpeten (not on member list)",
+    "Gevers Freddy (s)": "Freddy Gevers (not on member list)",
+    "Hemelsoet Geert (s)": "Geert Hemelsoet (not on member list)",
+    "Piron Kenjiro (s)": "Kenjiro Piron (not on member list)",
+    "Heck Freddy": "Freddy Heck",
+    "De Braeckeleer Rudy": "Rudy De Braeckeleer",
+    "Werner": "Werner Bassleer",
+    "Mekkes": "(not on member list)",
+    "Yvan": "Yvan Van Migerode",
+    "Pascal": "Pascal Cornand",
+    "Van Goethem Kristof (s)": "Kristof Van Goethem",
+    "Muller": "Geert Wijnant",
+    "Loeken Tatjen": "(not on member list)",
+    "Jordy De Greef (s)": "Jordi De Greef",
+    "Remi": "Remi Ophalvens",
+    "Gevers Freddy": "Freddy Gevers (not on member list)",
+    "Lodewijk": "Freddy Neirinckx",
+    "Jordy (s)": "Jordi De Greef",
+    "Steven H. (s)": "Steven Huysegoms",
+    "Jurgen (s)": "Jurgen Van Broeck",
+    "Van Migerode": "Yvan Van Migerode",
+    "Kenjiro (s)": "Kenjiro Piron (not on member list)",
+    "Huysegoms Steven": "Steven Huysegoms",
+    "Evert (s)": "Evert De Wuffel",
+    "Diego (s)": "Diego Ruysschaert",
+    "Jurgen V.B. (s)": "Jurgen Van Broeck",
+    "Jefken B.": "Jozef Bassleer",
+    "Wijnant Geert (v)": "Geert Wijnant",
+    "Neirinckx Freddy (v)": "Freddy Neirinckx",
+    "Bassleer Werner (v)": "Werner Bassleer",
+    "De Greef Jordi (s)": "Jordi De Greef",
+    "Verpeten Alfons (v)": "Alfons Verpeten (not on member list)",
+    "Cornand Pascal (v)": "Pascal Cornand",
+    "Bassleer Jozef (v)": "Jozef Bassleer",
+    "Van Broeck Jurgen": "Jurgen Van Broeck",
+    "D'Hondt Stijn": "Stijn D'Hondt",
+    "Hemelsoet (s)": "Geert Hemelsoet (not on member list)",
+    "Stijn (s)": "Stijn D'Hondt",
+    "Paul": "Paul Couck",
+    "Freddy H.": "Freddy Heck",
+    "Yvan V.M. (v)": "Yvan Van Migerode",
+    "Diego R. (s)": "Diego Ruysschaert",
+    "Evert D.W. (s)": "Evert De Wuffel",
+    "Loeken T. (v)": "Loeken Tatjen (not on member list)",
+    "Jozef B. (v)": "Jozef Bassleer",
+    "Remi O. (v)": "Remi Ophalvens",
+    "Werner B. (v)": "Werner Bassleer",
+    "Freddy H. (v)": "Freddy Heck",
+    "Paul C. (v)": "Paul Couck",
+    "Pascal C. (v)": "Pascal Cornand",
+    "Geert W. (v)": "Geert Wijnant",
+    "Kenjiro P. (s)": "Kenjiro Piron (not on member list)",
+    "Freddy N.": "Freddy Neirinckx",
+    "Werner B.": "Werner Bassleer",
+    "Jurgen VDB (s)": "Jurgen Van Broeck",
+    "Evert DW (s)": "Evert De Wuffel",
+    "Paul C.": "Paul Couck",
+    "Jozef B.": "Jozef Bassleer",
+    "Ivan V.M.": "Yvan Van Migerode",
+    "Pascal C.": "Pascal Cornand",
+    "Loeken T.": "Loeken Tatjen (not on member list)",
+    "Steven (s)": "Steven Huysegoms",
+    "Loeken": "Loeken Tatjen (not on member list)",
+    "Yvan V.M.": "Yvan Van Migerode",
+    "Geert H. (s)": "Geert Hemelsoet (not on member list)",
+    "Jefken": "Jozef Bassleer",
+    "Ivan": "Yvan Van Migerode",
+    "Jozef": "Jozef Bassleer",
+    "Kristof (s)": "Kristof Van Goethem",
+    "Geert Hemelsoet (s)": "Geert Hemelsoet (not on member list)",
+    "Kenjiro": "Kenjiro Piron (not on member list)",
+    "Evert": "Evert De Wuffel",
+    "Diego": "Diego Ruysschaert",
+    "Stijn": "Stijn D'Hondt",
+    "Van Goethem Kristof": "Kristof Van Goethem",
+    "Couck Paul": "Paul Couck",
+    "Arijs Ronny": "Ronny Arijs",
+    "Brackie": "Rudy De Braeckeleer",
+    "Muller (v)": "Geert Wijnant",
+    "Werner (v)": "Werner Bassleer",
+    "Van Migerode (v)": "Yvan Van Migerode",
+    "Steven": "Steven Huysegoms",
+    "Peter": "Peter Bassleer",
+    "Jurgen": "Jurgen Van Broeck",
+    "Remi (v)": "Remi Ophalvens",
+    "Evert (v)": "Evert De Wuffel",
+    "Jurgen (S)": "Jurgen Van Broeck",
+    "Diego (S)": "Diego Ruysschaert",
+    "Bart (S)": "Bart Meert",
+    "Freddy": "Freddy Heck",
+    "De Braekeleer Rudy": "Rudy De Braeckeleer",
+    "Van Broek Jurgen": "Jurgen Van Broeck",
+    "Meert Bart": "Bart Meert",
+    "Steven (S)": "Steven Huysegoms",
+    "Mike": "(not on member list)"
+  },
+  "unparsedPosts": [],
+  "counts": {
+    "posts": 41,
+    "resultPosts": 40,
+    "news": 1,
+    "calendarRows": 113,
+    "competitions": 113,
+    "results": 43,
+    "resultEntries": 421,
+    "anglers": 37,
+    "waters": 28,
+    "pages": 4,
+    "albumPhotos": 19
+  },
+  "calendarDoubts": [
+    {
+      "file": "2026.txt",
+      "date": "2026-04-18",
+      "title": "2° Reeks Kampioenschap",
+      "doubt": "new water, town not on the calendar (Humbeek?)"
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-04-25",
+      "title": "3° Reeks Kampioenschap",
+      "doubt": "new water: Dender at Liedekerke, exact spot unknown"
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-05-02",
+      "title": "GP Ophalvens Remi",
+      "doubt": "\"Ophalvens\" read as written; the 2024 GP was \"Loeken Remi\""
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-06-06",
+      "title": "Marathon",
+      "doubt": "calendar says Erpe; earlier seasons say Donkvissers Mere (same water, Erpe-Mere)"
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-06-20",
+      "title": "Koningschap",
+      "doubt": "\"trekking\" column says 15/06/26, not a time: maybe the registration deadline?"
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-06-27",
+      "title": "GP Bestuur",
+      "doubt": "new water"
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-07-04",
+      "title": "Trouwfeest Jurgen",
+      "doubt": "not a match (party); no times on the calendar"
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-08-08",
+      "title": "Koppelwedstrijd",
+      "doubt": "new water"
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-08-22",
+      "title": "GP Wedstrijd Bart & Chris",
+      "doubt": "probably the same water as Tommy Neckebroeck - Idegem?"
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-09-05",
+      "title": "Duitsland - België",
+      "doubt": "away match, no times on the calendar"
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-09-12",
+      "title": "GP Evert en Rudy",
+      "doubt": "result sheet says Kyma - Baasrode (location changed?)"
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-09-19",
+      "title": "Van Migerode Yvan",
+      "doubt": "result sheet says De Lustige Lijnvissers - Schellebelle; no S on the calendar but the sheet was entered as Super Prestige"
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-09-26",
+      "title": "GP Muller & Diego",
+      "doubt": "new water; no result yet"
+    },
+    {
+      "file": "2026-09-12-gp-evert-rudy.txt",
+      "date": "2026-09-12",
+      "title": "GP Evert & Rudy",
+      "doubt": "water on the result sheet (Kyma - Baasrode) differs from the calendar (Baasrode - Karperput); the sheet wins"
+    },
+    {
+      "file": "2026-09-19-gp-van-migerode-yvan.txt",
+      "date": "2026-09-19",
+      "title": "Grote Prijs Van Migerode Yvan",
+      "doubt": "water on the result sheet (De Lustige Lijnvissers - Schellebelle) differs from the calendar (Uitbergen); the sheet wins"
+    },
+    {
+      "file": "2026-09-19-gp-van-migerode-yvan.txt",
+      "date": "2026-09-19",
+      "title": "Grote Prijs Van Migerode Yvan",
+      "doubt": "Super Prestige: sheet says ja, calendar says nee; the sheet wins"
+    }
+  ],
+  "sheetDoubts": [
+    {
+      "file": "2026-09-19-gp-van-migerode-yvan.txt",
+      "place": 9,
+      "name": "Heck Freddy",
+      "weight": "12,000",
+      "doubt": "written as \"12,00 kg\"; read as 12,000"
+    }
+  ],
+  "anglerGuesses": {
+    "Jordy De Greef": "Jordi De Greef: The member list spells it 'Jordi'.",
+    "Jordy": "Jordi De Greef: The member list spells it 'Jordi'."
+  }
+}

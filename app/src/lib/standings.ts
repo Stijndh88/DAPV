@@ -73,3 +73,18 @@ export async function getStandings(season: number) {
   const sorted = [...rows.values()].sort((a, b) => b.total - a.total || b.totalWeight - a.totalWeight || b.wins - a.wins)
   return { season, method, dropWorst, competitions: played, rows: sorted, plannedCount: comps.docs.length }
 }
+
+/**
+ * Standings to show when no season is chosen: the given season if it has results,
+ * otherwise the most recent earlier season that does (a new season's calendar
+ * can exist before its first result, and old seasons may lack published results).
+ */
+export async function getLatestStandings(preferred: number) {
+  const first = await getStandings(preferred)
+  if (first.rows.length) return first
+  for (const y of (await getSeasons()).filter((y) => y < preferred)) {
+    const s = await getStandings(y)
+    if (s.rows.length) return s
+  }
+  return first
+}

@@ -1,0 +1,224 @@
+[
+  {
+    "name": "Ronny Arijs",
+    "slug": "ronny-arijs",
+    "category": null,
+    "member": true
+  },
+  {
+    "name": "Noé Baeyens",
+    "slug": "noe-baeyens",
+    "category": null,
+    "member": true
+  },
+  {
+    "name": "Bram Bassleer",
+    "slug": "bram-bassleer",
+    "category": null,
+    "member": true
+  },
+  {
+    "name": "Conny Bassleer",
+    "slug": "conny-bassleer",
+    "category": null,
+    "member": true
+  },
+  {
+    "name": "Jozef Bassleer",
+    "slug": "jozef-bassleer",
+    "category": "v",
+    "member": true
+  },
+  {
+    "name": "Peter Bassleer",
+    "slug": "peter-bassleer",
+    "category": null,
+    "member": true
+  },
+  {
+    "name": "Werner Bassleer",
+    "slug": "werner-bassleer",
+    "category": "v",
+    "member": true
+  },
+  {
+    "name": "Pascal Cornand",
+    "slug": "pascal-cornand",
+    "category": "v",
+    "member": true
+  },
+  {
+    "name": "Paul Couck",
+    "slug": "paul-couck",
+    "category": "v",
+    "member": true
+  },
+  {
+    "name": "Rudy De Braeckeleer",
+    "slug": "rudy-de-braeckeleer",
+    "category": null,
+    "member": true
+  },
+  {
+    "name": "Jordi De Greef",
+    "slug": "jordi-de-greef",
+    "category": "s",
+    "member": true
+  },
+  {
+    "name": "Brentley De Wolf",
+    "slug": "brentley-de-wolf",
+    "category": null,
+    "member": true
+  },
+  {
+    "name": "Evert De Wuffel",
+    "slug": "evert-de-wuffel",
+    "category": "s",
+    "member": true
+  },
+  {
+    "name": "Stijn D'Hondt",
+    "slug": "stijn-dhondt",
+    "category": "s",
+    "member": true
+  },
+  {
+    "name": "Dimitri De Poorter",
+    "slug": "dimitri-de-poorter",
+    "category": null,
+    "member": true
+  },
+  {
+    "name": "Lucas Ghysens",
+    "slug": "lucas-ghysens",
+    "category": null,
+    "member": true
+  },
+  {
+    "name": "Freddy Heck",
+    "slug": "freddy-heck",
+    "category": "v",
+    "member": true
+  },
+  {
+    "name": "Steven Huysegoms",
+    "slug": "steven-huysegoms",
+    "category": "s",
+    "member": true
+  },
+  {
+    "name": "Toretto Huysegoms",
+    "slug": "toretto-huysegoms",
+    "category": null,
+    "member": true
+  },
+  {
+    "name": "Bart Meert",
+    "slug": "bart-meert",
+    "category": "s",
+    "member": true
+  },
+  {
+    "name": "Christiaan Meert",
+    "slug": "christiaan-meert",
+    "category": null,
+    "member": true
+  },
+  {
+    "name": "Freddy Neirinckx",
+    "slug": "freddy-neirinckx",
+    "category": "v",
+    "member": true
+  },
+  {
+    "name": "Remi Ophalvens",
+    "slug": "remi-ophalvens",
+    "category": "v",
+    "member": true
+  },
+  {
+    "name": "Diego Ruysschaert",
+    "slug": "diego-ruysschaert",
+    "category": "s",
+    "member": true
+  },
+  {
+    "name": "Jurgen Van Broeck",
+    "slug": "jurgen-van-broeck",
+    "category": "s",
+    "member": true
+  },
+  {
+    "name": "Kristof Van Goethem",
+    "slug": "kristof-van-goethem",
+    "category": "s",
+    "member": true
+  },
+  {
+    "name": "Yvan Van Migerode",
+    "slug": "yvan-van-migerode",
+    "category": "v",
+    "member": true
+  },
+  {
+    "name": "Geert Wijnant",
+    "slug": "geert-wijnant",
+    "category": "v",
+    "member": true
+  },
+  {
+    "name": "Kenjiro Piron",
+    "slug": "kenjiro-piron",
+    "category": "s",
+    "member": false
+  },
+  {
+    "name": "Ivan Merckx",
+    "slug": "ivan-merckx",
+    "category": null,
+    "member": false
+  },
+  {
+    "name": "Steven De Pauw",
+    "slug": "steven-de-pauw",
+    "category": "s",
+    "member": false
+  },
+  {
+    "name": "Alfons Verpeten",
+    "slug": "alfons-verpeten",
+    "category": null,
+    "member": false
+  },
+  {
+    "name": "Freddy Gevers",
+    "slug": "freddy-gevers",
+    "category": "s",
+    "member": false
+  },
+  {
+    "name": "Geert Hemelsoet",
+    "slug": "geert-hemelsoet",
+    "category": "s",
+    "member": false
+  },
+  {
+    "name": "Mekkes",
+    "slug": "mekkes",
+    "category": null,
+    "member": false
+  },
+  {
+    "name": "Loeken Tatjen",
+    "slug": "loeken-tatjen",
+    "category": null,
+    "member": false
+  },
+  {
+    "name": "Mike",
+    "slug": "mike",
+    "category": null,
+    "member": false
+  }
+]

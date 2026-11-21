@@ -1,7 +1,9 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
-import { payload } from '@/lib/payload'
+import { payload, getSettings } from '@/lib/payload'
+import { directionsUrl } from '@/lib/calendar'
+import { FeedRules } from '@/components/site/FeedRules'
 import { fmtDate } from '@/lib/format'
 import { Img } from '@/components/site/Img'
 
@@ -21,15 +23,15 @@ export default async function Visplaats({ params }: Props) {
   const w = await load((await params).slug)
   if (!w) notFound()
   const p = await payload()
-  const comps = await p.find({
-    collection: 'competitions',
-    where: { and: [{ water: { equals: w.id } }, { date: { greater_than_equal: new Date().toISOString() } }] },
-    sort: 'date',
-    limit: 5,
-    depth: 0,
-  })
+  const [settings, all] = await Promise.all([
+    getSettings(),
+    p.find({ collection: 'competitions', where: { water: { equals: w.id } }, sort: '-date', limit: 100, depth: 0, pagination: false }),
+  ])
+  const now = new Date().toISOString()
+  const comps = { docs: all.docs.filter((c) => c.date >= now).reverse().slice(0, 5) }
+  const pastComps = all.docs.filter((c) => c.date < now)
   const address = [w.address, w.town].filter(Boolean).join(', ')
-  const map = w.mapUrl || (address ? `https://www.openstreetmap.org/search?query=${encodeURIComponent(address)}` : null)
+  const map = directionsUrl(w)
   return (
     <div className="wrap">
       <header className="page-head">
@@ -57,7 +59,7 @@ export default async function Visplaats({ params }: Props) {
             <div>
               <dt>Route</dt>
               <dd>
-                <a href={map} target="_blank" rel="noreferrer">Open de kaart</a>
+                <a href={map} target="_blank" rel="noreferrer">Route naar het water</a>
               </dd>
             </div>
           )}
@@ -68,11 +70,27 @@ export default async function Visplaats({ params }: Props) {
             <p className="pre">{w.rules}</p>
           </>
         )}
+        <FeedRules water={w} settings={settings} />
         {comps.docs.length > 0 && (
           <>
             <h2>Komende wedstrijden hier</h2>
             <ul className="story-list">
               {comps.docs.map((c) => (
+                <li key={c.id}>
+                  <Link href={`/wedstrijden/${c.slug}`}>
+                    <time>{fmtDate(c.date)}</time>
+                    <strong>{c.title}</strong>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+        {pastComps.length > 0 && (
+          <>
+            <h2>Eerder gevist hier</h2>
+            <ul className="story-list">
+              {pastComps.slice(0, 12).map((c) => (
                 <li key={c.id}>
                   <Link href={`/wedstrijden/${c.slug}`}>
                     <time>{fmtDate(c.date)}</time>

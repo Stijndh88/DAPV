@@ -1,0 +1,18 @@
+{
+  "name": "plasvissers-migration",
+  "private": true,
+  "type": "module",
+  "description": "Export plasvissers.be (WordPress) and convert it for the new Payload site",
+  "scripts": {
+    "export": "node src/export.mjs",
+    "transform": "node src/transform.mjs",
+    "redirects": "node src/redirects.mjs",
+    "all": "node src/export.mjs && node src/transform.mjs && node src/shrink-media.mjs && node src/redirects.mjs",
+    "shrink": "node src/shrink-media.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "cheerio": "1.0.0"
+  },
+  "engines": { "node": ">=20" }
+}

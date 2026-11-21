@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import type { Competition, Water } from '@/payload-types'
 import { payload, getSettings } from '@/lib/payload'
-import { getStandings } from '@/lib/standings'
-import { fmtDate, fmtKg, fmtShort, fmtWeekday, relativeDay, typeLabel } from '@/lib/format'
+import { getLatestStandings } from '@/lib/standings'
+import { fmtDate, fmtKg, fmtShort, fmtWeekday, relativeDay, typeLabel, ucfirst } from '@/lib/format'
 import { Bobber, Waterline } from '@/components/site/Waterline'
 import { Img } from '@/components/site/Img'
 
@@ -30,8 +30,7 @@ export default async function Home() {
   const next = upcoming.docs[0]
   const later = upcoming.docs.slice(1)
   const season = next?.season ?? new Date().getFullYear()
-  let standings = await getStandings(season)
-  if (standings.rows.length === 0 && season > 2000) standings = await getStandings(season - 1)
+  const standings = await getLatestStandings(season)
   const result = lastResult.docs[0]
   const resultComp = result && typeof result.competition === 'object' ? result.competition : null
   const winner = result?.entries?.[0]
@@ -50,7 +49,7 @@ export default async function Home() {
               </p>
               <h1 id="hero-title" className="hero__title">
                 <Link href={`/wedstrijden/${next.slug}`} style={{ color: 'inherit', textDecoration: 'none' }}>
-                  <span style={{ textTransform: 'capitalize' }}>{fmtWeekday(next.date)}</span> {fmtDate(next.date, { day: 'numeric', month: 'long' })}
+                  {ucfirst(fmtWeekday(next.date))} {fmtDate(next.date, { day: 'numeric', month: 'long' })}
                 </Link>
               </h1>
               <p className="hero__meta">
@@ -165,7 +164,7 @@ export default async function Home() {
                 <li key={c.id}>
                   <Link href={`/wedstrijden/${c.slug}`} className="fixture">
                     <span className="fixture__day">{fmtDate(c.date, { day: 'numeric' })}</span>
-                    <span className="fixture__month">{fmtDate(c.date, { weekday: 'long' })} {fmtDate(c.date, { month: 'long' })}</span>
+                    <span className="fixture__month">{ucfirst(fmtDate(c.date, { weekday: 'long' }))} {fmtDate(c.date, { month: 'long' })}</span>
                     <span className="fixture__title">
                       {c.title}
                       {c.status === 'verplaatst' && <span className="tag tag--warn">Verplaatst</span>}

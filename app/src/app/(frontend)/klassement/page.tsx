@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { getSeasons, getStandings } from '@/lib/standings'
+import { getLatestStandings, getSeasons, getStandings } from '@/lib/standings'
 import { fmtKg, fmtShort } from '@/lib/format'
 
 export const metadata: Metadata = { title: 'Klassement', description: 'Het seizoensklassement van de club.' }
@@ -11,8 +11,10 @@ export default async function Klassement({ searchParams }: Props) {
   const seasons = await getSeasons()
   const sp = await searchParams
   const current = new Date().getFullYear()
-  const season = Number(sp.seizoen) || (seasons.includes(current) ? current : seasons[0] ?? current)
-  const s = await getStandings(season)
+  const preferred = seasons.includes(current) ? current : seasons[0] ?? current
+  // Without a chosen season, show the latest season that has results
+  const s = sp.seizoen ? await getStandings(Number(sp.seizoen) || preferred) : await getLatestStandings(preferred)
+  const season = s.season
   const byWeight = s.method === 'weight'
 
   return (
@@ -23,7 +25,8 @@ export default async function Klassement({ searchParams }: Props) {
           {byWeight
             ? 'Het totale gewicht over alle wedstrijden telt.'
             : 'Per wedstrijd krijgt de winnaar evenveel punten als er deelnemers zijn, de laatste krijgt 1 punt.'}{' '}
-          {s.dropWorst > 0 && `De ${s.dropWorst} slechtste resultaten van elke visser vallen weg.`} Na {s.competitions.length} van{' '}
+          {s.dropWorst === 1 && 'Het slechtste resultaat van elke visser valt weg.'}
+          {s.dropWorst > 1 && `De ${s.dropWorst} slechtste resultaten van elke visser vallen weg.`} Na {s.competitions.length} van{' '}
           {s.plannedCount} wedstrijden.
         </p>
       </header>

@@ -1,0 +1,52 @@
+{
+  "_source": "Built 2026-11-20 from the names in the old results tables. Short names, initials and 'Last First' order are mapped to one person. Entries in 'guesses' are educated guesses that the club should confirm.",
+  "aliases": {
+    "Kenjiro": "Kenjiro Piron",
+    "Kenjiro P.": "Kenjiro Piron",
+    "Piron Kenjiro": "Kenjiro Piron",
+    "Merckx Ivan": "Ivan Merckx",
+    "Merckx Yvan": "Ivan Merckx",
+    "Verpeten Alfons": "Alfons Verpeten",
+    "Gevers Freddy": "Freddy Gevers",
+    "Hemelsoet Geert": "Geert Hemelsoet",
+    "Hemelsoet": "Geert Hemelsoet",
+    "Geert H.": "Geert Hemelsoet",
+    "Loeken T.": "Loeken Tatjen",
+    "Loeken": "Loeken Tatjen",
+    "Jordy": "Jordi De Greef",
+    "Jordy De Greef": "Jordi De Greef",
+    "Van Migerode": "Yvan Van Migerode",
+    "Yvan V.M.": "Yvan Van Migerode",
+    "Ivan V.M.": "Yvan Van Migerode",
+    "Jurgen V.B.": "Jurgen Van Broeck",
+    "Jurgen VDB": "Jurgen Van Broeck",
+    "Evert D.W.": "Evert De Wuffel",
+    "Evert DW": "Evert De Wuffel",
+    "Ivan": "Yvan Van Migerode",
+    "Jefken": "Jozef Bassleer",
+    "Jefken B.": "Jozef Bassleer",
+    "Brackie": "Rudy De Braeckeleer",
+    "Muller": "Geert Wijnant",
+    "Lodewijk": "Freddy Neirinckx",
+    "Bart": "Bart Meert",
+    "Freddy": "Freddy Heck",
+    "Van Broek Jurgen": "Jurgen Van Broeck",
+    "De Braekeleer Rudy": "Rudy De Braeckeleer"
+  },
+  "guesses": {
+    "Jordy": "The member list spells it 'Jordi'.",
+    "Jordy De Greef": "The member list spells it 'Jordi'."
+  },
+  "confirmed": {
+    "_note": "Confirmed by Stijn on 2026-11-21",
+    "names": [
+      "Ivan",
+      "Jefken",
+      "Jefken B.",
+      "Brackie",
+      "Muller",
+      "Lodewijk",
+      "Freddy"
+    ]
+  }
+}
