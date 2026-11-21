@@ -8,7 +8,7 @@ import { fileURLToPath } from 'node:url'
 import * as cheerio from 'cheerio'
 import {
   slugify, decodeEntities, cleanResultTitle, competitionSlug, waterSlug, parsePostPath,
-  parseWeight, splitNameCategory, parseDutchDate, parseTime, inferType,
+  parseWeight, splitNameCategory, parseDutchDate, parseTime, parseFishing, inferType,
 } from './lib.mjs'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
@@ -88,10 +88,9 @@ function parseCalendarTable(t, season) {
       date,
       superPrestige: col.sp >= 0 && /x|s|ja|\*/i.test(c[col.sp] ?? ''),
       water: col.water >= 0 ? c[col.water] : null,
-      drawTime: col.draw >= 0 ? parseTime(c[col.draw]) : null,
       fishing: col.fish >= 0 ? c[col.fish] : null,
-      startTime: col.fish >= 0 ? parseTime(c[col.fish]) : null,
-      endTime: col.fish >= 0 ? parseTime(String(c[col.fish]).split(/-|tot/).slice(1).join(' ')) : null,
+      // "9u00-12u00/13u30-17u00": start 09:00, end 17:00 (two sessions)
+      ...parseFishing(col.draw >= 0 ? c[col.draw] : null, col.fish >= 0 ? c[col.fish] : null),
       links: r.links,
     }]
   })
@@ -133,6 +132,7 @@ async function main() {
     members: await readJson(path.join(ROOT, 'seed', 'members.json')),
     waters: await readJson(path.join(ROOT, 'seed', 'waters.json')),
     aliases: await readJson(path.join(ROOT, 'seed', 'angler-aliases.json'), { aliases: {}, guesses: {} }),
+    feed: await readJson(path.join(ROOT, 'seed', 'feed-rules.json'), null),
   }
   await mkdir(OUT, { recursive: true })
 
@@ -166,12 +166,16 @@ async function main() {
       if (w && !w.imageFile) w.imageFile = localFile(imgSrc(img))
     })
   }
-  const matchWater = (cell) => {
+  const findWater = (cell) => {
     if (!cell) return null
     const c = cell.toLowerCase()
     // longest matching name or alias wins ("lustige lijnvissers" beats "lijnvissers")
     const score = (x) => Math.max(0, ...[x.name.toLowerCase(), ...x.aliases].filter((a) => c.includes(a)).map((a) => a.length))
-    let w = waters.map((x) => [x, score(x)]).filter(([, n]) => n > 0).sort((a, b) => b[1] - a[1])[0]?.[0]
+    return waters.map((x) => [x, score(x)]).filter(([, n]) => n > 0).sort((a, b) => b[1] - a[1])[0]?.[0] ?? null
+  }
+  const matchWater = (cell) => {
+    if (!cell) return null
+    let w = findWater(cell)
     if (!w) {
       w = { name: cell.trim(), place: null, slug: slugify(cell), aliases: [], description: null, imageFile: null, fromCalendar: true }
       waters.push(w)
@@ -224,6 +228,25 @@ async function main() {
     for (const t of readTables(p.content.rendered)) calendarRows.push(...parseCalendarTable(t, season).map((r) => ({ ...r, season })))
   }
 
+  // ---- calendars typed in from paper (seed/calendars/JJJJ.txt, see its README) ----
+  report.calendarDoubts = []
+  const calDir = process.env.MIGRATION_CALENDARS ?? path.join(ROOT, 'seed', 'calendars')
+  for (const file of (await readdir(calDir).catch(() => [])).filter((f) => /^\d{4}\.txt$/.test(f)).sort()) {
+    const text = await readFile(path.join(calDir, file), 'utf8')
+    const [head, body = ''] = text.split(/^---\s*$/m)
+    const meta = Object.fromEntries(head.split('\n').map((l) => l.match(/^\s*([^:#]+?)\s*:\s*(.*)$/)).filter(Boolean).map((m) => [m[1].toLowerCase(), m[2].trim()]))
+    const season = Number(meta.seizoen) || Number(file.slice(0, 4))
+    for (const line of body.split('\n')) {
+      if (!line.trim() || line.trim().startsWith('#')) continue
+      const [title, sp, date, water, draw, fishing, doubt] = line.split('|').map((x) => x.trim())
+      const iso = parseDutchDate(date, season)
+      if (!title || !iso) { warn(`${file}: cannot read line "${line}"`); continue }
+      const row = { title, date: iso, season, superPrestige: /^(s|\$|x|ja)$/i.test(sp ?? ''), water: water?.replace(/^["“”]+|["“”]+$/g, '') || null, ...parseFishing(draw, fishing), links: [], fromPaper: meta.bron ?? file }
+      calendarRows.push(row)
+      if (doubt) report.calendarDoubts.push({ file, date: iso, title, doubt })
+    }
+  }
+
   // ---- merge calendar + results into competitions ----
   const dayDiff = (a, b) => Math.abs((new Date(a) - new Date(b)) / 864e5)
   const competitions = []
@@ -233,24 +256,31 @@ async function main() {
     let rc = resultComps.find((r) => !usedResults.has(r) && r.oldPaths.some((op) => linkPaths.includes(op)))
     rc ??= resultComps.find((r) => !usedResults.has(r) && r.season === row.season && dayDiff(r.date, row.date) <= 1)
     if (rc) usedResults.add(rc)
-    const notes = [row.superPrestige && 'Telt mee voor de Super Prestige.'].filter(Boolean)
+    const notes = [] // Super Prestige is the countsForStandings flag, shown as a label
     // "GP Fam. Verpeten WORDT LATER GEVIST" -> status verplaatst, clean title
     const postponed = !rc && /\s*[-–(]?\s*(wordt later gevist|uitgesteld|verplaatst)\)?\s*$/i
     const isPostponed = postponed && postponed.test(row.title)
     if (isPostponed) notes.push('Uitgesteld: wordt later gevist (zo stond het op de oude kalender).')
+    if (row.drawNote) notes.push(row.drawNote)
+    const party = /trouwfeest|\bfeest\b|etentje/i.test(row.title)
+    if (party) notes.push('Clubactiviteit, geen wedstrijd.')
     competitions.push({
       slug: rc?.slug ?? competitionSlug(row.season, isPostponed ? row.title.replace(postponed, '') : row.title),
       title: rc?.title ?? (isPostponed ? row.title.replace(postponed, '') : row.title),
       date: row.date,
       startTime: row.startTime,
       endTime: row.endTime,
+      breakStart: row.breakStart ?? null,
+      breakEnd: row.breakEnd ?? null,
       drawTime: row.drawTime,
-      waterSlug: matchWater(row.water),
+      waterSlug: row.fromPaper ? null : matchWater(row.water), // paper rows: after the result sheets, which may move them
       type: inferType(row.title),
       season: row.season,
-      countsForStandings: inferType(row.title) === 'kampioenschap' || row.superPrestige,
+      countsForStandings: !party && (inferType(row.title) === 'kampioenschap' || row.superPrestige),
       status: isPostponed ? 'verplaatst' : rc ? 'gespeeld' : row.date < NOW ? 'gespeeld' : 'gepland',
-      notes: [...notes, !rc && !isPostponed && row.date < NOW ? 'Geen uitslag gepubliceerd op de oude website.' : null].filter(Boolean).join(' ') || null,
+      notes: [...notes, !rc && !isPostponed && !party && row.date < NOW ? !row.fromPaper ? 'Geen uitslag gepubliceerd op de oude website.' : null : null].filter(Boolean).join(' ') || null,
+      calendarWater: row.water,
+      fromPaper: row.fromPaper ?? null,
       oldPaths: rc?.oldPaths ?? [],
       results: rc?.entries ?? null,
       textHtml: rc?.textHtml || null,
@@ -283,13 +313,37 @@ async function main() {
     const season = Number(meta.datum.slice(0, 4))
     const sp = /^(ja|yes|x)$/i.test(meta['super prestige'] ?? '')
     const type = inferType(meta.titel)
+    // the match is already on a paper calendar: complete that one instead of adding a second
+    const cal = competitions.find((c) => c.fromPaper && c.date === meta.datum && !c.results)
+    if (cal) {
+      const sheetWater = matchWater(meta.water)
+      const moved = cal.calendarWater && sheetWater !== findWater(cal.calendarWater)?.slug
+      if (moved) report.calendarDoubts.push({ file, date: meta.datum, title: meta.titel, doubt: `water on the result sheet (${meta.water}) differs from the calendar (${cal.calendarWater}); the sheet wins` })
+      if (sp !== cal.countsForStandings) report.calendarDoubts.push({ file, date: meta.datum, title: meta.titel, doubt: `Super Prestige: sheet says ${sp ? 'ja' : 'nee'}, calendar says ${cal.countsForStandings ? 'ja' : 'nee'}; the sheet wins` })
+      Object.assign(cal, {
+        slug: competitionSlug(season, meta.titel), title: meta.titel, waterSlug: sheetWater, type,
+        countsForStandings: type === 'kampioenschap' || sp, status: 'gespeeld', results: entries,
+        notes: [
+          moved && `Verplaatst: op de kalender stond ${cal.calendarWater}.`,
+          meta.bron && `Bron: ${meta.bron}.`,
+        ].filter(Boolean).join(' ') || null,
+      })
+      continue
+    }
     competitions.push({
       slug: competitionSlug(season, meta.titel), title: meta.titel, date: meta.datum, startTime: null, endTime: null, drawTime: null,
       waterSlug: matchWater(meta.water), type, season,
       countsForStandings: type === 'kampioenschap' || sp, status: 'gespeeld',
-      notes: [sp && 'Telt mee voor de Super Prestige.', meta.bron && `Bron: ${meta.bron}.`].filter(Boolean).join(' ') || null,
+      notes: [meta.bron && `Bron: ${meta.bron}.`].filter(Boolean).join(' ') || null,
       oldPaths: [], results: entries, textHtml: null,
     })
+  }
+
+  // water lookups for calendar rows happen lazily above; drop helper fields
+  for (const c of competitions) {
+    if (c.fromPaper && !c.waterSlug) c.waterSlug = matchWater(c.calendarWater)
+    delete c.calendarWater
+    delete c.fromPaper
   }
 
   // make slugs unique within the import
@@ -403,9 +457,28 @@ async function main() {
   if (!albums.length) warn('No gallery photos found in /fotos/ HTML')
   else warn('Album date for "Foto\'s 2022" set to 2022-12-31 (the old gallery has no date)')
 
+  // ---- bait and feed rules per water (seed/feed-rules.json) ----
+  const feed = seed.feed
+  for (const [name, r] of Object.entries(feed?.waters ?? {})) {
+    const w = waters.find((x) => x.slug === r.match)
+    if (!w) { warn(`feed-rules: no water "${r.match}" for "${name}"`); continue }
+    const base = r.like ? feed.waters[r.like] : {}
+    w.feeding = {
+      shallow: r.shallow ?? null,
+      clubKeepnet: Boolean(r.clubKeepnet),
+      clubPellets: Boolean(r.clubPellets),
+      feedAllowed: r.feedAllowed ?? base.feedAllowed ?? [],
+      feedForbidden: r.feedForbidden ?? base.feedForbidden ?? [],
+      hookAllowed: [...(r.hookAllowed ?? base.hookAllowed ?? []), ...(r.hookExtra ?? [])],
+      hookForbidden: r.hookForbidden ?? base.hookForbidden ?? [],
+      limits: r.limits ?? base.limits ?? [],
+      note: r.note ?? base.note ?? null,
+    }
+  }
+
   // ---- board & settings ----
   const board = seed.board.members.map((b, i) => ({ ...b, order: i + 1 }))
-  const settings = { ...seed.club, clubSongFile: localFile(`https://plasvissers.be${seed.club.clubSong}`) }
+  const settings = { ...seed.club, feedRules: feed?.clubRules ?? [], clubSongFile: localFile(`https://plasvissers.be${seed.club.clubSong}`) }
   // The old MP3 starts with ~400 zero bytes, so upload type sniffing sees text/plain. Strip them.
   if (settings.clubSongFile) {
     const f = path.join(ROOT, settings.clubSongFile)

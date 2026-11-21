@@ -68,6 +68,35 @@ export const SiteSettings: GlobalConfig = {
           ],
         },
         {
+          label: 'Voeders',
+          fields: [
+            {
+              name: 'feedRules',
+              label: 'Voederregels van de club',
+              labels: { singular: 'Regel', plural: 'Regels' },
+              type: 'array',
+              admin: {
+                description:
+                  'Gelden aan elk water, bovenop de regels van het water zelf. Ze staan op elke visplaats- en wedstrijdpagina.',
+              },
+              fields: [
+                { name: 'text', label: 'Regel', type: 'textarea', required: true },
+                {
+                  name: 'appliesTo',
+                  label: 'Geldt voor',
+                  type: 'select',
+                  defaultValue: 'all',
+                  options: [
+                    { label: 'Alle wedstrijden', value: 'all' },
+                    { label: 'Doorlopende wedstrijden (zonder weging tussendoor)', value: 'continuous' },
+                    { label: 'Wedstrijden in twee delen (met weging tussendoor)', value: 'twoPart' },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        {
           label: 'Klassement',
           fields: [
             {

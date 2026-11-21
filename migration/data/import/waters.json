@@ -3,11 +3,67 @@
     "name": "Donkvissers",
     "place": "Mere",
     "aliases": [
-      "donk"
+      "donk",
+      "donkvissers"
     ],
+    "_note": "2026 calendar says 'Donkvissers - Erpe'; Erpe and Mere are both Erpe-Mere.",
     "slug": "donkvissers-mere",
     "description": null,
-    "imageFile": "data/media/2019/06/delustigedonkvissers.jpg"
+    "imageFile": "data/media/2019/06/delustigedonkvissers.jpg",
+    "feeding": {
+      "shallow": "ja",
+      "clubKeepnet": false,
+      "clubPellets": false,
+      "feedAllowed": [
+        "witte-maden",
+        "casters",
+        "korrels",
+        "mais"
+      ],
+      "feedForbidden": [
+        "rode-maden",
+        "granen",
+        "muggenlarven",
+        "voeder"
+      ],
+      "hookAllowed": [
+        "muggenlarven",
+        "witte-maden",
+        "casters",
+        "pieren",
+        "insecten",
+        "mais",
+        "zinkers",
+        "pasta",
+        "den-bol"
+      ],
+      "hookForbidden": [
+        "rode-maden",
+        "drijvend"
+      ],
+      "limits": [
+        {
+          "baits": [
+            "witte-maden",
+            "casters"
+          ],
+          "amount": "1 L samen"
+        },
+        {
+          "baits": [
+            "korrels"
+          ],
+          "amount": "2 kg, max. 4 mm, geen drijvers"
+        },
+        {
+          "baits": [
+            "mais"
+          ],
+          "amount": "0,5 kg"
+        }
+      ],
+      "note": "Per mand = 4 uur vissen."
+    }
   },
   {
     "name": "Koutervissers",
@@ -17,7 +73,61 @@
     ],
     "slug": "koutervissers-viane",
     "description": null,
-    "imageFile": "data/media/2021/05/koutervissersviane.jpg"
+    "imageFile": "data/media/2021/05/koutervissersviane.jpg",
+    "feeding": {
+      "shallow": "nee",
+      "clubKeepnet": true,
+      "clubPellets": true,
+      "feedAllowed": [
+        "witte-maden",
+        "casters",
+        "korrels",
+        "mais"
+      ],
+      "feedForbidden": [
+        "rode-maden",
+        "granen",
+        "muggenlarven",
+        "voeder"
+      ],
+      "hookAllowed": [
+        "muggenlarven",
+        "witte-maden",
+        "casters",
+        "pieren",
+        "insecten",
+        "mais",
+        "zinkers",
+        "pasta"
+      ],
+      "hookForbidden": [
+        "rode-maden",
+        "drijvend",
+        "den-bol"
+      ],
+      "limits": [
+        {
+          "baits": [
+            "witte-maden",
+            "casters"
+          ],
+          "amount": "1 L samen"
+        },
+        {
+          "baits": [
+            "korrels"
+          ],
+          "amount": "2 kg, max. 4 mm, geen drijvers"
+        },
+        {
+          "baits": [
+            "mais"
+          ],
+          "amount": "0,5 kg"
+        }
+      ],
+      "note": "Per mand = 4 uur vissen."
+    }
   },
   {
     "name": "Vissershof",
@@ -25,7 +135,61 @@
     "aliases": [],
     "slug": "vissershof-mere",
     "description": null,
-    "imageFile": "data/media/2019/06/tVissershof.gif"
+    "imageFile": "data/media/2019/06/tVissershof.gif",
+    "feeding": {
+      "shallow": "ja",
+      "clubKeepnet": false,
+      "clubPellets": false,
+      "feedAllowed": [
+        "witte-maden",
+        "casters",
+        "korrels",
+        "mais"
+      ],
+      "feedForbidden": [
+        "rode-maden",
+        "granen",
+        "muggenlarven",
+        "voeder"
+      ],
+      "hookAllowed": [
+        "muggenlarven",
+        "witte-maden",
+        "casters",
+        "pieren",
+        "insecten",
+        "mais",
+        "zinkers",
+        "pasta",
+        "den-bol"
+      ],
+      "hookForbidden": [
+        "rode-maden",
+        "drijvend"
+      ],
+      "limits": [
+        {
+          "baits": [
+            "witte-maden",
+            "casters"
+          ],
+          "amount": "1 L samen"
+        },
+        {
+          "baits": [
+            "korrels"
+          ],
+          "amount": "2 kg, max. 4 mm, geen drijvers"
+        },
+        {
+          "baits": [
+            "mais"
+          ],
+          "amount": "0,5 kg"
+        }
+      ],
+      "note": "Per mand = 4 uur vissen."
+    }
   },
   {
     "name": "Warm Water",
@@ -70,7 +234,61 @@
     "oldPath": "/vislocaties/meerse-lijnvissers-mere/",
     "slug": "de-meerse-lijnvissers-mere",
     "description": "<p><a data-type=\"URL\" data-id=\"https://plasvissers.be/vislocaties/\" href=\"https://plasvissers.be/vislocaties/\">&lt; Terug naar het overzicht met vislocaties</a></p>\n\n\n\n<center>\n</center>\n\n\n\n<hr>\n\n\n\n<p>Locatie: <a href=\"https://goo.gl/maps/9T3XCuG5rbt3Mtxi6\" target=\"_blank\" rel=\"noreferrer noopener nofollow\">Biezeputstraat 10, 9420 Erpe-Mere</a></p>\n\n\n\n<center></center>",
-    "imageFile": "data/media/2023/04/meerselijnvisserskantine-1024x504.png"
+    "imageFile": "data/media/2023/04/meerselijnvisserskantine-1024x504.png",
+    "feeding": {
+      "shallow": "ja",
+      "clubKeepnet": true,
+      "clubPellets": false,
+      "feedAllowed": [
+        "witte-maden",
+        "casters",
+        "korrels",
+        "mais"
+      ],
+      "feedForbidden": [
+        "rode-maden",
+        "granen",
+        "muggenlarven",
+        "voeder"
+      ],
+      "hookAllowed": [
+        "muggenlarven",
+        "witte-maden",
+        "casters",
+        "pieren",
+        "insecten",
+        "mais",
+        "zinkers"
+      ],
+      "hookForbidden": [
+        "rode-maden",
+        "deeg",
+        "den-bol",
+        "drijvend"
+      ],
+      "limits": [
+        {
+          "baits": [
+            "witte-maden",
+            "casters"
+          ],
+          "amount": "1 L samen"
+        },
+        {
+          "baits": [
+            "korrels"
+          ],
+          "amount": "2 kg, max. 4 mm, geen drijvers"
+        },
+        {
+          "baits": [
+            "mais"
+          ],
+          "amount": "0,5 kg"
+        }
+      ],
+      "note": "Per mand = 4 uur vissen."
+    }
   },
   {
     "name": "Meldert vijver",
@@ -80,7 +298,74 @@
     ],
     "slug": "meldert-vijver",
     "description": null,
-    "imageFile": "data/media/2019/06/MeldertVijver.jpg"
+    "imageFile": "data/media/2019/06/MeldertVijver.jpg",
+    "feeding": {
+      "shallow": "ja",
+      "clubKeepnet": false,
+      "clubPellets": false,
+      "feedAllowed": [
+        "voeder",
+        "leem",
+        "korrels",
+        "witte-maden",
+        "muggenlarven",
+        "pieren",
+        "granen"
+      ],
+      "feedForbidden": [
+        "rode-maden"
+      ],
+      "hookAllowed": [
+        "muggenlarven",
+        "witte-maden",
+        "casters",
+        "pieren",
+        "insecten",
+        "granen",
+        "den-bol",
+        "deeg"
+      ],
+      "hookForbidden": [
+        "rode-maden",
+        "aasvisjes",
+        "drijvend"
+      ],
+      "limits": [
+        {
+          "baits": [
+            "voeder",
+            "leem",
+            "korrels"
+          ],
+          "amount": "3,5 kg voeder of 5 kg leem of 2 kg korrels"
+        },
+        {
+          "baits": [
+            "witte-maden"
+          ],
+          "amount": "1 L"
+        },
+        {
+          "baits": [
+            "muggenlarven"
+          ],
+          "amount": "1 doos"
+        },
+        {
+          "baits": [
+            "pieren"
+          ],
+          "amount": "1.1 pins"
+        },
+        {
+          "baits": [
+            "granen"
+          ],
+          "amount": "2 emmers per dag"
+        }
+      ],
+      "note": null
+    }
   },
   {
     "name": "De Donkere Wolk",
@@ -101,7 +386,60 @@
     "_note": "Calendar writes both 'Tommy Neckebroeck' and 'Tommy N - Idegem'.",
     "slug": "tommy-neckebroeck-idegem",
     "description": null,
-    "imageFile": null
+    "imageFile": null,
+    "feeding": {
+      "shallow": "ja",
+      "clubKeepnet": true,
+      "clubPellets": true,
+      "feedAllowed": [
+        "witte-maden",
+        "casters",
+        "korrels",
+        "mais"
+      ],
+      "feedForbidden": [
+        "rode-maden",
+        "granen",
+        "muggenlarven",
+        "voeder"
+      ],
+      "hookAllowed": [
+        "muggenlarven",
+        "witte-maden",
+        "casters",
+        "pieren",
+        "insecten",
+        "mais",
+        "zinkers",
+        "pasta"
+      ],
+      "hookForbidden": [
+        "rode-maden",
+        "drijvend"
+      ],
+      "limits": [
+        {
+          "baits": [
+            "witte-maden",
+            "casters"
+          ],
+          "amount": "1 L samen"
+        },
+        {
+          "baits": [
+            "korrels"
+          ],
+          "amount": "2 kg, max. 4 mm, geen drijvers"
+        },
+        {
+          "baits": [
+            "mais"
+          ],
+          "amount": "0,5 kg"
+        }
+      ],
+      "note": "Per mand = 4 uur vissen."
+    }
   },
   {
     "name": "Ponderosa",
@@ -111,7 +449,61 @@
     ],
     "slug": "ponderosa-okegem",
     "description": null,
-    "imageFile": null
+    "imageFile": null,
+    "feeding": {
+      "shallow": "nee",
+      "clubKeepnet": true,
+      "clubPellets": true,
+      "feedAllowed": [
+        "witte-maden",
+        "casters",
+        "korrels",
+        "mais"
+      ],
+      "feedForbidden": [
+        "rode-maden",
+        "granen",
+        "muggenlarven",
+        "voeder"
+      ],
+      "hookAllowed": [
+        "muggenlarven",
+        "witte-maden",
+        "casters",
+        "pieren",
+        "insecten",
+        "mais",
+        "zinkers",
+        "pasta",
+        "den-bol"
+      ],
+      "hookForbidden": [
+        "rode-maden",
+        "drijvend"
+      ],
+      "limits": [
+        {
+          "baits": [
+            "witte-maden",
+            "casters"
+          ],
+          "amount": "1 L samen"
+        },
+        {
+          "baits": [
+            "korrels"
+          ],
+          "amount": "2 kg, max. 4 mm, geen drijvers"
+        },
+        {
+          "baits": [
+            "mais"
+          ],
+          "amount": "0,5 kg"
+        }
+      ],
+      "note": "Per mand = 4 uur vissen."
+    }
   },
   {
     "name": "Schwerte am Ruhr",
@@ -139,9 +531,10 @@
     "name": "Humbeek",
     "place": "Humbeek",
     "aliases": [
-      "humbeek"
+      "humbeek",
+      "humbeekse lijnvissers"
     ],
-    "_note": "Only the town is known from the calendar.",
+    "_note": "Only the town is known from the calendar. The 2026 calendar says 'Humbeekse Lijnvissers': assumed to be the same water (check).",
     "slug": "humbeek",
     "description": null,
     "imageFile": null
@@ -186,6 +579,178 @@
     ],
     "_note": "Water of the club De Lustige Lijnvissers.",
     "slug": "de-lustige-lijnvissers-schellebelle",
+    "description": null,
+    "imageFile": null
+  },
+  {
+    "name": "Dender",
+    "place": "Liedekerke",
+    "aliases": [
+      "liedekerke"
+    ],
+    "_note": "2026 calendar: 'Dender - Liedekerke'. Exact spot unknown.",
+    "slug": "dender-liedekerke",
+    "description": null,
+    "imageFile": null
+  },
+  {
+    "name": "MDM",
+    "place": "Nederzwalm",
+    "aliases": [
+      "mdm",
+      "nederzwalm"
+    ],
+    "_note": "2026 calendar: 'MDM - Nederzwalm'. Full name unknown.",
+    "slug": "mdm-nederzwalm",
+    "description": null,
+    "imageFile": null
+  },
+  {
+    "name": "De Mooie Molen",
+    "place": null,
+    "aliases": [
+      "mooie molen"
+    ],
+    "_note": "2026 calendar, Trouwfeest Jurgen (a party, not a water). Place unknown.",
+    "slug": "de-mooie-molen",
+    "description": null,
+    "imageFile": null
+  },
+  {
+    "name": "Meikopvissers",
+    "place": "Hamme",
+    "aliases": [
+      "meikop"
+    ],
+    "_note": "2026 calendar: 'Meikopvissers - Hamme'.",
+    "slug": "meikopvissers-hamme",
+    "description": null,
+    "imageFile": null
+  },
+  {
+    "name": "De Lustige Visser",
+    "place": "Idegem",
+    "aliases": [
+      "lustige visser -",
+      "lustige visser"
+    ],
+    "_note": "2026 calendar: 'De Lustige Visser(s) - Idegem'. Maybe the same water as Tommy Neckebroeck, Idegem (check).",
+    "slug": "de-lustige-visser-idegem",
+    "description": null,
+    "imageFile": null
+  },
+  {
+    "name": "Karperput",
+    "place": "Baasrode",
+    "aliases": [
+      "karperput"
+    ],
+    "_note": "2026 calendar for GP Evert & Rudy; the result sheet says Kyma - Baasrode.",
+    "slug": "karperput-baasrode",
+    "description": null,
+    "imageFile": null
+  },
+  {
+    "name": "Marikjell",
+    "place": "Denderhoutem",
+    "aliases": [
+      "marikjell",
+      "denderhoutem"
+    ],
+    "_note": "2026 calendar: 'Marikjell - Denderhoutem'.",
+    "slug": "marikjell-denderhoutem",
+    "description": null,
+    "imageFile": null
+  },
+  {
+    "name": "Forten",
+    "place": "Dendermonde",
+    "aliases": [
+      "forten dendermonde",
+      "forten - dendermonde",
+      "forten"
+    ],
+    "_note": "Calendars 2022-2024: 'Forten (-) Dendermonde'. Before 2026-11-21 these matched Dendervissers Gijzegem by mistake.",
+    "slug": "forten-dendermonde",
+    "description": null,
+    "imageFile": null
+  },
+  {
+    "name": "Dender",
+    "place": "Erembodegem",
+    "aliases": [
+      "erembodegem"
+    ],
+    "_note": "Calendars: 'Dender - Erembodegem'. Exact spot unknown.",
+    "slug": "dender-erembodegem",
+    "description": null,
+    "imageFile": null,
+    "feeding": {
+      "shallow": null,
+      "clubKeepnet": false,
+      "clubPellets": false,
+      "feedAllowed": [
+        "voeder",
+        "leem",
+        "witte-maden",
+        "casters",
+        "muggenlarven",
+        "pieren"
+      ],
+      "feedForbidden": [
+        "rode-maden"
+      ],
+      "hookAllowed": [
+        "muggenlarven",
+        "witte-maden",
+        "casters",
+        "pieren",
+        "insecten",
+        "granen"
+      ],
+      "hookForbidden": [
+        "rode-maden",
+        "aasvisjes"
+      ],
+      "limits": [
+        {
+          "baits": [
+            "voeder",
+            "leem"
+          ],
+          "amount": "5 kg voeder of 5 kg leem"
+        },
+        {
+          "baits": [
+            "witte-maden",
+            "casters"
+          ],
+          "amount": "1 L (of half om half)"
+        },
+        {
+          "baits": [
+            "muggenlarven"
+          ],
+          "amount": "1 doos"
+        },
+        {
+          "baits": [
+            "pieren"
+          ],
+          "amount": "1.1 pins"
+        }
+      ],
+      "note": null
+    }
+  },
+  {
+    "name": "Donkmeer",
+    "place": "Berlare",
+    "aliases": [
+      "donkmeer"
+    ],
+    "_note": "Calendar: 'Donkmeer - Berlare'.",
+    "slug": "donkmeer-berlare",
     "description": null,
     "imageFile": null
   }

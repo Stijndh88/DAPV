@@ -119,15 +119,113 @@
     "posts": 41,
     "resultPosts": 40,
     "news": 1,
-    "calendarRows": 89,
-    "competitions": 92,
+    "calendarRows": 113,
+    "competitions": 113,
     "results": 43,
     "resultEntries": 421,
     "anglers": 37,
-    "waters": 18,
+    "waters": 28,
     "pages": 4,
     "albumPhotos": 19
   },
+  "calendarDoubts": [
+    {
+      "file": "2026.txt",
+      "date": "2026-04-18",
+      "title": "2° Reeks Kampioenschap",
+      "doubt": "new water, town not on the calendar (Humbeek?)"
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-04-25",
+      "title": "3° Reeks Kampioenschap",
+      "doubt": "new water: Dender at Liedekerke, exact spot unknown"
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-05-02",
+      "title": "GP Ophalvens Remi",
+      "doubt": "\"Ophalvens\" read as written; the 2024 GP was \"Loeken Remi\""
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-06-06",
+      "title": "Marathon",
+      "doubt": "calendar says Erpe; earlier seasons say Donkvissers Mere (same water, Erpe-Mere)"
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-06-20",
+      "title": "Koningschap",
+      "doubt": "\"trekking\" column says 15/06/26, not a time: maybe the registration deadline?"
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-06-27",
+      "title": "GP Bestuur",
+      "doubt": "new water"
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-07-04",
+      "title": "Trouwfeest Jurgen",
+      "doubt": "not a match (party); no times on the calendar"
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-08-08",
+      "title": "Koppelwedstrijd",
+      "doubt": "new water"
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-08-22",
+      "title": "GP Wedstrijd Bart & Chris",
+      "doubt": "probably the same water as Tommy Neckebroeck - Idegem?"
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-09-05",
+      "title": "Duitsland - België",
+      "doubt": "away match, no times on the calendar"
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-09-12",
+      "title": "GP Evert en Rudy",
+      "doubt": "result sheet says Kyma - Baasrode (location changed?)"
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-09-19",
+      "title": "Van Migerode Yvan",
+      "doubt": "result sheet says De Lustige Lijnvissers - Schellebelle; no S on the calendar but the sheet was entered as Super Prestige"
+    },
+    {
+      "file": "2026.txt",
+      "date": "2026-09-26",
+      "title": "GP Muller & Diego",
+      "doubt": "new water; no result yet"
+    },
+    {
+      "file": "2026-09-12-gp-evert-rudy.txt",
+      "date": "2026-09-12",
+      "title": "GP Evert & Rudy",
+      "doubt": "water on the result sheet (Kyma - Baasrode) differs from the calendar (Baasrode - Karperput); the sheet wins"
+    },
+    {
+      "file": "2026-09-19-gp-van-migerode-yvan.txt",
+      "date": "2026-09-19",
+      "title": "Grote Prijs Van Migerode Yvan",
+      "doubt": "water on the result sheet (De Lustige Lijnvissers - Schellebelle) differs from the calendar (Uitbergen); the sheet wins"
+    },
+    {
+      "file": "2026-09-19-gp-van-migerode-yvan.txt",
+      "date": "2026-09-19",
+      "title": "Grote Prijs Van Migerode Yvan",
+      "doubt": "Super Prestige: sheet says ja, calendar says nee; the sheet wins"
+    }
+  ],
   "sheetDoubts": [
     {
       "file": "2026-09-19-gp-van-migerode-yvan.txt",
