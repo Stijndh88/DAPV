@@ -1,0 +1,15 @@
+datum: 2026-09-12
+titel: GP Evert & Rudy
+water: Kyma - Baasrode
+super prestige: ja
+bron: handgeschreven blad, foto van Stijn (21/11/2026)
+---
+1 | Werner | 8 | 96,150
+2 | Jurgen (S) | 12 | 61,820
+3 | Diego (S) | 3 | 59,080
+4 | Bart (S) | 9 | 56,240
+5 | Muller | 2 | 45,640
+6 | Brackie | 1 | 43,140
+7 | Paul | 7 | 18,600
+8 | Pascal | 11 | 10,680
+9 | Freddy | 13 | 7,660 | "Freddy" without initial: read as Freddy Heck (Freddy Neirinckx is "Lodewijk" on the sheets)

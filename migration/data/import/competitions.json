@@ -1551,5 +1551,50 @@
     "oldPaths": [],
     "results": null,
     "textHtml": null
+  },
+  {
+    "slug": "2026-gp-evert-rudy",
+    "title": "GP Evert & Rudy",
+    "date": "2026-09-12",
+    "startTime": null,
+    "endTime": null,
+    "drawTime": null,
+    "waterSlug": "kyma-baasrode",
+    "type": "club",
+    "season": 2026,
+    "countsForStandings": true,
+    "status": "gespeeld",
+    "notes": "Telt mee voor de Super Prestige. Bron: handgeschreven blad, foto van Stijn (21/11/2026).",
+    "oldPaths": []
+  },
+  {
+    "slug": "2026-grote-prijs-van-migerode-yvan",
+    "title": "Grote Prijs Van Migerode Yvan",
+    "date": "2026-09-19",
+    "startTime": null,
+    "endTime": null,
+    "drawTime": null,
+    "waterSlug": "de-lustige-lijnvissers-schellebelle",
+    "type": "club",
+    "season": 2026,
+    "countsForStandings": true,
+    "status": "gespeeld",
+    "notes": "Telt mee voor de Super Prestige. Bron: handgeschreven blad van De Lustige Lijnvissers, foto van Stijn (21/11/2026).",
+    "oldPaths": []
+  },
+  {
+    "slug": "2026-gp-jurgen-paul",
+    "title": "GP Jurgen & Paul",
+    "date": "2026-10-03",
+    "startTime": null,
+    "endTime": null,
+    "drawTime": null,
+    "waterSlug": "brasemput-baasrode",
+    "type": "club",
+    "season": 2026,
+    "countsForStandings": true,
+    "status": "gespeeld",
+    "notes": "Telt mee voor de Super Prestige. Bron: handgeschreven blad, foto van Stijn (21/11/2026).",
+    "oldPaths": []
   }
 ]

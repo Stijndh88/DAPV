@@ -1,0 +1,17 @@
+datum: 2026-10-03
+titel: GP Jurgen & Paul
+water: Brasemput - Baasrode
+super prestige: ja
+bron: handgeschreven blad, foto van Stijn (21/11/2026)
+---
+1 | Van Migerode | 13 | 54,850 | first decimal could be 8 or 2 (54,850 or 54,250)
+2 | Werner | 19 | 45,700
+3 | Steven (S) | 7 | 38,700 | category letter is overwritten; read as (S)
+4 | Diego (S) | 4 | 36,100
+5 | Bart (S) | 27 | 33,150
+6 | Brackie | 30 | 30,150
+7 | Muller | 33 | 12,200
+8 | Pascal | 10 | 11,100
+9 | Jurgen (S) | 24 | 9,100
+10 | Mike (D) | 21 | 5,800 | "Mike" is not on the member list: new angler (is this Mekkes?)
+11 | Paul Couck | 16 | 0,850

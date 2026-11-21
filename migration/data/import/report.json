@@ -29,12 +29,12 @@
     "Yvan": "Yvan Van Migerode",
     "Pascal": "Pascal Cornand",
     "Van Goethem Kristof (s)": "Kristof Van Goethem",
-    "Muller": "(not on member list)",
+    "Muller": "Geert Wijnant",
     "Loeken Tatjen": "(not on member list)",
     "Jordy De Greef (s)": "Jordi De Greef",
     "Remi": "Remi Ophalvens",
     "Gevers Freddy": "Freddy Gevers (not on member list)",
-    "Lodewijk": "(not on member list)",
+    "Lodewijk": "Freddy Neirinckx",
     "Jordy (s)": "Jordi De Greef",
     "Steven H. (s)": "Steven Huysegoms",
     "Jurgen (s)": "Jurgen Van Broeck",
@@ -96,14 +96,23 @@
     "Couck Paul": "Paul Couck",
     "Arijs Ronny": "Ronny Arijs",
     "Brackie": "Rudy De Braeckeleer",
-    "Muller (v)": "Muller (not on member list)",
+    "Muller (v)": "Geert Wijnant",
     "Werner (v)": "Werner Bassleer",
     "Van Migerode (v)": "Yvan Van Migerode",
     "Steven": "Steven Huysegoms",
     "Peter": "Peter Bassleer",
     "Jurgen": "Jurgen Van Broeck",
     "Remi (v)": "Remi Ophalvens",
-    "Evert (v)": "Evert De Wuffel"
+    "Evert (v)": "Evert De Wuffel",
+    "Jurgen (S)": "Jurgen Van Broeck",
+    "Diego (S)": "Diego Ruysschaert",
+    "Bart (S)": "Bart Meert",
+    "Freddy": "Freddy Heck",
+    "De Braekeleer Rudy": "Rudy De Braeckeleer",
+    "Van Broek Jurgen": "Jurgen Van Broeck",
+    "Meert Bart": "Bart Meert",
+    "Steven (S)": "Steven Huysegoms",
+    "Mike (D)": "Mike (not on member list)"
   },
   "unparsedPosts": [],
   "counts": {
@@ -111,20 +120,54 @@
     "resultPosts": 40,
     "news": 1,
     "calendarRows": 89,
-    "competitions": 89,
-    "results": 40,
-    "resultEntries": 392,
-    "anglers": 38,
-    "waters": 15,
+    "competitions": 92,
+    "results": 43,
+    "resultEntries": 421,
+    "anglers": 37,
+    "waters": 18,
     "pages": 4,
     "albumPhotos": 19
   },
+  "sheetDoubts": [
+    {
+      "file": "2026-09-12-gp-evert-rudy.txt",
+      "place": 9,
+      "name": "Freddy",
+      "weight": "7,660",
+      "doubt": "\"Freddy\" without initial: read as Freddy Heck (Freddy Neirinckx is \"Lodewijk\" on the sheets)"
+    },
+    {
+      "file": "2026-09-19-gp-van-migerode-yvan.txt",
+      "place": 9,
+      "name": "Heck Freddy",
+      "weight": "12,000",
+      "doubt": "written as \"12,00 kg\"; read as 12,000"
+    },
+    {
+      "file": "2026-10-03-gp-jurgen-paul.txt",
+      "place": 1,
+      "name": "Van Migerode",
+      "weight": "54,850",
+      "doubt": "first decimal could be 8 or 2 (54,850 or 54,250)"
+    },
+    {
+      "file": "2026-10-03-gp-jurgen-paul.txt",
+      "place": 3,
+      "name": "Steven (S)",
+      "weight": "38,700",
+      "doubt": "category letter is overwritten; read as (S)"
+    },
+    {
+      "file": "2026-10-03-gp-jurgen-paul.txt",
+      "place": 10,
+      "name": "Mike (D)",
+      "weight": "5,800",
+      "doubt": "\"Mike\" is not on the member list: new angler (is this Mekkes?)"
+    }
+  ],
   "anglerGuesses": {
     "Jordy De Greef": "Jordi De Greef: The member list spells it 'Jordi'.",
     "Jordy": "Jordi De Greef: The member list spells it 'Jordi'.",
-    "Jefken B.": "Jozef Bassleer: Same as 'Jefken'.",
-    "Jefken": "Jozef Bassleer: Jef is short for Jozef, and 'Jefken B.' never fishes in the same match as Jozef Bassleer.",
-    "Ivan": "Yvan Van Migerode: Only in Koningschap 2022. Ivan Merckx has no results after 2021 and Yvan Van Migerode is also written 'Ivan V.M.' in 2022.",
-    "Brackie": "Rudy De Braeckeleer: The 2022 'GP De Wuffel - Braeckeleer' is called 'GP Brackie & Evert' in the 2024 calendar, so Brackie is Rudy De Braeckeleer."
+    "Freddy": "Freddy Heck: Only on the 12/9/2026 sheet; Freddy Heck (Freddy Neirinckx goes by Lodewijk)."
   }
 }

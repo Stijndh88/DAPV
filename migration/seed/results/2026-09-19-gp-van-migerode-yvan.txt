@@ -1,0 +1,15 @@
+datum: 2026-09-19
+titel: Grote Prijs Van Migerode Yvan
+water: De Lustige Lijnvissers - Schellebelle
+super prestige: ja
+bron: handgeschreven blad van De Lustige Lijnvissers, foto van Stijn (21/11/2026)
+---
+1 | Bassleer Werner | 3 | 69,280
+2 | Van Migerode Yvan | 9 | 67,520
+3 | Wijnant Geert | 6 | 58,220
+4 | Cornand Pascal | 31 | 56,400
+5 | De Braekeleer Rudy | 27 | 54,480
+6 | Van Broek Jurgen | 12 | 52,560
+7 | Meert Bart | 15 | 42,920
+8 | Couck Paul | 21 | 13,480
+9 | Heck Freddy | 24 | 12,000 | written as "12,00 kg"; read as 12,000

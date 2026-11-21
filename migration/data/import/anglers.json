@@ -116,7 +116,7 @@
   {
     "name": "Bart Meert",
     "slug": "bart-meert",
-    "category": null,
+    "category": "s",
     "member": true
   },
   {
@@ -210,21 +210,15 @@
     "member": false
   },
   {
-    "name": "Muller",
-    "slug": "muller",
-    "category": null,
-    "member": false
-  },
-  {
     "name": "Loeken Tatjen",
     "slug": "loeken-tatjen",
     "category": null,
     "member": false
   },
   {
-    "name": "Lodewijk",
-    "slug": "lodewijk",
-    "category": null,
+    "name": "Mike",
+    "slug": "mike",
+    "category": "d",
     "member": false
   }
 ]

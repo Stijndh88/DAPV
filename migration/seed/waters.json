@@ -113,6 +113,29 @@
         "staatswater"
       ],
       "_note": "Calendar only says 'Staatswater' (public water); location unknown."
+    },
+    {
+      "name": "Brasemput",
+      "place": "Baasrode",
+      "aliases": [
+        "brasemput"
+      ]
+    },
+    {
+      "name": "Kyma",
+      "place": "Baasrode",
+      "aliases": [
+        "kyma"
+      ]
+    },
+    {
+      "name": "De Lustige Lijnvissers",
+      "place": "Schellebelle",
+      "aliases": [
+        "lustige lijnvissers",
+        "schellebelle"
+      ],
+      "_note": "Water of the club De Lustige Lijnvissers."
     }
   ]
 }
