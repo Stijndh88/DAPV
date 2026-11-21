@@ -26,7 +26,7 @@ export const Anglers: CollectionConfig = {
       name: 'category',
       label: 'Categorie',
       type: 'text',
-      admin: { description: 'Optioneel, bv. "v" (dames), "s" (senior) of "j" (jeugd). Uit oude uitslagen overgenomen.' },
+      admin: { description: 'Optioneel: "s" (senior), "v" (veteraan) of "j" (junior). Uit oude uitslagen overgenomen.' },
     },
     slugField('name'),
   ],

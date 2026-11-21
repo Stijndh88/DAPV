@@ -2,7 +2,7 @@
 // Turn the raw WordPress export (data/raw) into import-ready JSON (data/import)
 // that matches the Payload collections in /app.
 //   node src/transform.mjs [--now 2026-11-20]
-import { readFile, writeFile, mkdir } from 'node:fs/promises'
+import { readFile, writeFile, mkdir, readdir } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import * as cheerio from 'cheerio'
@@ -115,6 +115,9 @@ function cleanHtml(html, { dropImages = true } = {}) {
 const imgSrc = (el) => [el.attribs['data-src'], el.attribs['data-lazy-src'], el.attribs.src].find((u) => u && !u.startsWith('data:')) ?? null
 const firstImage = (html) => cheerio.load(html ?? '')('img').toArray().map(imgSrc).find(Boolean) ?? null
 
+// country tags on guest anglers in result sheets; categories are s (senior), v (veteraan), j (junior)
+const COUNTRIES = { D: 'Duitsland', NL: 'Nederland', F: 'Frankrijk', L: 'Luxemburg' }
+
 // ---------- main ----------
 async function main() {
   const posts = await readJson(path.join(RAW, 'posts.json'), null)
@@ -166,7 +169,9 @@ async function main() {
   const matchWater = (cell) => {
     if (!cell) return null
     const c = cell.toLowerCase()
-    let w = waters.find((x) => c.includes(x.name.toLowerCase()) || x.aliases.some((a) => c.includes(a)))
+    // longest matching name or alias wins ("lustige lijnvissers" beats "lijnvissers")
+    const score = (x) => Math.max(0, ...[x.name.toLowerCase(), ...x.aliases].filter((a) => c.includes(a)).map((a) => a.length))
+    let w = waters.map((x) => [x, score(x)]).filter(([, n]) => n > 0).sort((a, b) => b[1] - a[1])[0]?.[0]
     if (!w) {
       w = { name: cell.trim(), place: null, slug: slugify(cell), aliases: [], description: null, imageFile: null, fromCalendar: true }
       waters.push(w)
@@ -258,6 +263,35 @@ async function main() {
       oldPaths: rc.oldPaths, results: rc.entries, textHtml: rc.textHtml || null,
     })
   }
+  // ---- results typed in from paper sheets (seed/results/*.txt, see its README) ----
+  report.sheetDoubts = []
+  const sheetDir = process.env.MIGRATION_SHEETS ?? path.join(ROOT, 'seed', 'results')
+  const sheetFiles = (await readdir(sheetDir).catch(() => [])).filter((f) => f.endsWith('.txt')).sort()
+  for (const file of sheetFiles) {
+    const text = await readFile(path.join(sheetDir, file), 'utf8')
+    const [head, body = ''] = text.split(/^---\s*$/m)
+    const meta = Object.fromEntries(head.split('\n').map((l) => l.match(/^\s*([^:#]+?)\s*:\s*(.*)$/)).filter(Boolean).map((m) => [m[1].toLowerCase(), m[2].trim()]))
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(meta.datum ?? '') || !meta.titel) { warn(`${file}: needs "datum: JJJJ-MM-DD" and "titel:"`); continue }
+    const entries = []
+    for (const line of body.split('\n')) {
+      if (!line.trim() || line.trim().startsWith('#')) continue
+      const [place, rawName, peg, weight, doubt] = line.split('|').map((x) => x.trim())
+      if (!rawName) continue
+      entries.push({ rawName, weight: parseWeight(weight), fishCount: null, peg: Number.parseInt(peg, 10) || null, oldPlace: Number.parseInt(place, 10) || null, king: false })
+      if (doubt) report.sheetDoubts.push({ file, place: Number.parseInt(place, 10) || null, name: rawName, weight, doubt })
+    }
+    const season = Number(meta.datum.slice(0, 4))
+    const sp = /^(ja|yes|x)$/i.test(meta['super prestige'] ?? '')
+    const type = inferType(meta.titel)
+    competitions.push({
+      slug: competitionSlug(season, meta.titel), title: meta.titel, date: meta.datum, startTime: null, endTime: null, drawTime: null,
+      waterSlug: matchWater(meta.water), type, season,
+      countsForStandings: type === 'kampioenschap' || sp, status: 'gespeeld',
+      notes: [sp && 'Telt mee voor de Super Prestige.', meta.bron && `Bron: ${meta.bron}.`].filter(Boolean).join(' ') || null,
+      oldPaths: [], results: entries, textHtml: null,
+    })
+  }
+
   // make slugs unique within the import
   const seen = new Map()
   for (const c of competitions) {
@@ -321,6 +355,12 @@ async function main() {
           pair = parts.length > 1 && /^\d+\s*\/\s*\d+$/.test(parts[1]) ? [parts[0]] : parts
         }
         const notes = []
+        // "(D)" after a guest's name is a country, not a category (s/v/j)
+        const country = pair[0].match(/\s*\((D|NL|F|L)\)\s*$/i)
+        if (country) {
+          pair[0] = pair[0].replace(country[0], '')
+          notes.push(`Gastvisser uit ${COUNTRIES[country[1].toUpperCase()]}`)
+        }
         if (e.king) notes.push('Koning')
         if (fish) notes.push(`Zwaarste vis ${fish[1].trim()} kg`)
         if (pair.length > 1) notes.push(`Koppel: ${pair.join(' & ')}`)

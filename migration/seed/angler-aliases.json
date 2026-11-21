@@ -25,14 +25,28 @@
     "Ivan": "Yvan Van Migerode",
     "Jefken": "Jozef Bassleer",
     "Jefken B.": "Jozef Bassleer",
-    "Brackie": "Rudy De Braeckeleer"
+    "Brackie": "Rudy De Braeckeleer",
+    "Muller": "Geert Wijnant",
+    "Lodewijk": "Freddy Neirinckx",
+    "Bart": "Bart Meert",
+    "Freddy": "Freddy Heck",
+    "Van Broek Jurgen": "Jurgen Van Broeck",
+    "De Braekeleer Rudy": "Rudy De Braeckeleer"
   },
   "guesses": {
-    "Ivan": "Only in Koningschap 2022. Ivan Merckx has no results after 2021 and Yvan Van Migerode is also written 'Ivan V.M.' in 2022.",
-    "Jefken": "Jef is short for Jozef, and 'Jefken B.' never fishes in the same match as Jozef Bassleer.",
-    "Jefken B.": "Same as 'Jefken'.",
-    "Brackie": "The 2022 'GP De Wuffel - Braeckeleer' is called 'GP Brackie & Evert' in the 2024 calendar, so Brackie is Rudy De Braeckeleer.",
     "Jordy": "The member list spells it 'Jordi'.",
     "Jordy De Greef": "The member list spells it 'Jordi'."
+  },
+  "confirmed": {
+    "_note": "Confirmed by Stijn on 2026-11-21",
+    "names": [
+      "Ivan",
+      "Jefken",
+      "Jefken B.",
+      "Brackie",
+      "Muller",
+      "Lodewijk",
+      "Freddy"
+    ]
   }
 }

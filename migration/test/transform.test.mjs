@@ -51,11 +51,21 @@ test('transform builds competitions, results, anglers and news', async () => {
   await writeFile(path.join(dir, 'raw', 'html.json'), '{}')
   await writeFile(path.join(dir, 'media-manifest.json'), JSON.stringify({ 'https://plasvissers.be/wp-content/uploads/2022/07/raffle_small.jpg': 'data/media/2022/07/raffle_small.jpg' }))
 
-  execFileSync(process.execPath, [path.join(ROOT, 'src/transform.mjs'), '--now', '2026-11-20'], { env: { ...process.env, MIGRATION_DATA: dir }, stdio: 'pipe' })
+  // one paper result sheet (seed/results format)
+  await mkdir(path.join(dir, 'sheets'), { recursive: true })
+  await writeFile(path.join(dir, 'sheets', '2026-09-19-gp-test.txt'), [
+    'datum: 2026-09-19', 'titel: Grote Prijs Van Migerode Yvan', 'water: De Lustige Lijnvissers - Schellebelle', 'super prestige: ja', '---',
+    '# plaats | naam | nr. | gewicht | twijfel', '1 | Bassleer Werner | 3 | 69,280', '2 | Muller | 6 | 58,220 | hard to read', '',
+  ].join('\n'))
+
+  execFileSync(process.execPath, [path.join(ROOT, 'src/transform.mjs'), '--now', '2026-11-20'], { env: { ...process.env, MIGRATION_DATA: dir, MIGRATION_SHEETS: path.join(dir, 'sheets') }, stdio: 'pipe' })
   const read = async (n) => JSON.parse(await readFile(path.join(dir, 'import', n), 'utf8'))
 
   const comps = await read('competitions.json')
-  assert.equal(comps.length, 3)
+  assert.equal(comps.length, 4)
+  const sheet = comps.find((c) => c.slug === '2026-grote-prijs-van-migerode-yvan')
+  assert.equal(sheet.waterSlug, 'de-lustige-lijnvissers-schellebelle') // not "De Meerse Lijnvissers"
+  assert.ok(sheet.countsForStandings)
   const arijs = comps.find((c) => c.slug === '2023-gp-fam-arijs')
   assert.equal(arijs.waterSlug, 'de-meerse-lijnvissers-mere')
   assert.equal(arijs.startTime, '13:30')
@@ -68,7 +78,11 @@ test('transform builds competitions, results, anglers and news', async () => {
   assert.match(parking.notes, /Geen uitslag/)
 
   const results = await read('results.json')
-  assert.equal(results.length, 2)
+  assert.equal(results.length, 3)
+  const sr = results.find((x) => x.competitionSlug === '2026-grote-prijs-van-migerode-yvan')
+  assert.deepEqual(sr.entries.map((e) => [e.anglerSlug, e.weight, e.peg]), [['werner-bassleer', 69.28, 3], ['geert-wijnant', 58.22, 6]])
+  const report = await read('report.json')
+  assert.equal(report.sheetDoubts[0].doubt, 'hard to read')
   const r = results.find((x) => x.competitionSlug === '2023-1e-reeks-kampioenschap')
   assert.equal(r.entries.length, 3) // empty row skipped
   assert.deepEqual(r.entries.map((e) => e.anglerSlug), ['evert-de-wuffel', 'pascal-cornand', 'mekkes'])
