@@ -232,8 +232,20 @@
     "to": "/club/bestuur"
   },
   {
+    "from": "/bwg_album/fotos",
+    "to": "/fotos"
+  },
+  {
     "from": "/bwg_gallery/fotos-2022",
     "to": "/fotos/fotos-2022"
+  },
+  {
+    "from": "/bwg_tag/2022",
+    "to": "/fotos/fotos-2022"
+  },
+  {
+    "from": "/bwg_tag/2023",
+    "to": "/fotos"
   },
   {
     "from": "/category/nieuws",

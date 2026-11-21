@@ -163,7 +163,8 @@ async function main() {
 
   // board
   for (const b of read<any[]>('board-members.json')) {
-    await upsert(payload, 'board-members', { name: { equals: b.name } }, { name: b.name, role: b.role, email: b.email, order: b.order })
+    const photo = await media(payload, b.photoFile, b.name)
+    await upsert(payload, 'board-members', { name: { equals: b.name } }, { name: b.name, role: b.role, email: b.email, order: b.order, photo })
     inc('board-members')
   }
 
@@ -178,16 +179,26 @@ async function main() {
 
   // pages
   for (const p of read<any[]>('pages.json')) {
-    await upsert(payload, 'pages', { slug: { equals: p.slug } }, { title: p.title, slug: p.slug, content: p.html, _status: 'published' })
+    // photos from the old page go after the text as Lexical upload blocks
+    let content: any = p.html
+    if (p.photos?.length) {
+      content = await htmlToLexical(p.html || '<p></p>')
+      for (const ph of p.photos) {
+        const id = await media(payload, ph.file, ph.caption ?? altFromFile(ph.file, p.title))
+        if (id) content.root.children.push({ type: 'upload', relationTo: 'media', value: id, fields: null, format: '', version: 3 })
+      }
+    }
+    await upsert(payload, 'pages', { slug: { equals: p.slug } }, { title: p.title, slug: p.slug, content, _status: 'published' })
     inc('pages')
   }
 
   // albums
   for (const a of read<any[]>('albums.json')) {
     const photos: (string | number)[] = []
-    for (const f of a.photoFiles) { const id = await media(payload, f, altFromFile(f, a.title)); if (id) photos.push(id) }
+    for (const f of a.photoFiles) { const id = await media(payload, f, a.photoTitles?.[f] ?? altFromFile(f, a.title)); if (id) photos.push(id) }
     await upsert(payload, 'albums', { slug: { equals: a.slug } }, {
       title: a.title, slug: a.slug, date: new Date(`${a.date}T12:00:00Z`).toISOString(), description: a.description, cover: photos[0], photos, _status: 'published',
+      competition: a.competitionSlug ? compIds.get(a.competitionSlug) : undefined,
     })
     inc('albums')
   }
