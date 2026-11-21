@@ -1,0 +1,64 @@
+[
+  {
+    "slug": "praktisch",
+    "title": "Praktische clubgegevens",
+    "html": "<div aria-hidden=\"true\"></div>\n\n\n\n<div><div>\n\n\n\n\n<div><div>\n<p>Clublokaal</p>\n\n\n\n<p>Café @ De Parking<br>Botermelkstraat 46<br>9300 Aalst</p>\n\n\n\n<ul><li><a href=\"https://www.facebook.com/atdeparking/\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 2C6.5 2 2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12c0-5.5-4.5-10-10-10z\"></path></svg><span>Facebook</span></a></li></ul>\n</div></div>\n</div></div>",
+    "photos": [
+      {
+        "file": "data/media/2022/07/cafeparking.png",
+        "caption": null
+      }
+    ],
+    "oldPaths": [
+      "/praktische-clubgegevens/",
+      "/?page_id=242"
+    ]
+  },
+  {
+    "slug": "reglement",
+    "title": "Clubreglement",
+    "html": "<div aria-hidden=\"true\"></div>\n\n\n\n<ul><li>Bij wedstrijden zoals koningschap, marathon, grote prijs (GP) en koppelvissing zal er gevist worden naar zuiver gewicht. </li><li>Bij het kampioenschap mag men de slechtst geviste wedstrijd laten vallen. </li><li>Bij een afwezigheid der reeksen komt men niet meer in aanmerking voor de titels. </li><li>Bij gelijke punten worden de punten van de vier reeksen opgenomen.</li></ul>",
+    "photos": [],
+    "oldPaths": [
+      "/ontstaan/clubreglement/",
+      "/?page_id=232"
+    ]
+  },
+  {
+    "slug": "lid-worden",
+    "title": "Lid worden?",
+    "html": "<p>Wil je lid worden van onze club? Dat kan! Vul hieronder het formulier in en we nemen zo snel mogelijk contact met jou op.</p>",
+    "photos": [],
+    "oldPaths": [
+      "/lid-worden/",
+      "/?page_id=98"
+    ]
+  },
+  {
+    "slug": "geschiedenis",
+    "title": "Geschiedenis",
+    "html": "<div>\n<div>\n<div></div>\n</div>\n\n\n\n<div>\n<p>De club is opgericht in 1969 door de heer Petrus Bassleer in café ’t Plasken. De eerste vergadering kon toch de aandacht trekken van zo’n zestig personen. Op dat moment was er nog geen voorzitter aangesteld. Na overleg met de aanwezigen werd er beslist om Jozef Bassleer aan te stellen, die op dat moment nog voorzitter was bij de Ajuinvissers. Eerst werd er nog druk overlegd tussen vader en zoon maar het voorzitterschap werd toch aanvaard en zo had de club ‘De Aalsterse Plasvissers’ hun patron. Het ledenbestand groeide aan tot ongeveer tachtig leden, wat voor een beginnende club al veel te veel was. De maatregel om maximum 50 leden te aanvaarden, was dan ook niet onoverkomelijk. Deze regel is nu nog steeds van kracht.</p>\n</div>\n</div>\n\n\n\n\n\n\n\n<p>De Plasvissers verlegden ook hun grenzen. De voorzitter van de club nam contact op met Belgische militairen die in Duitsland gekazerneerd waren in Ludenscheid om eens een wedstrijd te organiseren tussen beide clubs. Na 3 jaar was de Duitse club Schwerte-Rurh ook geïnteresseerd om mee te vissen. Deze traditie wordt nog steeds in  stand gehouden, en dit al 35 jaar lang.</p>\n\n\n\n<div></div>\n\n\n\n<p>In 2004 werd het 35-jarig jubileum van voorzitter Jozef Bassleer in feestzaal De Snip gevierd. In deze zaal wordt ook jaarlijks een groot ‘Plasvissers’ bal georganiseerd dat toch al om en bij de 100 aanwezigen telt. Onze Duitse vrienden uit Schwerte zijn ook steeds van de partij.</p>\n\n\n\n<div></div>\n\n\n\n<p>In 2019 vierde de club zijn 50 jarig jubileum. </p>",
+    "photos": [
+      {
+        "file": "data/media/2021/05/wp5ac523f1_02-1.jpg",
+        "caption": null
+      },
+      {
+        "file": "data/media/2019/06/PLasvissers-in-Duitsland_0001.jpg",
+        "caption": null
+      },
+      {
+        "file": "data/media/2019/06/plasvissers-hengelen-35-jaa.jpg",
+        "caption": null
+      },
+      {
+        "file": "data/media/2019/06/763.jpg",
+        "caption": null
+      }
+    ],
+    "oldPaths": [
+      "/ontstaan/",
+      "/?page_id=22"
+    ]
+  }
+]

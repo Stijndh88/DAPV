@@ -1,0 +1,18 @@
+{
+  "_source": "plasvissers.be /praktische-clubgegevens/, /ontstaan/ and homepage, read 2026-11-20",
+  "name": "De Aalsterse Plasvissers",
+  "tagline": "Al meer dan 50 jaar de tofste club van 't stad!",
+  "founded": 1969,
+  "stamnummer": "02001",
+  "activeMembers": 25,
+  "clubhouse": {
+    "name": "Café @ De Parking",
+    "street": "Botermelkstraat 46",
+    "postalCode": "9300",
+    "city": "Aalst",
+    "lat": 50.95317,
+    "lng": 4.06073,
+    "facebook": "https://www.facebook.com/atdeparking/"
+  },
+  "clubSong": "/wp-content/uploads/2019/06/t-Plasvisserslieken.mp3"
+}

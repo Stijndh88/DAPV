@@ -1,0 +1,141 @@
+{
+  "_source": "plasvissers.be /vislocaties/ and its subpages, read 2026-11-20. Addresses only where the site gives one. aliases help match calendar 'Water' cells.",
+  "waters": [
+    {
+      "name": "Donkvissers",
+      "place": "Mere",
+      "aliases": [
+        "donk"
+      ]
+    },
+    {
+      "name": "Koutervissers",
+      "place": "Viane",
+      "aliases": [
+        "kouter"
+      ]
+    },
+    {
+      "name": "Vissershof",
+      "place": "Mere",
+      "aliases": []
+    },
+    {
+      "name": "Warm Water",
+      "place": "Vilvoorde",
+      "aliases": [
+        "warm water"
+      ]
+    },
+    {
+      "name": "Gespoelde Put",
+      "place": "Grembergen",
+      "aliases": [
+        "gespoelde"
+      ]
+    },
+    {
+      "name": "Dendervissers",
+      "place": "Gijzegem",
+      "aliases": [
+        "gijzegem",
+        "dender"
+      ],
+      "oldPath": "/vislocaties/dendervissers-gijzegem/"
+    },
+    {
+      "name": "De Meerse Lijnvissers",
+      "place": "Mere",
+      "address": "Biezeputstraat 10, 9420 Erpe-Mere",
+      "aliases": [
+        "meerse",
+        "lijnvissers"
+      ],
+      "oldPath": "/vislocaties/meerse-lijnvissers-mere/"
+    },
+    {
+      "name": "Meldert vijver",
+      "place": "Meldert",
+      "aliases": [
+        "meldert"
+      ]
+    },
+    {
+      "name": "De Donkere Wolk",
+      "place": "Geraardsbergen",
+      "aliases": [
+        "donkere wolk"
+      ]
+    },
+    {
+      "name": "Tommy Neckebroeck",
+      "place": "Idegem",
+      "aliases": [
+        "tommy"
+      ],
+      "_note": "Calendar writes both 'Tommy Neckebroeck' and 'Tommy N - Idegem'."
+    },
+    {
+      "name": "Ponderosa",
+      "place": "Okegem",
+      "aliases": [
+        "ponderosa"
+      ]
+    },
+    {
+      "name": "Schwerte am Ruhr",
+      "place": "Schwerte",
+      "aliases": [
+        "schwerte"
+      ],
+      "_note": "Away match at the German friends' club."
+    },
+    {
+      "name": "Kapelle-op-den-Bos",
+      "place": "Kapelle-op-den-Bos",
+      "aliases": [
+        "kapelle"
+      ],
+      "_note": "Only the town is known from the calendar."
+    },
+    {
+      "name": "Humbeek",
+      "place": "Humbeek",
+      "aliases": [
+        "humbeek"
+      ],
+      "_note": "Only the town is known from the calendar."
+    },
+    {
+      "name": "Staatswater",
+      "place": null,
+      "aliases": [
+        "staatswater"
+      ],
+      "_note": "Calendar only says 'Staatswater' (public water); location unknown."
+    },
+    {
+      "name": "Brasemput",
+      "place": "Baasrode",
+      "aliases": [
+        "brasemput"
+      ]
+    },
+    {
+      "name": "Kyma",
+      "place": "Baasrode",
+      "aliases": [
+        "kyma"
+      ]
+    },
+    {
+      "name": "De Lustige Lijnvissers",
+      "place": "Schellebelle",
+      "aliases": [
+        "lustige lijnvissers",
+        "schellebelle"
+      ],
+      "_note": "Water of the club De Lustige Lijnvissers."
+    }
+  ]
+}

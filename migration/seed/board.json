@@ -1,0 +1,11 @@
+{
+  "_source": "plasvissers.be /bestuur/, read 2026-11-20. Order as shown on the site.",
+  "members": [
+    { "name": "Werner Bassleer", "role": "Voorzitter", "email": "werner@plasvissers.be" },
+    { "name": "Evert De Wuffel", "role": "Ondervoorzitter", "email": "evert@plasvissers.be" },
+    { "name": "Diego Ruysschaert", "role": "Secretaris", "email": "diego@plasvissers.be" },
+    { "name": "Conny Bassleer", "role": "Schatbewaarder", "email": "conny@plasvissers.be" },
+    { "name": "Rudy De Braeckeleer", "role": "Bestuurslid" },
+    { "name": "Ronny Arijs", "role": "Bestuurslid" }
+  ]
+}

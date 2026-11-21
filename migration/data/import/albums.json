@@ -1,0 +1,241 @@
+[
+  {
+    "slug": "fotos-2022",
+    "title": "Foto's 2022",
+    "date": "2022-12-31",
+    "description": "Overgezet van de vorige website.",
+    "coverFile": "data/media/photo-gallery/285010115_1737228953281900_3575035053435660225_n.jpg",
+    "photoFiles": [
+      "data/media/photo-gallery/285010115_1737228953281900_3575035053435660225_n.jpg",
+      "data/media/photo-gallery/288797718_2284723458359002_1967456932431103397_n.jpg",
+      "data/media/photo-gallery/308269703_492945302385429_6289307336010035704d_n.jpg",
+      "data/media/photo-gallery/221366445_151538270412191_5831792612328540750_n.jpg",
+      "data/media/photo-gallery/279732296_5022700144443644_6430984332178047335_n.jpg",
+      "data/media/photo-gallery/220404071_466212124550372_7041011100863352747_n.jpg",
+      "data/media/photo-gallery/217546909_3006912932968446_3584067088692233692_n.jpg",
+      "data/media/photo-gallery/221855214_510594880168193_8313091901119606881_n.jpg",
+      "data/media/photo-gallery/235331567_247308090579454_5793503029789529239_n.jpg",
+      "data/media/photo-gallery/234094724_125876643051741_5928067630602687923_n.jpg",
+      "data/media/photo-gallery/287023683_1089225538673411_7186701734783381132_n-1.jpg",
+      "data/media/photo-gallery/291147517_1062265121392525_6972603856646375859_n.jpg",
+      "data/media/photo-gallery/291049489_1200089724138047_5466603187717694716_n.jpg",
+      "data/media/photo-gallery/290955760_1504395673310991_9162590404542967928_n.jpg",
+      "data/media/photo-gallery/291445688_575578713963378_3872431870046001542_n.jpg",
+      "data/media/photo-gallery/291335757_368978938686614_5750429447133595942_n.jpg",
+      "data/media/photo-gallery/291583991_3914324325459747_3327126005714595282_n.jpg",
+      "data/media/photo-gallery/290885592_893256691604000_467733177936099696_n.jpg",
+      "data/media/photo-gallery/291781278_1213433832754229_4819458437804522285_n.jpg"
+    ],
+    "oldPaths": [
+      "/fotos/",
+      "/bwg_gallery/fotos-2022/"
+    ]
+  },
+  {
+    "slug": "wedstrijd-2021-gp-familie-arijs",
+    "title": "Foto's GP Familie Arijs 2021",
+    "date": "2021-05-01",
+    "description": "Foto’s bij de uitslag op de vorige website.",
+    "competitionSlug": "2021-gp-familie-arijs",
+    "coverFile": "data/media/2021/05/180525350_920608092114473_2067377979290666204_n.jpg",
+    "photoFiles": [
+      "data/media/2021/05/180525350_920608092114473_2067377979290666204_n.jpg"
+    ],
+    "oldPaths": []
+  },
+  {
+    "slug": "wedstrijd-2021-gp-kristof-van-goethem-immo-kurt",
+    "title": "Foto's GP Kristof Van Goethem – Immo Kurt 2021",
+    "date": "2021-05-08",
+    "description": "Foto’s bij de uitslag op de vorige website.",
+    "competitionSlug": "2021-gp-kristof-van-goethem-immo-kurt",
+    "coverFile": "data/media/2021/05/183257447_4442349472461492_8957466267367636556_n.jpg",
+    "photoFiles": [
+      "data/media/2021/05/183257447_4442349472461492_8957466267367636556_n.jpg",
+      "data/media/2021/05/183108008_604481210527296_8147841837784218587_n.jpg",
+      "data/media/2021/05/183603747_288836952958924_5290161960804401551_n.jpg"
+    ],
+    "oldPaths": []
+  },
+  {
+    "slug": "wedstrijd-2021-gp-freddy-neirinckx",
+    "title": "Foto's GP Freddy Neirinckx 2021",
+    "date": "2021-05-22",
+    "description": "Foto’s bij de uitslag op de vorige website.",
+    "competitionSlug": "2021-gp-freddy-neirinckx",
+    "coverFile": "data/media/2021/05/DeBochtenBerlare.jpg",
+    "photoFiles": [
+      "data/media/2021/05/DeBochtenBerlare.jpg",
+      "data/media/2021/05/IMG_20210522_074522-scaled.jpg",
+      "data/media/2021/05/IMG_20210522_111201-2-scaled.jpg"
+    ],
+    "oldPaths": []
+  },
+  {
+    "slug": "wedstrijd-2021-koningschap-2021",
+    "title": "Foto's Koningschap 2021",
+    "date": "2021-05-29",
+    "description": "Foto’s bij de uitslag op de vorige website.",
+    "competitionSlug": "2021-koningschap-2021",
+    "coverFile": "data/media/2021/05/IMG_20210529_190114_Bokeh-scaled.jpg",
+    "photoFiles": [
+      "data/media/2021/05/IMG_20210529_190114_Bokeh-scaled.jpg",
+      "data/media/2021/05/IMG_20210529_181942_Bokeh-scaled.jpg",
+      "data/media/2021/05/IMG_20210522_074522-scaled.jpg",
+      "data/media/2021/05/IMG_20210522_111201-2-scaled.jpg",
+      "data/media/2021/05/IMG_20210522_111201-1-scaled.jpg",
+      "data/media/2021/05/IMG_20210522_111201-scaled.jpg"
+    ],
+    "oldPaths": []
+  },
+  {
+    "slug": "wedstrijd-2021-gp-familie-verpeten",
+    "title": "Foto's GP Familie Verpeten 2021",
+    "date": "2021-06-05",
+    "description": "Foto’s bij de uitslag op de vorige website.",
+    "competitionSlug": "2021-gp-familie-verpeten",
+    "coverFile": "data/media/2021/06/197571826_240171051204276_2998403309549613505_n.jpg",
+    "photoFiles": [
+      "data/media/2021/06/197571826_240171051204276_2998403309549613505_n.jpg"
+    ],
+    "oldPaths": []
+  },
+  {
+    "slug": "wedstrijd-2021-gp-heck-freddy",
+    "title": "Foto's GP Heck Freddy 2021",
+    "date": "2021-06-12",
+    "description": "Foto’s bij de uitslag op de vorige website.",
+    "competitionSlug": "2021-gp-heck-freddy",
+    "coverFile": "data/media/2021/06/IMG_20210612_123628.jpg",
+    "photoFiles": [
+      "data/media/2021/06/IMG_20210612_123628.jpg"
+    ],
+    "oldPaths": []
+  },
+  {
+    "slug": "wedstrijd-2021-koppelwedstrijd",
+    "title": "Foto's Koppelwedstrijd 2021",
+    "date": "2021-06-26",
+    "description": "Foto’s bij de uitslag op de vorige website.",
+    "competitionSlug": "2021-koppelwedstrijd",
+    "coverFile": "data/media/2021/07/IMG_20210626_090524-scaled.jpg",
+    "photoFiles": [
+      "data/media/2021/07/IMG_20210626_090524-scaled.jpg"
+    ],
+    "oldPaths": []
+  },
+  {
+    "slug": "wedstrijd-2021-marathon",
+    "title": "Foto's Marathon 2021",
+    "date": "2021-08-21",
+    "description": "Foto’s bij de uitslag op de vorige website.",
+    "competitionSlug": "2021-marathon",
+    "coverFile": "data/media/2021/09/235331567_247308090579454_5793503029789529239_n.jpg",
+    "photoFiles": [
+      "data/media/2021/09/235331567_247308090579454_5793503029789529239_n.jpg",
+      "data/media/2021/09/234094724_125876643051741_5928067630602687923_n.jpg"
+    ],
+    "oldPaths": []
+  },
+  {
+    "slug": "wedstrijd-2022-2e-reeks-kampioenschap",
+    "title": "Foto's 2e Reeks Kampioenschap 2022",
+    "date": "2022-04-23",
+    "description": "Foto’s bij de uitslag op de vorige website.",
+    "competitionSlug": "2022-2e-reeks-kampioenschap",
+    "coverFile": "data/media/2022/07/278853312_1644682899225216_1679680750157994576_n.jpg",
+    "photoFiles": [
+      "data/media/2022/07/278853312_1644682899225216_1679680750157994576_n.jpg"
+    ],
+    "oldPaths": []
+  },
+  {
+    "slug": "wedstrijd-2022-4e-reeks-kampioenschap",
+    "title": "Foto's 4e Reeks Kampioenschap 2022",
+    "date": "2022-05-07",
+    "description": "Foto’s bij de uitslag op de vorige website.",
+    "competitionSlug": "2022-4e-reeks-kampioenschap",
+    "coverFile": "data/media/2022/07/279732296_5022700144443644_6430984332178047335_n.jpg",
+    "photoFiles": [
+      "data/media/2022/07/279732296_5022700144443644_6430984332178047335_n.jpg"
+    ],
+    "oldPaths": []
+  },
+  {
+    "slug": "wedstrijd-2022-gp-freddy-heck",
+    "title": "Foto's GP Freddy Heck 2022",
+    "date": "2022-06-04",
+    "description": "Foto’s bij de uitslag op de vorige website.",
+    "competitionSlug": "2022-gp-freddy-heck",
+    "coverFile": "data/media/2022/07/285010115_1737228953281900_3575035053435660225_n.jpg",
+    "photoFiles": [
+      "data/media/2022/07/285010115_1737228953281900_3575035053435660225_n.jpg"
+    ],
+    "oldPaths": []
+  },
+  {
+    "slug": "wedstrijd-2022-belgie-duitsland",
+    "title": "Foto's België ~ Duitsland 2022",
+    "date": "2022-06-11",
+    "description": "Foto’s bij de uitslag op de vorige website.",
+    "competitionSlug": "2022-belgie-duitsland",
+    "coverFile": "data/media/2022/07/287023683_1089225538673411_7186701734783381132_n.jpg",
+    "photoFiles": [
+      "data/media/2022/07/287023683_1089225538673411_7186701734783381132_n.jpg"
+    ],
+    "oldPaths": []
+  },
+  {
+    "slug": "wedstrijd-2022-gp-conny-bassleer",
+    "title": "Foto's GP Conny Bassleer 2022",
+    "date": "2022-06-18",
+    "description": "Foto’s bij de uitslag op de vorige website.",
+    "competitionSlug": "2022-gp-conny-bassleer",
+    "coverFile": "data/media/2022/07/288183450_5313758295398387_1545616678851193876_n.jpg",
+    "photoFiles": [
+      "data/media/2022/07/288183450_5313758295398387_1545616678851193876_n.jpg"
+    ],
+    "oldPaths": []
+  },
+  {
+    "slug": "archief-vorige-website",
+    "title": "Archief vorige website",
+    "date": "2024-05-26",
+    "description": "Foto’s uit de mediabibliotheek van de vorige website die nergens anders staan: oude portretten, het clublokaal Café De Belskes, vangsten en wedstrijddagen.",
+    "coverFile": "data/media/2019/06/belgievsduitsland.jpg",
+    "photoFiles": [
+      "data/media/2019/06/belgievsduitsland.jpg",
+      "data/media/2019/06/DeMeerseLijnvissers.jpg",
+      "data/media/2019/06/Werner.jpg",
+      "data/media/2019/06/Verpeten-Alfons.jpg",
+      "data/media/2019/06/Steenhout-Rudy.jpg",
+      "data/media/2019/06/Koning-Werner-2014.jpg",
+      "data/media/2019/06/Jefken-plasvisser.jpg",
+      "data/media/2019/06/DSC00643.jpg",
+      "data/media/2019/06/Diego.jpg",
+      "data/media/2019/06/De-Soete.jpg",
+      "data/media/2019/06/bruno.jpg",
+      "data/media/2019/06/Anita.jpg",
+      "data/media/2021/04/IMG_1590-scaled.jpg",
+      "data/media/2021/04/IMG_1585-scaled.jpg",
+      "data/media/2021/04/IMG_1657-scaled.jpg",
+      "data/media/2021/04/IMG_1552-scaled.jpg",
+      "data/media/2021/05/dendervissersgijzegem.jpg",
+      "data/media/2021/05/meerselijnvissers.jpg",
+      "data/media/2021/05/cafedebelskes-2.jpg",
+      "data/media/2021/05/cafedebelskes-1.jpg",
+      "data/media/2021/05/wp1b9ed8fc_02.jpg",
+      "data/media/2022/07/name-game-basket.jpg",
+      "data/media/2022/07/291343762_1048802389331957_7809468568254203883_n.jpg",
+      "data/media/2023/04/denderjaagvissers.png",
+      "data/media/2024/05/20240525_133733-scaled.jpg"
+    ],
+    "photoTitles": {
+      "data/media/2019/06/Verpeten-Alfons.jpg": "Fonsken",
+      "data/media/2019/06/Steenhout-Rudy.jpg": "Rudy",
+      "data/media/2019/06/Jefken-plasvisser.jpg": "Jefken met zijn vangst",
+      "data/media/2019/06/DSC00643.jpg": "Jef"
+    },
+    "oldPaths": []
+  }
+]
