@@ -112,7 +112,7 @@
     "Van Broek Jurgen": "Jurgen Van Broeck",
     "Meert Bart": "Bart Meert",
     "Steven (S)": "Steven Huysegoms",
-    "Mike (D)": "Mike (not on member list)"
+    "Mike": "(not on member list)"
   },
   "unparsedPosts": [],
   "counts": {
@@ -130,44 +130,15 @@
   },
   "sheetDoubts": [
     {
-      "file": "2026-09-12-gp-evert-rudy.txt",
-      "place": 9,
-      "name": "Freddy",
-      "weight": "7,660",
-      "doubt": "\"Freddy\" without initial: read as Freddy Heck (Freddy Neirinckx is \"Lodewijk\" on the sheets)"
-    },
-    {
       "file": "2026-09-19-gp-van-migerode-yvan.txt",
       "place": 9,
       "name": "Heck Freddy",
       "weight": "12,000",
       "doubt": "written as \"12,00 kg\"; read as 12,000"
-    },
-    {
-      "file": "2026-10-03-gp-jurgen-paul.txt",
-      "place": 1,
-      "name": "Van Migerode",
-      "weight": "54,850",
-      "doubt": "first decimal could be 8 or 2 (54,850 or 54,250)"
-    },
-    {
-      "file": "2026-10-03-gp-jurgen-paul.txt",
-      "place": 3,
-      "name": "Steven (S)",
-      "weight": "38,700",
-      "doubt": "category letter is overwritten; read as (S)"
-    },
-    {
-      "file": "2026-10-03-gp-jurgen-paul.txt",
-      "place": 10,
-      "name": "Mike (D)",
-      "weight": "5,800",
-      "doubt": "\"Mike\" is not on the member list: new angler (is this Mekkes?)"
     }
   ],
   "anglerGuesses": {
     "Jordy De Greef": "Jordi De Greef: The member list spells it 'Jordi'.",
-    "Jordy": "Jordi De Greef: The member list spells it 'Jordi'.",
-    "Freddy": "Freddy Heck: Only on the 12/9/2026 sheet; Freddy Heck (Freddy Neirinckx goes by Lodewijk)."
+    "Jordy": "Jordi De Greef: The member list spells it 'Jordi'."
   }
 }

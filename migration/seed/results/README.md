@@ -12,12 +12,13 @@ bron: handgeschreven blad, foto van Stijn (21/11/2026)
 ---
 # plaats | naam | nr. | gewicht | twijfel (optional, not shown on the site)
 1 | Werner | 8 | 96,150
-2 | Jurgen (S) | 12 | 61,820 | category letter unclear
+2 | Jurgen (S) | 12 | 61,820 | weight hard to read
 ```
 
 - Names may be short ("Werner", "Diego (S)") or "Last First": they are matched to anglers with
   `seed/members.json` and `seed/angler-aliases.json`. Add an alias there when a new nickname appears.
-- `(S)`, `(D)`, `(v)` after a name is kept as the angler's category.
+- `(S)` senior, `(V)` veteraan, `(J)` junior after a name is kept as the angler's category.
+- `(D)` after a guest's name is a country (Duitsland), shown as "Gastvisser uit Duitsland". Also `(NL)`, `(F)`, `(L)`.
 - A fifth column is a reading doubt. It goes into `data/import/report.json` ("sheetDoubts") so someone
   can check the photo, and is not shown on the site.
 - `water` is matched by name or alias in `seed/waters.json`; an unknown water is created and reported.

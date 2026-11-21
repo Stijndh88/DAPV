@@ -12,4 +12,4 @@ bron: handgeschreven blad, foto van Stijn (21/11/2026)
 6 | Brackie | 1 | 43,140
 7 | Paul | 7 | 18,600
 8 | Pascal | 11 | 10,680
-9 | Freddy | 13 | 7,660 | "Freddy" without initial: read as Freddy Heck (Freddy Neirinckx is "Lodewijk" on the sheets)
+9 | Freddy | 13 | 7,660

@@ -35,8 +35,7 @@
   },
   "guesses": {
     "Jordy": "The member list spells it 'Jordi'.",
-    "Jordy De Greef": "The member list spells it 'Jordi'.",
-    "Freddy": "Only on the 12/9/2026 sheet; Freddy Heck (Freddy Neirinckx goes by Lodewijk)."
+    "Jordy De Greef": "The member list spells it 'Jordi'."
   },
   "confirmed": {
     "_note": "Confirmed by Stijn on 2026-11-21",
@@ -46,7 +45,8 @@
       "Jefken B.",
       "Brackie",
       "Muller",
-      "Lodewijk"
+      "Lodewijk",
+      "Freddy"
     ]
   }
 }

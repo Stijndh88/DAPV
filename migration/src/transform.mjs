@@ -115,6 +115,9 @@ function cleanHtml(html, { dropImages = true } = {}) {
 const imgSrc = (el) => [el.attribs['data-src'], el.attribs['data-lazy-src'], el.attribs.src].find((u) => u && !u.startsWith('data:')) ?? null
 const firstImage = (html) => cheerio.load(html ?? '')('img').toArray().map(imgSrc).find(Boolean) ?? null
 
+// country tags on guest anglers in result sheets; categories are s (senior), v (veteraan), j (junior)
+const COUNTRIES = { D: 'Duitsland', NL: 'Nederland', F: 'Frankrijk', L: 'Luxemburg' }
+
 // ---------- main ----------
 async function main() {
   const posts = await readJson(path.join(RAW, 'posts.json'), null)
@@ -352,6 +355,12 @@ async function main() {
           pair = parts.length > 1 && /^\d+\s*\/\s*\d+$/.test(parts[1]) ? [parts[0]] : parts
         }
         const notes = []
+        // "(D)" after a guest's name is a country, not a category (s/v/j)
+        const country = pair[0].match(/\s*\((D|NL|F|L)\)\s*$/i)
+        if (country) {
+          pair[0] = pair[0].replace(country[0], '')
+          notes.push(`Gastvisser uit ${COUNTRIES[country[1].toUpperCase()]}`)
+        }
         if (e.king) notes.push('Koning')
         if (fish) notes.push(`Zwaarste vis ${fish[1].trim()} kg`)
         if (pair.length > 1) notes.push(`Koppel: ${pair.join(' & ')}`)
