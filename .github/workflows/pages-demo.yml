@@ -1,0 +1,105 @@
+# Read-only demo of the public site on GitHub Pages (https://<owner>.github.io/<repo>/).
+#
+# Pages only serves static files, so this job runs the real app once against a throwaway
+# PostgreSQL, imports the WordPress content from migration/data, and saves every public
+# page as plain HTML with demo/snapshot.mjs. The CMS (/admin) is not part of the demo.
+#
+# One-time setup: Settings → Pages → Build and deployment → Source: "GitHub Actions".
+name: Pages demo
+
+on:
+  push:
+    branches: [main]
+    paths: [app/**, migration/data/**, demo/**, .github/workflows/pages-demo.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-demo
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_USER: payload
+          POSTGRES_PASSWORD: payload
+          POSTGRES_DB: plasvissers
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U payload"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      DATABASE_URI: postgres://payload:payload@localhost:5432/plasvissers
+      MEDIA_DIR: ${{ github.workspace }}/demo-media
+      NEXT_TELEMETRY_DISABLED: '1'
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          package_json_file: app/package.json
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: app/pnpm-lock.yaml
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Throwaway secret
+        run: echo "PAYLOAD_SECRET=$(openssl rand -hex 32)" >> "$GITHUB_ENV"
+
+      - name: Create tables and import the old site's content
+        run: |
+          pnpm migrate
+          pnpm payload run scripts/import-wordpress.ts
+
+      - name: Build
+        run: pnpm build
+
+      - name: Start the app
+        run: |
+          nohup pnpm start -p 3000 > "$RUNNER_TEMP/server.log" 2>&1 &
+          for i in $(seq 1 60); do
+            curl -fs http://localhost:3000/api/health > /dev/null && exit 0
+            sleep 2
+          done
+          cat "$RUNNER_TEMP/server.log"; exit 1
+
+      - name: Save the public pages as static HTML
+        working-directory: .
+        run: |
+          node demo/snapshot.mjs \
+            --origin http://localhost:3000 \
+            --base "/${{ github.event.repository.name }}" \
+            --out "$RUNNER_TEMP/site" \
+            --static app/.next/static \
+            --repo "${{ github.server_url }}/${{ github.repository }}"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ runner.temp }}/site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
