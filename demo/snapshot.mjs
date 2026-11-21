@@ -62,7 +62,7 @@ function enqueue(raw, from) {
 function refsIn(html) {
   const out = []
   for (const m of html.matchAll(/\s(?:href|src|action|poster)="([^"]*)"/g)) out.push(m[1])
-  for (const m of html.matchAll(/\ssrcSet="([^"]*)"|\ssrcset="([^"]*)"/g))
+  for (const m of html.matchAll(/\s(?:imageSrcSet|imagesrcset|srcSet)="([^"]*)"|\ssrcset="([^"]*)"/g))
     for (const part of (m[1] ?? m[2]).split(',')) out.push(part.trim().split(/\s+/)[0])
   for (const m of html.matchAll(/url\(\s*['"]?([^'")]+)['"]?\s*\)/g)) out.push(m[1])
   return out
@@ -138,7 +138,7 @@ function transform(html, from) {
     .replace(/<head>/, '<head><meta name="robots" content="noindex"/>')
     .replace(/(<body[^>]*>)/, `$1${BANNER}`)
   html = html.replace(/(\s(?:href|src|action|poster)=")([^"]*)(")/g, (_, a, v, b) => a + rewriteUrl(v, from) + b)
-  html = html.replace(/(\ssrc[sS]et=")([^"]*)(")/g, (_, a, v, b) =>
+  html = html.replace(/(\s(?:imageSrcSet|imagesrcset|srcSet|srcset)=")([^"]*)(")/g, (_, a, v, b) =>
     a + v.split(',').map((part) => {
       const [u, ...rest] = part.trim().split(/\s+/)
       return [rewriteUrl(u, from), ...rest].join(' ')
