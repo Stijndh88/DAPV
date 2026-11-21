@@ -1,0 +1,28 @@
+seizoen: 2026
+bron: papieren "Wedstrijdkalender Aalsterse Plasvissers 2026", foto van Stijn (21/11/2026)
+---
+# wedstrijd | S | datum | water | trekking | vissen van ... tot | twijfel (optional, not shown on the site)
+GP Fam. Arijs | S | 04/04/26 | Meerse Lijnvissers - Mere | 7u45 | 9u00-12u00/13u30-17u00
+1° Reeks Kampioenschap | S | 11/04/26 | Dender - Gijzegem | 8u00 | 10u00 tot 16u00
+2° Reeks Kampioenschap | S | 18/04/26 | Humbeekse Lijnvissers | 7u45 | 9u00-12u00/13u30-17u00 | new water, town not on the calendar (Humbeek?)
+3° Reeks Kampioenschap | S | 25/04/26 | Dender - Liedekerke | 8u00 | 10u00 tot 16u00 | new water: Dender at Liedekerke, exact spot unknown
+GP Ophalvens Remi | S | 02/05/26 | Meldertvijver - Meldert | 7u45 | 9u00-12u00/13u30-17u00 | "Ophalvens" read as written; the 2024 GP was "Loeken Remi"
+4° Reeks Kampioenschap | S | 09/05/26 | Vissershof - Mere | 7u45 | 9u00-12u00/13u30-17u00
+GP Heck Freddy | S | 23/05/26 | Ponderosa - Okegem | 7u45 | 9u00-12u00/13u30-17u00
+GP Stijn en Simon | S | 30/05/26 | Humbeekse Lijnvissers | 7u45 | 9u00-12u00/13u30-17u00
+Marathon | S | 06/06/26 | Donkvissers - Erpe | 7u45 | 9u00-12u00/13u30-18u00 | calendar says Erpe; earlier seasons say Donkvissers Mere (same water, Erpe-Mere)
+België - Duitsland |  | 13/06/26 | Ponderosa - Okegem | 8u15 | 9u30-12u00/13u30-16u00
+Koningschap |  | 20/06/26 | Vissershof - Mere | 15/06/26 | 9u30-12u00/13u30-17u00 | "trekking" column says 15/06/26, not a time: maybe the registration deadline?
+GP Bestuur | S | 27/06/26 | MDM - Nederzwalm | 7u45 | 9u00-12u00/13u30-17u00 | new water
+Trouwfeest Jurgen |  | 04/07/26 | "De Mooie Molen" |  |  | not a match (party); no times on the calendar
+Avondvissing | S | 01/08/26 | Vissershof - Mere | 12u45 | 14u00 tot 20u00
+Koppelwedstrijd |  | 08/08/26 | Meikopvissers - Hamme | 7u45 | 9u00-12u00/13u30-17u00 | new water
+GP Wedstrijd Bart & Chris | S | 22/08/26 | De Lustige Visser - Idegem | 7u45 | 9u00-12u00/13u30-17u00 | probably the same water as Tommy Neckebroeck - Idegem?
+GP Bassleer Conny & Peter | S | 29/08/26 | Meerse Lijnvissers - Mere | 7u45 | 9u00-12u00/13u30-17u00
+Duitsland - België |  | 05/09/26 | Schwerte Am Ruhr |  |  | away match, no times on the calendar
+GP Evert en Rudy | S | 12/09/26 | Baasrode - Karperput | 7u45 | 9u00-12u00/13u30-17u00 | result sheet says Kyma - Baasrode (location changed?)
+Van Migerode Yvan |  | 19/09/26 | Uitbergen | 7u45 | 9u00-12u00/13u30-17u00 | result sheet says De Lustige Lijnvissers - Schellebelle; no S on the calendar but the sheet was entered as Super Prestige
+GP Muller & Diego | S | 26/09/26 | Marikjell - Denderhoutem | 7u45 | 9u00-12u00/13u30-17u00 | new water; no result yet
+GP Jurgen en Paul | S | 03/10/26 | Baarsrode - Brasemput | 7u45 | 9u00-12u00/13u30-17u00
+GP Café Parking | S | 10/10/26 | Dender Gijzegem | 8u00 | 10u00 tot 16u00
+GP Bassleer | S | 17/10/26 | Dender Gijzegem | 8u00 | 10u00 tot 16u00

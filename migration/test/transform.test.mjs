@@ -58,14 +58,30 @@ test('transform builds competitions, results, anglers and news', async () => {
     '# plaats | naam | nr. | gewicht | twijfel', '1 | Bassleer Werner | 3 | 69,280', '2 | Muller | 6 | 58,220 | hard to read', '',
   ].join('\n'))
 
-  execFileSync(process.execPath, [path.join(ROOT, 'src/transform.mjs'), '--now', '2026-11-20'], { env: { ...process.env, MIGRATION_DATA: dir, MIGRATION_SHEETS: path.join(dir, 'sheets') }, stdio: 'pipe' })
+  // one paper calendar (seed/calendars format); the sheet above completes its 19/09 row
+  await mkdir(path.join(dir, 'calendars'), { recursive: true })
+  await writeFile(path.join(dir, 'calendars', '2026.txt'), [
+    'seizoen: 2026', '---', '# wedstrijd | S | datum | water | trekking | vissen | twijfel',
+    'GP Fam. Arijs | S | 04/04/26 | Meerse Lijnvissers - Mere | 7u45 | 9u00-12u00/13u30-17u00',
+    'Van Migerode Yvan |  | 19/09/26 | Uitbergen | 7u45 | 9u00-12u00/13u30-17u00 | moved',
+    'Koningschap |  | 20/06/26 | Vissershof - Mere | 15/06/26 | 9u30-12u00/13u30-17u00', '',
+  ].join('\n'))
+
+  execFileSync(process.execPath, [path.join(ROOT, 'src/transform.mjs'), '--now', '2026-11-20'], { env: { ...process.env, MIGRATION_DATA: dir, MIGRATION_SHEETS: path.join(dir, 'sheets'), MIGRATION_CALENDARS: path.join(dir, 'calendars') }, stdio: 'pipe' })
   const read = async (n) => JSON.parse(await readFile(path.join(dir, 'import', n), 'utf8'))
 
   const comps = await read('competitions.json')
-  assert.equal(comps.length, 4)
+  assert.equal(comps.length, 6) // 3 old calendar rows + 3 paper rows; the sheet completes one of them
+  const arijs26 = comps.find((c) => c.slug === '2026-gp-fam-arijs')
+  assert.deepEqual([arijs26.drawTime, arijs26.startTime, arijs26.endTime], ['07:45', '09:00', '17:00'])
+  assert.deepEqual([arijs26.breakStart, arijs26.breakEnd], ['12:00', '13:30'])
+  assert.equal(comps.find((c) => c.slug === '2026-koningschap').drawTime, null)
   const sheet = comps.find((c) => c.slug === '2026-grote-prijs-van-migerode-yvan')
   assert.equal(sheet.waterSlug, 'de-lustige-lijnvissers-schellebelle') // not "De Meerse Lijnvissers"
   assert.ok(sheet.countsForStandings)
+  assert.equal(sheet.drawTime, '07:45') // times come from the calendar
+  assert.match(sheet.notes, /op de kalender stond Uitbergen/)
+  assert.equal(comps.filter((c) => c.date === '2026-09-19').length, 1)
   const arijs = comps.find((c) => c.slug === '2023-gp-fam-arijs')
   assert.equal(arijs.waterSlug, 'de-meerse-lijnvissers-mere')
   assert.equal(arijs.startTime, '13:30')

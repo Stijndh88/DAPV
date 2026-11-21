@@ -129,7 +129,7 @@ async function main() {
   for (const w of read<any[]>('waters.json')) {
     const image = await media(payload, w.imageFile, `${w.name} ${w.place ?? ''}`.trim())
     const description = w.description ?? (w.place ? `<p>Wedstrijdwater in ${w.place}.</p>` : undefined)
-    waterIds.set(w.slug, await upsert(payload, 'waters', { slug: { equals: w.slug } }, { name: w.name, slug: w.slug, town: w.place, address: w.address, description, image }))
+    waterIds.set(w.slug, await upsert(payload, 'waters', { slug: { equals: w.slug } }, { name: w.name, slug: w.slug, town: w.place, address: w.address, description, image, feeding: w.feeding ?? undefined }))
     inc('waters')
   }
 
@@ -145,7 +145,7 @@ async function main() {
   for (const c of read<any[]>('competitions.json')) {
     compIds.set(c.slug, await upsert(payload, 'competitions', { slug: { equals: c.slug } }, {
       title: c.title, slug: c.slug, date: new Date(`${c.date}T12:00:00Z`).toISOString(),
-      startTime: c.startTime, endTime: c.endTime, drawTime: c.drawTime, notes: c.notes,
+      startTime: c.startTime, endTime: c.endTime, breakStart: c.breakStart, breakEnd: c.breakEnd, drawTime: c.drawTime, notes: c.notes,
       water: c.waterSlug ? waterIds.get(c.waterSlug) : undefined, type: c.type, season: c.season,
       countsForStandings: c.countsForStandings, status: c.status,
     }))
@@ -199,6 +199,7 @@ async function main() {
     clubName: s.name, tagline: s.tagline, clubSong,
     clubhouse: s.clubhouse?.name,
     address: s.clubhouse && `${s.clubhouse.street}\n${s.clubhouse.postalCode} ${s.clubhouse.city}`,
+    feedRules: s.feedRules,
   }, true)
   if (!DRY) await payload.updateGlobal({ slug: 'site-settings' as never, data: settings as never })
 
