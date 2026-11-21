@@ -221,7 +221,7 @@
     "oldPath": "/vislocaties/dendervissers-gijzegem/",
     "slug": "dendervissers-gijzegem",
     "description": "<p><a data-type=\"URL\" data-id=\"https://plasvissers.be/vislocaties/\" href=\"https://plasvissers.be/vislocaties/\">&lt; Terug naar het overzicht met vislocaties</a></p>\n\n\n\n<center>\n</center>\n\n\n\n<hr>\n\n\n\n<p>Locatie: <a href=\"https://www.google.com/maps/@50.9744407,4.0574159,3a,54.4y,258.5h,77.2t/data=!3m6!1e1!3m4!1saSTp7QwWS6TnVn__lE9OIQ!2e0!7i13312!8i6656\" target=\"_blank\" rel=\"noreferrer noopener nofollow\">langs het Denderpad/jaagpad in Gijzegem</a></p>\n\n\n\n<p>De toegang loopt langs een baantje dat parallel loopt met het Dender-/jaagpad, te bereiken vanuit Gijzegem.<br>Stel de GPS in op het adres <strong>Denderweg 102 9308 Gijzegem</strong>.</p>\n\n\n\n<center></center>\n\n\n\n<p>Als je hier aankomt zal je een klein, versmald brugje over moeten en meteen rechts afslaan <strong>voor het jaagpad</strong>.</p>\n\n\n\n\n\n\n\n<p><strong>Na een kleine 235 meter </strong>zul je rechts een hek zien (dat ondertussen misschien wel open staat). De baan zal hier ook wat verhard(er) zijn. Dit is de toegang naar de vijver van de Dendervissers. Volg gewoon mee naar links tot aan de kantine.</p>",
-    "imageFile": "data/media/2023/04/gijzegemarrowright-1024x750.png"
+    "imageFile": "data/media/2023/04/gijzegemarrowright.png"
   },
   {
     "name": "De Meerse Lijnvissers",
@@ -234,7 +234,7 @@
     "oldPath": "/vislocaties/meerse-lijnvissers-mere/",
     "slug": "de-meerse-lijnvissers-mere",
     "description": "<p><a data-type=\"URL\" data-id=\"https://plasvissers.be/vislocaties/\" href=\"https://plasvissers.be/vislocaties/\">&lt; Terug naar het overzicht met vislocaties</a></p>\n\n\n\n<center>\n</center>\n\n\n\n<hr>\n\n\n\n<p>Locatie: <a href=\"https://goo.gl/maps/9T3XCuG5rbt3Mtxi6\" target=\"_blank\" rel=\"noreferrer noopener nofollow\">Biezeputstraat 10, 9420 Erpe-Mere</a></p>\n\n\n\n<center></center>",
-    "imageFile": "data/media/2023/04/meerselijnvisserskantine-1024x504.png",
+    "imageFile": "data/media/2023/04/meerselijnvisserskantine.png",
     "feeding": {
       "shallow": "ja",
       "clubKeepnet": true,

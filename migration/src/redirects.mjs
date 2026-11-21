@@ -44,6 +44,9 @@ const FIXED = {
   '/comments/feed': '/nieuws',
   '/vislocaties': '/visplaatsen',
   '/bwg_gallery/fotos-2022': '/fotos/fotos-2022',
+  '/bwg_album/fotos': '/fotos',
+  '/bwg_tag/2022': '/fotos/fotos-2022',
+  '/bwg_tag/2023': '/fotos',
   '/wp-admin': '/admin',
   '/wp-login.php': '/admin',
 }

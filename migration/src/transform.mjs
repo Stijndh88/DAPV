@@ -136,12 +136,29 @@ async function main() {
   }
   await mkdir(OUT, { recursive: true })
 
-  const normUrl = (u) => u && u.replace(/^http:/, 'https:').replace('://www.', '://').replace(/\?.*$/, '')
+  const normUrl = (u) => u && u.replace(/^http:/, 'https:').replace('://www.', '://').replace('://test.', '://').replace(/\?.*$/, '')
   const localFile = (u) => {
     if (!u) return null
     const n = normUrl(u).replace(/\/photo-gallery\/(thumb|\.thumb|\.original)\//, '/photo-gallery/')
     return manifest[n] ?? manifest[n.replace(/-\d{2,4}x\d{2,4}(?=\.[a-z]+$)/i, '')] ?? null
   }
+  // prefer the full-size upload over a "-300x225" variant
+  // prefer WordPress' "-scaled" copy (max 2560 px) over the camera original
+  const bestFile = (u) => {
+    if (!u) return null
+    const full = normUrl(u).replace(/-\d{2,4}x\d{2,4}(?=\.[a-z]+$)/i, '')
+    const scaled = /-scaled\.[a-z]+$/i.test(full) ? full : full.replace(/(\.[a-z]+)$/i, '-scaled$1')
+    return localFile(scaled) ?? localFile(full) ?? localFile(u) ?? null
+  }
+  const PLACEHOLDER = /carp_fisher_silhouette|\/cropped-|\/fish\.png|\/images\.jpg|wp942296bc|ajax_loader/i
+  /** photos in a piece of HTML plus media attached to that post/page, full size, no placeholders */
+  const photosOf = (html, wpId = null) => {
+    const inline = cheerio.load(html ?? '')('img').toArray().map((i) => [bestFile(imgSrc(i)), cheerio.load(html)(i).closest('figure').find('figcaption').text().trim() || null])
+    const attached = media.filter((m) => wpId && m.post === wpId && m.mime_type?.startsWith('image/')).map((m) => [bestFile(m.source_url), null])
+    const seen = new Set()
+    return [...inline, ...attached].filter(([f]) => f && !PLACEHOLDER.test(f) && !seen.has(f) && seen.add(f)).map(([file, caption]) => ({ file, caption }))
+  }
+  const usedFiles = new Set()
   const mediaById = new Map(media.map((m) => [m.id, m]))
   const catSlug = new Map(categories.map((c) => [c.id, c.slug]))
   const pathOf = (link) => new URL(link).pathname
@@ -152,7 +169,7 @@ async function main() {
     const page = w.oldPath && pages.find((p) => pathOf(p.link) === w.oldPath)
     if (page) {
       w.description = cleanHtml(page.content.rendered)
-      w.imageFile = localFile(firstImage(page.content.rendered))
+      w.imageFile = bestFile(firstImage(page.content.rendered))
     }
   }
   // the /vislocaties/ overview has one captioned photo per water
@@ -163,7 +180,7 @@ async function main() {
       const cap = $o(f).find('figcaption').text().toLowerCase()
       const img = $o(f).find('img').get(0)
       const w = img && waters.find((x) => cap.includes(x.name.toLowerCase()))
-      if (w && !w.imageFile) w.imageFile = localFile(imgSrc(img))
+      if (w && !w.imageFile) w.imageFile = bestFile(imgSrc(img))
     })
   }
   const findWater = (cell) => {
@@ -204,6 +221,7 @@ async function main() {
         oldPaths: [pathOf(p.link), `/?p=${p.id}`],
         entries,
         textHtml: cleanHtml(p.content.rendered.replace(/<table[\s\S]*?<\/table>/gi, '')),
+        photos: photosOf(p.content.rendered, p.id),
       })
     } else {
       if (!cats.includes('nieuws')) report.unparsedPosts.push({ id: p.id, title, link: p.link, reason: 'no results table found; imported as news' })
@@ -284,13 +302,14 @@ async function main() {
       oldPaths: rc?.oldPaths ?? [],
       results: rc?.entries ?? null,
       textHtml: rc?.textHtml || null,
+      photos: rc?.photos ?? [],
     })
   }
   for (const rc of resultComps.filter((r) => !usedResults.has(r))) {
     competitions.push({
       slug: rc.slug, title: rc.title, date: rc.date, startTime: null, endTime: null, drawTime: null, waterSlug: null, type: rc.type, season: rc.season,
       countsForStandings: rc.type === 'kampioenschap', status: 'gespeeld', notes: null,
-      oldPaths: rc.oldPaths, results: rc.entries, textHtml: rc.textHtml || null,
+      oldPaths: rc.oldPaths, results: rc.entries, textHtml: rc.textHtml || null, photos: rc.photos ?? [],
     })
   }
   // ---- results typed in from paper sheets (seed/results/*.txt, see its README) ----
@@ -439,6 +458,8 @@ async function main() {
     slug: PAGE_MAP[p.slug],
     title: p.slug === 'ontstaan' ? 'Geschiedenis' : decodeEntities(p.title.rendered),
     html: cleanHtml(p.content.rendered),
+    // photos are placed after the text (Payload upload blocks); captions become their alt text
+    photos: photosOf(p.content.rendered),
     oldPaths: [pathOf(p.link), `/?page_id=${p.id}`],
   }))
 
@@ -454,6 +475,16 @@ async function main() {
     description: 'Overgezet van de vorige website.', coverFile: galleryFiles[0], photoFiles: galleryFiles,
     oldPaths: ['/fotos/', '/bwg_gallery/fotos-2022/'],
   }] : []
+  // one album per match whose old results post had photos
+  for (const c of competitions) {
+    if (!c.photos?.length) { delete c.photos; continue }
+    albums.push({
+      slug: `wedstrijd-${c.slug}`, title: `Foto's ${c.title} ${c.season}`.replace(/(\d{4}) \1$/, '$1'), date: c.date,
+      description: 'Foto’s bij de uitslag op de vorige website.', competitionSlug: c.slug,
+      coverFile: c.photos[0].file, photoFiles: c.photos.map((ph) => ph.file), oldPaths: [],
+    })
+    delete c.photos
+  }
   if (!albums.length) warn('No gallery photos found in /fotos/ HTML')
   else warn('Album date for "Foto\'s 2022" set to 2022-12-31 (the old gallery has no date)')
 
@@ -477,7 +508,23 @@ async function main() {
   }
 
   // ---- board & settings ----
-  const board = seed.board.members.map((b, i) => ({ ...b, order: i + 1 }))
+  // /bestuur/ shows one photo above each name, in the same order as seed/board.json
+  const bestuur = pages.find((p) => p.slug === 'bestuur')
+  const boardPhotos = []
+  if (bestuur) {
+    const $b = cheerio.load(bestuur.content.rendered)
+    let pending = null
+    $b('img, p, h2, h3, h4, strong, figcaption').each((_, el) => {
+      if (el.name === 'img') { pending = bestFile(imgSrc(el)); return }
+      const t = $b(el).text().replace(/\s+/g, ' ').trim()
+      if (t && pending !== undefined) { boardPhotos.push({ text: t.toLowerCase(), file: pending }); pending = undefined }
+    })
+  }
+  const board = seed.board.members.map((b, i) => {
+    const [first, ...rest] = b.name.toLowerCase().split(' ')
+    const hit = boardPhotos.find((x) => x.text.includes(first) && x.text.includes(rest.join(' ')))
+    return { ...b, order: i + 1, photoFile: hit?.file && !PLACEHOLDER.test(hit.file) ? hit.file : null }
+  })
   const settings = { ...seed.club, feedRules: feed?.clubRules ?? [], clubSongFile: localFile(`https://plasvissers.be${seed.club.clubSong}`) }
   // The old MP3 starts with ~400 zero bytes, so upload type sniffing sees text/plain. Strip them.
   if (settings.clubSongFile) {
@@ -485,6 +532,32 @@ async function main() {
     const buf = await readFile(f).catch(() => null)
     const start = buf ? buf.findIndex((b) => b !== 0) : 0
     if (start > 0) { await writeFile(f, buf.subarray(start)); warn(`Stripped ${start} leading zero bytes from ${settings.clubSongFile}`) }
+  }
+
+  // every other photo in the old media library goes into an archive album, so nothing is lost
+  const used = new Set(JSON.stringify([waters, news, outPages, albums, board]).match(/data\/media\/[^"]+/g))
+  const archive = media
+    .filter((m) => m.mime_type?.startsWith('image/'))
+    .map((m) => ({ file: bestFile(m.source_url), title: decodeEntities(m.title?.rendered ?? ''), date: m.date.slice(0, 10) }))
+    .filter((m) => m.file && !PLACEHOLDER.test(m.file) && !used.has(m.file))
+    .sort((a, b) => a.date.localeCompare(b.date))
+  // skip photos that were uploaded twice under another name (seed/media-duplicates.json)
+  const dupes = (await readJson(path.join(ROOT, 'seed', 'media-duplicates.json'), { duplicates: {} })).duplicates
+  const seenArchive = new Set()
+  const archiveFiles = archive.filter((m) => !dupes[path.basename(m.file)] && !seenArchive.has(m.file) && seenArchive.add(m.file))
+  if (archiveFiles.length) {
+    albums.push({
+      slug: 'archief-vorige-website', title: 'Archief vorige website', date: archiveFiles.at(-1).date,
+      description: 'Foto’s uit de mediabibliotheek van de vorige website die nergens anders staan: oude portretten, het clublokaal Café De Belskes, vangsten en wedstrijddagen.',
+      coverFile: archiveFiles[0].file, photoFiles: archiveFiles.map((m) => m.file),
+      // keep media titles that say something ("Koning Werner 2014"), not ones that repeat the file name
+      photoTitles: Object.fromEntries(archiveFiles.filter((m) => {
+        const stem = path.basename(m.file).replace(/\.[a-z]+$/i, '').toLowerCase().replace(/[^a-z0-9]/g, '')
+        const t = m.title.toLowerCase().replace(/[^a-z0-9]/g, '')
+        return t && t !== stem && !/^samsung$|^\d+$/.test(t) && !stem.startsWith(t)
+      }).map((m) => [m.file, m.title])),
+      oldPaths: [],
+    })
   }
 
   const write = (n, d) => writeFile(path.join(OUT, n), JSON.stringify(d, null, 2))
