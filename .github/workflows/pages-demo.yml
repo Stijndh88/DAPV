@@ -9,7 +9,7 @@ name: Pages demo
 
 on:
   push:
-    branches: [main, claude/project-thread-n4t6eg]
+    branches: [main]
     paths: [app/**, migration/data/**, demo/**, .github/workflows/pages-demo.yml]
   workflow_dispatch:
 
